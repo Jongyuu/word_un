@@ -33,7 +33,9 @@
     "test:setup": "tsx scripts/test-setup.ts",
     "deploy:check": "tsx scripts/deploy-check.ts",
     "backup": "tsx scripts/backup-data.ts",
-    "stats": "tsx scripts/data-stats.ts"
+    "stats": "tsx scripts/data-stats.ts",
+    "perf": "tsx scripts/performance-check.ts",
+    "validate": "tsx scripts/validate-data.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.107.0",
