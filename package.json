@@ -8,8 +8,12 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "setup": "tsx scripts/setup-wizard.ts",
     "import-data": "tsx scripts/import-seed-data.ts",
-    "test:setup": "tsx scripts/test-setup.ts"
+    "test:setup": "tsx scripts/test-setup.ts",
+    "deploy:check": "tsx scripts/deploy-check.ts",
+    "backup": "tsx scripts/backup-data.ts",
+    "stats": "tsx scripts/data-stats.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.107.0",

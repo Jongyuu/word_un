@@ -64,25 +64,90 @@ word-universe/
 ### 前置要求
 - Node.js 18+
 - npm 或 pnpm
+- Supabase 账号（免费）
 
-### 安装依赖
+### 步骤 1：克隆项目
+
+```bash
+git clone https://github.com/Jongyuu/word_un.git
+cd word_un
+```
+
+### 步骤 2：安装依赖
 
 ```bash
 npm install
 ```
 
-### 启动开发服务器
+### 步骤 3：配置环境变量
+
+**方法一：使用配置向导（推荐）**
+
+```bash
+npm run setup
+```
+
+按照提示输入 Supabase 项目信息即可自动配置。
+
+**方法二：手动配置**
+
+1. 复制环境变量模板：
+```bash
+cp .env.example .env.local
+```
+
+2. 编辑 `.env.local` 文件，填入你的 Supabase 密钥：
+```env
+VITE_SUPABASE_URL=https://your-project.supabase.co
+VITE_SUPABASE_ANON_KEY=your-anon-key
+SUPABASE_SERVICE_KEY=your-service-key
+```
+
+> 💡 如何获取密钥？查看 [SUPABASE_SETUP.md](./SUPABASE_SETUP.md)
+
+### 步骤 4：初始化数据库
+
+1. 创建 Supabase 项目（如果还没有）
+2. 运行数据库迁移（参考 [SUPABASE_SETUP.md](./SUPABASE_SETUP.md)）
+3. 导入种子数据：
+
+```bash
+npm run import-data
+```
+
+### 步骤 5：测试配置
+
+```bash
+npm run test:setup
+```
+
+确认看到：
+- ✅ 环境变量已配置
+- ✅ Supabase 连接成功
+- ✅ 节点数量: 50
+- ✅ 关系数量: 258
+
+### 步骤 6：启动开发服务器
 
 ```bash
 npm run dev
 ```
 
-访问 `http://localhost:5173`
+访问 `http://localhost:5173`，开始探索知识宇宙！🌌
 
-### 构建生产版本
+---
+
+## 🛠️ 可用脚本
 
 ```bash
-npm run build
+npm run dev           # 启动开发服务器
+npm run build         # 构建生产版本
+npm run preview       # 预览构建产物
+
+npm run setup         # 环境配置向导
+npm run test:setup    # 测试环境配置
+npm run import-data   # 导入种子数据
+npm run deploy:check  # 部署前检查
 ```
 
 ---
@@ -96,27 +161,30 @@ npm run build
 - [x] 配置 Tailwind CSS
 - [x] 创建组件骨架
 
-### Phase 2: 数据库设计（进行中）
-- [ ] 创建 Supabase 项目
-- [ ] 设计数据库表结构
-- [ ] AI 生成种子数据
+### Phase 2: 数据库设计 ✅ 已完成
+- [x] 创建 Supabase 项目
+- [x] 设计数据库表结构
+- [x] AI 生成种子数据
+- [x] 环境配置工具
 
-### Phase 3: 图谱引擎
-- [ ] 集成 React Flow
-- [ ] 实现节点切换逻辑
-- [ ] 按需加载数据
+### Phase 3: 图谱引擎 ✅ 已完成
+- [x] 集成 React Flow
+- [x] 实现节点切换逻辑
+- [x] 按需加载数据
 
-### Phase 4: UI 交互
-- [ ] 节点信息卡片
-- [ ] 面包屑导航
-- [ ] 动画效果
+### Phase 4: UI 交互 ✅ 已完成
+- [x] 节点信息卡片
+- [x] 面包屑导航
+- [x] 动画效果
 
-### Phase 5: 数据扩展
+### Phase 5: 数据扩展（进行中）
+- [x] 50+ 初始节点
 - [ ] AI 生成 500+ 节点
 
 ### Phase 6: 部署上线
 - [ ] 部署到 Vercel
 - [ ] 性能优化
+- [ ] CI/CD 配置
 
 ---
 
