@@ -32,7 +32,7 @@ async function importData() {
 
     // 导入节点
     console.log('📦 导入节点...')
-    const { data: nodesData, error: nodesError } = await supabase
+    const { error: nodesError } = await supabase
       .from('nodes')
       .insert(nodes)
 
@@ -44,7 +44,7 @@ async function importData() {
 
     // 导入关系
     console.log('🔗 导入关系...')
-    const { data: relationsData, error: relationsError } = await supabase
+    const { error: relationsError } = await supabase
       .from('relations')
       .insert(relations)
 
@@ -69,7 +69,7 @@ async function importData() {
 
     console.log('🎉 数据导入完成！')
   } catch (error) {
-    console.error('❌ 导入失败:', error.message)
+    console.error('❌ 导入失败:', error instanceof Error ? error.message : String(error))
     process.exit(1)
   }
 }

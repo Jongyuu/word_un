@@ -11,7 +11,7 @@ export interface Node {
     etymology?: string
     category?: string
     tags?: string[]
-    [key: string]: any
+    [key: string]: string | number | boolean | string[] | undefined
   }
   createdAt?: string
 }

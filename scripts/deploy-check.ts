@@ -1,5 +1,6 @@
 import * as fs from 'fs'
 import * as path from 'path'
+import { execSync } from 'child_process'
 import { createClient } from '@supabase/supabase-js'
 
 async function deployCheck() {
@@ -27,11 +28,10 @@ async function deployCheck() {
 
   // 2. 检查 TypeScript 编译
   console.log('2️⃣ 检查 TypeScript 编译...')
-  const { execSync } = require('child_process')
   try {
     execSync('npx tsc --noEmit', { stdio: 'pipe' })
     checks.passed.push('✅ TypeScript 编译通过')
-  } catch (error) {
+  } catch {
     checks.failed.push('❌ TypeScript 编译失败')
   }
 
@@ -44,7 +44,7 @@ async function deployCheck() {
     } else {
       checks.failed.push('❌ dist 目录未生成')
     }
-  } catch (error) {
+  } catch {
     checks.failed.push('❌ 项目构建失败')
   }
 
@@ -65,7 +65,7 @@ async function deployCheck() {
       } else {
         checks.warnings.push('⚠️  数据库为空，需要导入数据')
       }
-    } catch (error) {
+    } catch {
       checks.failed.push('❌ 数据库连接失败')
     }
   }

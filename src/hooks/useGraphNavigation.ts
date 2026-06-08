@@ -1,4 +1,5 @@
 // TODO: Define navigation hook return type
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface UseGraphNavigationReturn {
   // TODO: Add navigation methods
 }

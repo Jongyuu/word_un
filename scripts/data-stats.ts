@@ -47,7 +47,7 @@ async function showStats() {
       })
 
     if (typeStats) {
-      typeStats.forEach((stat: any) => {
+      typeStats.forEach((stat: { type: string; count: number }) => {
         console.log(`  ${stat.type}: ${stat.count} 个`)
       })
     }
@@ -117,7 +117,7 @@ async function showStats() {
     console.log('\n' + '═'.repeat(50) + '\n')
 
   } catch (error) {
-    console.error('❌ 统计失败:', error.message)
+    console.error('❌ 统计失败:', error instanceof Error ? error.message : String(error))
     process.exit(1)
   }
 }
