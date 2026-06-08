@@ -1,8 +1,28 @@
 {
   "name": "word-un",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
+  "description": "🌌 知识探索宇宙 - 在探索中自然学习英语",
+  "author": "Jongyuu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jongyuu/word_un.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jongyuu/word_un/issues"
+  },
+  "homepage": "https://github.com/Jongyuu/word_un#readme",
+  "keywords": [
+    "react",
+    "typescript",
+    "knowledge-graph",
+    "english-learning",
+    "visualization",
+    "supabase",
+    "react-flow"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
