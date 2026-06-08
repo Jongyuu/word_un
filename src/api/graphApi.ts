@@ -1,19 +1,23 @@
-// TODO: Define API response types
-interface GraphData {
-  // TODO: Add graph data structure
+import type { GraphResponse } from '@/types'
+
+const API_BASE = '/api'
+
+export const graphApi = {
+  // 获取初始图谱数据
+  async getInitialGraph(): Promise<GraphResponse> {
+    const response = await fetch(`${API_BASE}/graph/initial`)
+    if (!response.ok) {
+      throw new Error('Failed to fetch initial graph')
+    }
+    return response.json()
+  },
+
+  // 获取指定节点的图谱数据
+  async getNodeGraph(nodeId: string): Promise<GraphResponse> {
+    const response = await fetch(`${API_BASE}/graph/center/${nodeId}`)
+    if (!response.ok) {
+      throw new Error(`Failed to fetch node: ${nodeId}`)
+    }
+    return response.json()
+  }
 }
-
-export const fetchInitialGraph = async (): Promise<GraphData | null> => {
-  // TODO: Implement API call to fetch initial graph data
-  return null;
-};
-
-export const fetchNodeChildren = async (nodeId: string): Promise<GraphData | null> => {
-  // TODO: Implement API call to fetch node children
-  return null;
-};
-
-export const expandNode = async (nodeId: string): Promise<GraphData | null> => {
-  // TODO: Implement API call to expand node
-  return null;
-};

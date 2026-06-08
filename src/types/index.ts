@@ -1,0 +1,21 @@
+// 核心数据类型
+export interface Node {
+  id: string
+  label: string
+  labelCn?: string
+  type: 'word' | 'topic' | 'root' | 'concept'
+  importance: number
+  isCenter?: boolean
+}
+
+export interface Relation {
+  id: string
+  source: string
+  target: string
+  type: string
+  strength: number
+  label?: string
+}
+
+// 导出 API 相关类型
+export * from './api'
