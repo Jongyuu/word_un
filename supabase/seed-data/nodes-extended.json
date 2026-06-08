@@ -1,0 +1,6835 @@
+[
+  {
+    "id": "physics",
+    "type": "topic",
+    "label": "Physics",
+    "label_cn": "物理学",
+    "definition": "The natural science that studies matter, energy, motion, and force through space and time.",
+    "importance": 1,
+    "metadata": {
+      "category": "science",
+      "etymology": "From Greek 'physika' meaning 'natural things', from 'physis' (nature)",
+      "tags": [
+        "science",
+        "natural science",
+        "matter",
+        "energy"
+      ]
+    }
+  },
+  {
+    "id": "chemistry",
+    "type": "topic",
+    "label": "Chemistry",
+    "label_cn": "化学",
+    "definition": "The scientific study of the composition, structure, properties, and reactions of matter, especially at the atomic and molecular level.",
+    "importance": 1,
+    "metadata": {
+      "category": "science",
+      "etymology": "From Medieval Latin 'alchimia', from Arabic 'al-kimiya' (the art of transformation)",
+      "tags": [
+        "science",
+        "matter",
+        "molecules",
+        "reactions"
+      ]
+    }
+  },
+  {
+    "id": "biology",
+    "type": "topic",
+    "label": "Biology",
+    "label_cn": "生物学",
+    "definition": "The natural science concerned with the study of life and living organisms, including their structure, function, growth, evolution, and taxonomy.",
+    "importance": 1,
+    "metadata": {
+      "category": "science",
+      "etymology": "From Greek 'bios' (life) + 'logos' (study)",
+      "tags": [
+        "science",
+        "life",
+        "organisms",
+        "evolution"
+      ]
+    }
+  },
+  {
+    "id": "science",
+    "type": "concept",
+    "label": "Science",
+    "label_cn": "科学",
+    "definition": "A systematic enterprise that builds and organizes knowledge in the form of testable explanations and predictions about the universe.",
+    "importance": 1,
+    "metadata": {
+      "category": "methodology",
+      "etymology": "From Latin 'scientia' meaning 'knowledge', from 'scire' (to know)",
+      "tags": [
+        "knowledge",
+        "methodology",
+        "research",
+        "evidence"
+      ]
+    }
+  },
+  {
+    "id": "energy",
+    "type": "concept",
+    "label": "Energy",
+    "label_cn": "能量",
+    "definition": "The capacity to do work or produce change, existing in various forms such as kinetic, potential, thermal, electrical, chemical, or nuclear.",
+    "importance": 0.95,
+    "metadata": {
+      "category": "physics",
+      "etymology": "From Greek 'energeia' meaning 'activity, operation', from 'en' (in) + 'ergon' (work)",
+      "tags": [
+        "physics",
+        "work",
+        "power",
+        "force"
+      ]
+    }
+  },
+  {
+    "id": "atom",
+    "type": "concept",
+    "label": "Atom",
+    "label_cn": "原子",
+    "definition": "The smallest unit of matter that retains the properties of an element, consisting of a nucleus surrounded by electrons.",
+    "importance": 0.95,
+    "metadata": {
+      "category": "chemistry",
+      "etymology": "From Greek 'atomos' meaning 'indivisible', from 'a-' (not) + 'tomos' (cut)",
+      "tags": [
+        "chemistry",
+        "matter",
+        "particle",
+        "element"
+      ]
+    }
+  },
+  {
+    "id": "molecule",
+    "type": "concept",
+    "label": "Molecule",
+    "label_cn": "分子",
+    "definition": "A group of atoms bonded together, representing the smallest fundamental unit of a chemical compound that can participate in a chemical reaction.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "chemistry",
+      "etymology": "From French 'molécule', from Latin 'molecula' (small mass), diminutive of 'moles' (mass)",
+      "tags": [
+        "chemistry",
+        "compound",
+        "bond",
+        "structure"
+      ]
+    }
+  },
+  {
+    "id": "cell",
+    "type": "concept",
+    "label": "Cell",
+    "label_cn": "细胞",
+    "definition": "The basic structural and functional unit of all living organisms, typically microscopic and consisting of cytoplasm and a nucleus enclosed in a membrane.",
+    "importance": 0.95,
+    "metadata": {
+      "category": "biology",
+      "etymology": "From Latin 'cella' meaning 'small room', first used by Robert Hooke observing cork tissue",
+      "tags": [
+        "biology",
+        "organism",
+        "life",
+        "structure"
+      ]
+    }
+  },
+  {
+    "id": "electron",
+    "type": "concept",
+    "label": "Electron",
+    "label_cn": "电子",
+    "definition": "A subatomic particle with a negative electric charge that orbits the nucleus of an atom.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "physics",
+      "etymology": "From Greek 'elektron' meaning 'amber' (which produces static electricity when rubbed)",
+      "tags": [
+        "physics",
+        "particle",
+        "electricity",
+        "atom"
+      ]
+    }
+  },
+  {
+    "id": "proton",
+    "type": "concept",
+    "label": "Proton",
+    "label_cn": "质子",
+    "definition": "A stable subatomic particle with a positive electric charge found in the nucleus of every atom.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "physics",
+      "etymology": "From Greek 'proton', neuter of 'protos' meaning 'first'",
+      "tags": [
+        "physics",
+        "particle",
+        "nucleus",
+        "atom"
+      ]
+    }
+  },
+  {
+    "id": "neutron",
+    "type": "concept",
+    "label": "Neutron",
+    "label_cn": "中子",
+    "definition": "A subatomic particle with no electric charge found in the nucleus of atoms, having approximately the same mass as a proton.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "physics",
+      "etymology": "From 'neutral' + '-on' (particle suffix), coined in 1932",
+      "tags": [
+        "physics",
+        "particle",
+        "nucleus",
+        "neutral"
+      ]
+    }
+  },
+  {
+    "id": "dna",
+    "type": "concept",
+    "label": "DNA",
+    "label_cn": "脱氧核糖核酸",
+    "definition": "Deoxyribonucleic acid, a molecule carrying genetic instructions for the development, functioning, growth, and reproduction of all known organisms.",
+    "importance": 0.95,
+    "metadata": {
+      "category": "biology",
+      "etymology": "Abbreviation of 'deoxyribonucleic acid', from chemical components",
+      "tags": [
+        "biology",
+        "genetics",
+        "heredity",
+        "molecule"
+      ]
+    }
+  },
+  {
+    "id": "evolution",
+    "type": "concept",
+    "label": "Evolution",
+    "label_cn": "进化",
+    "definition": "The process by which different kinds of living organisms develop and diversify from earlier forms through genetic changes over successive generations.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "biology",
+      "etymology": "From Latin 'evolutio' meaning 'unrolling', from 'evolvere' (to unfold)",
+      "tags": [
+        "biology",
+        "adaptation",
+        "natural selection",
+        "species"
+      ]
+    }
+  },
+  {
+    "id": "photosynthesis",
+    "type": "concept",
+    "label": "Photosynthesis",
+    "label_cn": "光合作用",
+    "definition": "The process by which green plants and some organisms use sunlight to synthesize nutrients from carbon dioxide and water, producing oxygen as a byproduct.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "biology",
+      "etymology": "From Greek 'phos' (light) + 'synthesis' (putting together)",
+      "tags": [
+        "biology",
+        "plants",
+        "energy",
+        "chlorophyll"
+      ]
+    }
+  },
+  {
+    "id": "gravity",
+    "type": "concept",
+    "label": "Gravity",
+    "label_cn": "重力",
+    "definition": "The force that attracts a body toward the center of the earth or toward any other physical body having mass.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "physics",
+      "etymology": "From Latin 'gravitas' meaning 'weight', from 'gravis' (heavy)",
+      "tags": [
+        "physics",
+        "force",
+        "mass",
+        "attraction"
+      ]
+    }
+  },
+  {
+    "id": "enzyme",
+    "type": "concept",
+    "label": "Enzyme",
+    "label_cn": "酶",
+    "definition": "A biological catalyst, typically a protein, that speeds up chemical reactions in living organisms without being consumed in the process.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "biology",
+      "etymology": "From Greek 'enzymos' meaning 'leavened', from 'en' (in) + 'zyme' (leaven)",
+      "tags": [
+        "biology",
+        "catalyst",
+        "protein",
+        "reaction"
+      ]
+    }
+  },
+  {
+    "id": "catalyst",
+    "type": "concept",
+    "label": "Catalyst",
+    "label_cn": "催化剂",
+    "definition": "A substance that increases the rate of a chemical reaction without itself undergoing permanent chemical change.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "chemistry",
+      "etymology": "From Greek 'katalysis' meaning 'dissolution', from 'kata-' (down) + 'lyein' (loosen)",
+      "tags": [
+        "chemistry",
+        "reaction",
+        "speed",
+        "unchanged"
+      ]
+    }
+  },
+  {
+    "id": "protein",
+    "type": "concept",
+    "label": "Protein",
+    "label_cn": "蛋白质",
+    "definition": "Large biomolecules consisting of chains of amino acids, essential for the structure, function, and regulation of body tissues and organs.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "biology",
+      "etymology": "From French 'protéine', from Greek 'proteios' meaning 'primary', from 'protos' (first)",
+      "tags": [
+        "biology",
+        "amino acid",
+        "molecule",
+        "nutrition"
+      ]
+    }
+  },
+  {
+    "id": "carbon",
+    "type": "word",
+    "label": "Carbon",
+    "label_cn": "碳",
+    "definition": "A nonmetallic chemical element with atomic number 6, forming the basis of all organic compounds and essential to life.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "chemistry",
+      "etymology": "From French 'carbone', from Latin 'carbo' (coal, charcoal)",
+      "tags": [
+        "chemistry",
+        "element",
+        "organic",
+        "life"
+      ]
+    }
+  },
+  {
+    "id": "oxygen",
+    "type": "word",
+    "label": "Oxygen",
+    "label_cn": "氧",
+    "definition": "A colorless, odorless gas with atomic number 8, essential for respiration in most living organisms and supporting combustion.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "chemistry",
+      "etymology": "From French 'oxygène', from Greek 'oxys' (sharp, acid) + 'genes' (forming)",
+      "tags": [
+        "chemistry",
+        "element",
+        "gas",
+        "respiration"
+      ]
+    }
+  },
+  {
+    "id": "hydrogen",
+    "type": "word",
+    "label": "Hydrogen",
+    "label_cn": "氢",
+    "definition": "The lightest and most abundant chemical element with atomic number 1, forming water when combined with oxygen.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "chemistry",
+      "etymology": "From French 'hydrogène', from Greek 'hydro' (water) + 'genes' (forming)",
+      "tags": [
+        "chemistry",
+        "element",
+        "gas",
+        "water"
+      ]
+    }
+  },
+  {
+    "id": "nucleus",
+    "type": "concept",
+    "label": "Nucleus",
+    "label_cn": "细胞核/原子核",
+    "definition": "The central and most important part of an object or group, forming the basis for activity or growth; in biology, the membrane-bound organelle containing genetic material; in physics, the dense central core of an atom.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "science",
+      "etymology": "From Latin 'nucleus' meaning 'kernel, inner part', diminutive of 'nux' (nut)",
+      "tags": [
+        "biology",
+        "physics",
+        "center",
+        "core"
+      ]
+    }
+  },
+  {
+    "id": "organism",
+    "type": "concept",
+    "label": "Organism",
+    "label_cn": "有机体/生物体",
+    "definition": "An individual living thing, such as an animal, plant, fungus, or bacterium, capable of carrying on life processes.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "biology",
+      "etymology": "From Greek 'organon' meaning 'instrument, tool' + '-ismos' (suffix forming nouns)",
+      "tags": [
+        "biology",
+        "life",
+        "living",
+        "individual"
+      ]
+    }
+  },
+  {
+    "id": "species",
+    "type": "concept",
+    "label": "Species",
+    "label_cn": "物种",
+    "definition": "A group of living organisms consisting of similar individuals capable of exchanging genes or interbreeding, the basic unit of biological classification.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "biology",
+      "etymology": "From Latin 'species' meaning 'appearance, kind, sort'",
+      "tags": [
+        "biology",
+        "classification",
+        "taxonomy",
+        "organism"
+      ]
+    }
+  },
+  {
+    "id": "ecosystem",
+    "type": "concept",
+    "label": "Ecosystem",
+    "label_cn": "生态系统",
+    "definition": "A biological community of interacting organisms and their physical environment, functioning as a unit.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "biology",
+      "etymology": "From Greek 'oikos' (house, dwelling) + 'systema' (organized whole)",
+      "tags": [
+        "biology",
+        "environment",
+        "community",
+        "interaction"
+      ]
+    }
+  },
+  {
+    "id": "reaction",
+    "type": "concept",
+    "label": "Reaction",
+    "label_cn": "反应",
+    "definition": "A process in which one or more substances are changed into others through the breaking and forming of chemical bonds.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "chemistry",
+      "etymology": "From Latin 're-' (back) + 'actio' (action), from 'agere' (to do)",
+      "tags": [
+        "chemistry",
+        "change",
+        "transformation",
+        "bond"
+      ]
+    }
+  },
+  {
+    "id": "velocity",
+    "type": "concept",
+    "label": "Velocity",
+    "label_cn": "速度",
+    "definition": "The speed of something in a given direction, a vector quantity measuring the rate of change of position.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "physics",
+      "etymology": "From Latin 'velocitas' meaning 'swiftness', from 'velox' (swift, quick)",
+      "tags": [
+        "physics",
+        "motion",
+        "speed",
+        "direction"
+      ]
+    }
+  },
+  {
+    "id": "mass",
+    "type": "concept",
+    "label": "Mass",
+    "label_cn": "质量",
+    "definition": "A measure of the amount of matter in an object, determining its resistance to acceleration and gravitational attraction to other bodies.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "physics",
+      "etymology": "From Latin 'massa' meaning 'lump, dough', from Greek 'maza' (barley cake)",
+      "tags": [
+        "physics",
+        "matter",
+        "inertia",
+        "weight"
+      ]
+    }
+  },
+  {
+    "id": "force",
+    "type": "concept",
+    "label": "Force",
+    "label_cn": "力",
+    "definition": "An influence that can change the motion of an object, measured in newtons, calculated as mass times acceleration.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "physics",
+      "etymology": "From Latin 'fortia' meaning 'strength', from 'fortis' (strong)",
+      "tags": [
+        "physics",
+        "motion",
+        "acceleration",
+        "interaction"
+      ]
+    }
+  },
+  {
+    "id": "temperature",
+    "type": "concept",
+    "label": "Temperature",
+    "label_cn": "温度",
+    "definition": "A physical quantity expressing hot and cold, measuring the average kinetic energy of particles in a substance.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "physics",
+      "etymology": "From Latin 'temperatura' meaning 'a tempering, moderation', from 'temperare' (to mix, regulate)",
+      "tags": [
+        "physics",
+        "heat",
+        "thermodynamics",
+        "energy"
+      ]
+    }
+  },
+  {
+    "id": "radiation",
+    "type": "concept",
+    "label": "Radiation",
+    "label_cn": "辐射",
+    "definition": "The emission or transmission of energy in the form of waves or particles through space or a medium.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "physics",
+      "etymology": "From Latin 'radiare' meaning 'to emit rays', from 'radius' (ray, beam)",
+      "tags": [
+        "physics",
+        "energy",
+        "wave",
+        "particle"
+      ]
+    }
+  },
+  {
+    "id": "magnetism",
+    "type": "concept",
+    "label": "Magnetism",
+    "label_cn": "磁性",
+    "definition": "A physical phenomenon produced by moving electric charges, resulting in attractive and repulsive forces between objects.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "physics",
+      "etymology": "From Greek 'Magnesia' (region in Thessaly where magnetic stones were found)",
+      "tags": [
+        "physics",
+        "magnetic field",
+        "attraction",
+        "force"
+      ]
+    }
+  },
+  {
+    "id": "electricity",
+    "type": "concept",
+    "label": "Electricity",
+    "label_cn": "电",
+    "definition": "A form of energy resulting from the movement of charged particles, such as electrons, manifesting as lightning, static electricity, or electric current.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "physics",
+      "etymology": "From Latin 'electricus' meaning 'of amber', from Greek 'elektron' (amber)",
+      "tags": [
+        "physics",
+        "energy",
+        "current",
+        "charge"
+      ]
+    }
+  },
+  {
+    "id": "wavelength",
+    "type": "concept",
+    "label": "Wavelength",
+    "label_cn": "波长",
+    "definition": "The distance between successive crests of a wave, especially in electromagnetic radiation or sound waves.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "physics",
+      "etymology": "Compound of 'wave' + 'length', from physics terminology",
+      "tags": [
+        "physics",
+        "wave",
+        "light",
+        "frequency"
+      ]
+    }
+  },
+  {
+    "id": "frequency",
+    "type": "concept",
+    "label": "Frequency",
+    "label_cn": "频率",
+    "definition": "The rate at which something occurs or is repeated over a particular period, especially the number of cycles per second of a wave.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "physics",
+      "etymology": "From Latin 'frequentia' meaning 'crowd, multitude', from 'frequens' (crowded, repeated)",
+      "tags": [
+        "physics",
+        "wave",
+        "oscillation",
+        "hertz"
+      ]
+    }
+  },
+  {
+    "id": "compound",
+    "type": "concept",
+    "label": "Compound",
+    "label_cn": "化合物",
+    "definition": "A substance formed when two or more chemical elements are chemically bonded together in fixed proportions.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "chemistry",
+      "etymology": "From Latin 'componere' meaning 'to put together', from 'com-' (together) + 'ponere' (to place)",
+      "tags": [
+        "chemistry",
+        "molecule",
+        "bond",
+        "element"
+      ]
+    }
+  },
+  {
+    "id": "solution",
+    "type": "concept",
+    "label": "Solution",
+    "label_cn": "溶液",
+    "definition": "A homogeneous mixture composed of two or more substances, where a solute is dissolved in a solvent.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "chemistry",
+      "etymology": "From Latin 'solutio' meaning 'a loosening, dissolving', from 'solvere' (to loosen, dissolve)",
+      "tags": [
+        "chemistry",
+        "mixture",
+        "solvent",
+        "solute"
+      ]
+    }
+  },
+  {
+    "id": "acid",
+    "type": "concept",
+    "label": "Acid",
+    "label_cn": "酸",
+    "definition": "A substance with a pH less than 7 that can donate hydrogen ions, typically having a sour taste and turning litmus paper red.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "chemistry",
+      "etymology": "From Latin 'acidus' meaning 'sour', from 'acere' (to be sour)",
+      "tags": [
+        "chemistry",
+        "pH",
+        "hydrogen",
+        "sour"
+      ]
+    }
+  },
+  {
+    "id": "base",
+    "type": "concept",
+    "label": "Base",
+    "label_cn": "碱",
+    "definition": "A substance with a pH greater than 7 that can accept hydrogen ions, typically feeling slippery and turning litmus paper blue.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "chemistry",
+      "etymology": "From Greek 'basis' meaning 'foundation', through Latin 'basis'",
+      "tags": [
+        "chemistry",
+        "pH",
+        "alkaline",
+        "hydroxide"
+      ]
+    }
+  },
+  {
+    "id": "ion",
+    "type": "concept",
+    "label": "Ion",
+    "label_cn": "离子",
+    "definition": "An atom or molecule with a net electric charge due to the loss or gain of one or more electrons.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "chemistry",
+      "etymology": "From Greek 'ion', present participle of 'ienai' meaning 'to go'",
+      "tags": [
+        "chemistry",
+        "charge",
+        "electron",
+        "particle"
+      ]
+    }
+  },
+  {
+    "id": "bond",
+    "type": "concept",
+    "label": "Bond",
+    "label_cn": "化学键",
+    "definition": "A lasting attraction between atoms that enables the formation of chemical compounds, typically involving sharing or transfer of electrons.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "chemistry",
+      "etymology": "From Middle English 'band', from Old Norse 'band' (that which binds)",
+      "tags": [
+        "chemistry",
+        "electron",
+        "attraction",
+        "molecule"
+      ]
+    }
+  },
+  {
+    "id": "membrane",
+    "type": "concept",
+    "label": "Membrane",
+    "label_cn": "膜",
+    "definition": "A thin, flexible sheet of tissue or material that separates or connects structures, especially the selectively permeable barrier surrounding cells.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "biology",
+      "etymology": "From Latin 'membrana' meaning 'skin covering a limb', from 'membrum' (limb)",
+      "tags": [
+        "biology",
+        "cell",
+        "barrier",
+        "tissue"
+      ]
+    }
+  },
+  {
+    "id": "chromosome",
+    "type": "concept",
+    "label": "Chromosome",
+    "label_cn": "染色体",
+    "definition": "A thread-like structure of DNA and proteins found in the nucleus of cells, carrying genetic information in the form of genes.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "biology",
+      "etymology": "From Greek 'chroma' (color) + 'soma' (body), named for staining properties",
+      "tags": [
+        "biology",
+        "genetics",
+        "DNA",
+        "heredity"
+      ]
+    }
+  },
+  {
+    "id": "gene",
+    "type": "concept",
+    "label": "Gene",
+    "label_cn": "基因",
+    "definition": "A unit of heredity made up of DNA that occupies a specific location on a chromosome and determines a particular characteristic in an organism.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "biology",
+      "etymology": "From German 'Gen', shortened from 'Pangen', from Greek 'genos' (race, offspring)",
+      "tags": [
+        "biology",
+        "genetics",
+        "heredity",
+        "DNA"
+      ]
+    }
+  },
+  {
+    "id": "respiration",
+    "type": "concept",
+    "label": "Respiration",
+    "label_cn": "呼吸作用",
+    "definition": "The biochemical process in which cells break down glucose and oxygen to release energy, producing carbon dioxide and water as byproducts.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "biology",
+      "etymology": "From Latin 'respirare' meaning 'to breathe', from 're-' (again) + 'spirare' (to breathe)",
+      "tags": [
+        "biology",
+        "energy",
+        "metabolism",
+        "cellular"
+      ]
+    }
+  },
+  {
+    "id": "metabolism",
+    "type": "concept",
+    "label": "Metabolism",
+    "label_cn": "新陈代谢",
+    "definition": "The chemical processes that occur within living organisms to maintain life, including converting food to energy and building cellular materials.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "biology",
+      "etymology": "From Greek 'metabole' meaning 'change', from 'meta-' (change) + 'ballein' (to throw)",
+      "tags": [
+        "biology",
+        "energy",
+        "chemical",
+        "process"
+      ]
+    }
+  },
+  {
+    "id": "mutation",
+    "type": "concept",
+    "label": "Mutation",
+    "label_cn": "突变",
+    "definition": "A change in the DNA sequence of a gene that can occur spontaneously or be induced, potentially altering the organism's characteristics.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "biology",
+      "etymology": "From Latin 'mutare' meaning 'to change'",
+      "tags": [
+        "biology",
+        "genetics",
+        "DNA",
+        "evolution"
+      ]
+    }
+  },
+  {
+    "id": "darwin",
+    "type": "person",
+    "label": "Darwin",
+    "label_cn": "达尔文",
+    "definition": "Charles Darwin (1809-1882), English naturalist who established the theory of evolution through natural selection in his work 'On the Origin of Species'.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "biology",
+      "etymology": "English surname, from Old English 'Deorwine' meaning 'dear friend'",
+      "tags": [
+        "biology",
+        "evolution",
+        "natural selection",
+        "scientist"
+      ]
+    }
+  },
+  {
+    "id": "newton",
+    "type": "person",
+    "label": "Newton",
+    "label_cn": "牛顿",
+    "definition": "Isaac Newton (1643-1727), English mathematician and physicist who formulated the laws of motion and universal gravitation, revolutionizing physics.",
+    "importance": 0.95,
+    "metadata": {
+      "category": "physics",
+      "etymology": "English surname meaning 'new town', from Old English 'niwe' + 'tun'",
+      "tags": [
+        "physics",
+        "gravity",
+        "mathematics",
+        "scientist"
+      ]
+    }
+  },
+  {
+    "id": "einstein",
+    "type": "person",
+    "label": "Einstein",
+    "label_cn": "爱因斯坦",
+    "definition": "Albert Einstein (1879-1955), German-born theoretical physicist who developed the theory of relativity, fundamentally changing our understanding of space, time, and energy.",
+    "importance": 0.95,
+    "metadata": {
+      "category": "physics",
+      "etymology": "German surname meaning 'one stone', from 'ein' (one) + 'Stein' (stone)",
+      "tags": [
+        "physics",
+        "relativity",
+        "quantum",
+        "scientist"
+      ]
+    }
+  },
+  {
+    "id": "quantum",
+    "type": "concept",
+    "label": "Quantum",
+    "label_cn": "量子",
+    "definition": "The minimum amount of any physical entity involved in an interaction, representing the discrete nature of energy and matter at atomic scales.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "physics",
+      "etymology": "From Latin 'quantum' meaning 'how much', neuter of 'quantus' (how great)",
+      "tags": [
+        "physics",
+        "particle",
+        "energy",
+        "discrete"
+      ]
+    }
+  },
+  {
+    "id": "body",
+    "type": "concept",
+    "label": "body",
+    "label_cn": "身体",
+    "definition": "The physical structure of a person or animal, including bones, flesh, and organs",
+    "importance": 1,
+    "metadata": {
+      "category": "anatomy",
+      "etymology": "Old English 'bodig', meaning trunk or chest",
+      "tags": [
+        "anatomy",
+        "physical",
+        "structure"
+      ]
+    }
+  },
+  {
+    "id": "mind",
+    "type": "concept",
+    "label": "mind",
+    "label_cn": "心智",
+    "definition": "The element of a person that enables them to be aware of the world and their experiences, to think, and to feel",
+    "importance": 1,
+    "metadata": {
+      "category": "psychology",
+      "etymology": "Old English 'gemynd', meaning memory, thinking",
+      "tags": [
+        "consciousness",
+        "cognition",
+        "mental"
+      ]
+    }
+  },
+  {
+    "id": "emotion",
+    "type": "concept",
+    "label": "emotion",
+    "label_cn": "情感",
+    "definition": "A strong feeling deriving from one's circumstances, mood, or relationships with others",
+    "importance": 0.95,
+    "metadata": {
+      "category": "psychology",
+      "etymology": "Latin 'emovere', meaning to move out, agitate",
+      "tags": [
+        "feeling",
+        "psychology",
+        "mental state"
+      ]
+    }
+  },
+  {
+    "id": "health",
+    "type": "concept",
+    "label": "health",
+    "label_cn": "健康",
+    "definition": "The state of being free from illness or injury; overall physical and mental well-being",
+    "importance": 0.95,
+    "metadata": {
+      "category": "wellness",
+      "etymology": "Old English 'hælth', meaning wholeness, being whole",
+      "tags": [
+        "wellness",
+        "medicine",
+        "well-being"
+      ]
+    }
+  },
+  {
+    "id": "sense",
+    "type": "concept",
+    "label": "sense",
+    "label_cn": "感官",
+    "definition": "A faculty by which the body perceives an external stimulus; one of the five traditional senses",
+    "importance": 0.9,
+    "metadata": {
+      "category": "perception",
+      "etymology": "Latin 'sensus', meaning perception, feeling",
+      "tags": [
+        "perception",
+        "sensory",
+        "awareness"
+      ]
+    }
+  },
+  {
+    "id": "heart",
+    "type": "word",
+    "label": "heart",
+    "label_cn": "心脏",
+    "definition": "A hollow muscular organ that pumps blood through the circulatory system by rhythmic contraction and dilation",
+    "importance": 0.95,
+    "metadata": {
+      "category": "organ",
+      "etymology": "Old English 'heorte', from Proto-Germanic 'khertan'",
+      "tags": [
+        "organ",
+        "cardiovascular",
+        "vital"
+      ]
+    }
+  },
+  {
+    "id": "brain",
+    "type": "word",
+    "label": "brain",
+    "label_cn": "大脑",
+    "definition": "The organ of the central nervous system responsible for thought, memory, emotion, and sensory processing",
+    "importance": 1,
+    "metadata": {
+      "category": "organ",
+      "etymology": "Old English 'brægen', origin uncertain",
+      "tags": [
+        "organ",
+        "nervous system",
+        "cognition"
+      ]
+    }
+  },
+  {
+    "id": "lung",
+    "type": "word",
+    "label": "lung",
+    "label_cn": "肺",
+    "definition": "Either of the two respiratory organs that oxygenate blood and remove carbon dioxide",
+    "importance": 0.85,
+    "metadata": {
+      "category": "organ",
+      "etymology": "Old English 'lungen', meaning light organ",
+      "tags": [
+        "organ",
+        "respiratory",
+        "breathing"
+      ]
+    }
+  },
+  {
+    "id": "liver",
+    "type": "word",
+    "label": "liver",
+    "label_cn": "肝脏",
+    "definition": "A large organ that detoxifies chemicals, metabolizes drugs, and produces biochemicals for digestion",
+    "importance": 0.75,
+    "metadata": {
+      "category": "organ",
+      "etymology": "Old English 'lifer', possibly from 'life'",
+      "tags": [
+        "organ",
+        "digestive",
+        "metabolism"
+      ]
+    }
+  },
+  {
+    "id": "kidney",
+    "type": "word",
+    "label": "kidney",
+    "label_cn": "肾脏",
+    "definition": "Either of a pair of organs that filter waste products from the blood and produce urine",
+    "importance": 0.7,
+    "metadata": {
+      "category": "organ",
+      "etymology": "Middle English 'kidnei', compound of unknown origin",
+      "tags": [
+        "organ",
+        "excretory",
+        "filtration"
+      ]
+    }
+  },
+  {
+    "id": "stomach",
+    "type": "word",
+    "label": "stomach",
+    "label_cn": "胃",
+    "definition": "The internal organ where food is digested before passing to the intestines",
+    "importance": 0.8,
+    "metadata": {
+      "category": "organ",
+      "etymology": "Greek 'stomachos', meaning throat, gullet",
+      "tags": [
+        "organ",
+        "digestive",
+        "nutrition"
+      ]
+    }
+  },
+  {
+    "id": "eye",
+    "type": "word",
+    "label": "eye",
+    "label_cn": "眼睛",
+    "definition": "The organ of sight in humans and animals, detecting light and converting it to neural signals",
+    "importance": 0.95,
+    "metadata": {
+      "category": "sensory organ",
+      "etymology": "Old English 'ēage', from Proto-Germanic 'augon'",
+      "tags": [
+        "sense",
+        "vision",
+        "perception"
+      ]
+    }
+  },
+  {
+    "id": "ear",
+    "type": "word",
+    "label": "ear",
+    "label_cn": "耳朵",
+    "definition": "The organ of hearing and balance in humans and animals",
+    "importance": 0.9,
+    "metadata": {
+      "category": "sensory organ",
+      "etymology": "Old English 'ēare', from Proto-Germanic 'auzon'",
+      "tags": [
+        "sense",
+        "hearing",
+        "auditory"
+      ]
+    }
+  },
+  {
+    "id": "nose",
+    "type": "word",
+    "label": "nose",
+    "label_cn": "鼻子",
+    "definition": "The organ of smell and the entrance to the respiratory tract",
+    "importance": 0.85,
+    "metadata": {
+      "category": "sensory organ",
+      "etymology": "Old English 'nosu', from Proto-Germanic 'nusus'",
+      "tags": [
+        "sense",
+        "smell",
+        "respiratory"
+      ]
+    }
+  },
+  {
+    "id": "tongue",
+    "type": "word",
+    "label": "tongue",
+    "label_cn": "舌头",
+    "definition": "The muscular organ in the mouth used for tasting, swallowing, and speech",
+    "importance": 0.8,
+    "metadata": {
+      "category": "sensory organ",
+      "etymology": "Old English 'tunge', from Proto-Germanic 'tungon'",
+      "tags": [
+        "sense",
+        "taste",
+        "speech"
+      ]
+    }
+  },
+  {
+    "id": "skin",
+    "type": "word",
+    "label": "skin",
+    "label_cn": "皮肤",
+    "definition": "The outer covering of the body, the largest organ, providing protection and sensation",
+    "importance": 0.9,
+    "metadata": {
+      "category": "organ",
+      "etymology": "Old Norse 'skinn', meaning animal hide",
+      "tags": [
+        "sense",
+        "touch",
+        "protection"
+      ]
+    }
+  },
+  {
+    "id": "vision",
+    "type": "concept",
+    "label": "vision",
+    "label_cn": "视觉",
+    "definition": "The faculty or state of being able to see; sight",
+    "importance": 0.85,
+    "metadata": {
+      "category": "sense",
+      "etymology": "Latin 'visio', from 'videre' meaning to see",
+      "tags": [
+        "perception",
+        "sight",
+        "sensory"
+      ]
+    }
+  },
+  {
+    "id": "hearing",
+    "type": "concept",
+    "label": "hearing",
+    "label_cn": "听觉",
+    "definition": "The faculty of perceiving sounds",
+    "importance": 0.8,
+    "metadata": {
+      "category": "sense",
+      "etymology": "Old English 'hieran', meaning to hear",
+      "tags": [
+        "perception",
+        "auditory",
+        "sensory"
+      ]
+    }
+  },
+  {
+    "id": "touch",
+    "type": "concept",
+    "label": "touch",
+    "label_cn": "触觉",
+    "definition": "The faculty of perception through physical contact with the skin",
+    "importance": 0.75,
+    "metadata": {
+      "category": "sense",
+      "etymology": "Old French 'touchier', from Latin 'toccare'",
+      "tags": [
+        "perception",
+        "tactile",
+        "sensory"
+      ]
+    }
+  },
+  {
+    "id": "taste",
+    "type": "concept",
+    "label": "taste",
+    "label_cn": "味觉",
+    "definition": "The sensation of flavor perceived in the mouth and throat on contact with a substance",
+    "importance": 0.7,
+    "metadata": {
+      "category": "sense",
+      "etymology": "Old French 'taster', meaning to handle, touch, taste",
+      "tags": [
+        "perception",
+        "flavor",
+        "sensory"
+      ]
+    }
+  },
+  {
+    "id": "smell",
+    "type": "concept",
+    "label": "smell",
+    "label_cn": "嗅觉",
+    "definition": "The faculty of perceiving odors by means of the olfactory nerves",
+    "importance": 0.7,
+    "metadata": {
+      "category": "sense",
+      "etymology": "Middle English 'smellen', origin uncertain",
+      "tags": [
+        "perception",
+        "olfactory",
+        "sensory"
+      ]
+    }
+  },
+  {
+    "id": "pain",
+    "type": "concept",
+    "label": "pain",
+    "label_cn": "疼痛",
+    "definition": "Physical suffering or discomfort caused by illness or injury",
+    "importance": 0.8,
+    "metadata": {
+      "category": "sensation",
+      "etymology": "Latin 'poena', meaning punishment, penalty",
+      "tags": [
+        "sensation",
+        "discomfort",
+        "health"
+      ]
+    }
+  },
+  {
+    "id": "pleasure",
+    "type": "concept",
+    "label": "pleasure",
+    "label_cn": "愉悦",
+    "definition": "A feeling of happy satisfaction and enjoyment",
+    "importance": 0.75,
+    "metadata": {
+      "category": "emotion",
+      "etymology": "Latin 'placere', meaning to please",
+      "tags": [
+        "emotion",
+        "happiness",
+        "satisfaction"
+      ]
+    }
+  },
+  {
+    "id": "joy",
+    "type": "word",
+    "label": "joy",
+    "label_cn": "喜悦",
+    "definition": "A feeling of great pleasure and happiness",
+    "importance": 0.8,
+    "metadata": {
+      "category": "emotion",
+      "etymology": "Old French 'joie', from Latin 'gaudium'",
+      "tags": [
+        "emotion",
+        "happiness",
+        "positive"
+      ]
+    }
+  },
+  {
+    "id": "sadness",
+    "type": "word",
+    "label": "sadness",
+    "label_cn": "悲伤",
+    "definition": "The condition or quality of being sad; sorrow",
+    "importance": 0.75,
+    "metadata": {
+      "category": "emotion",
+      "etymology": "Old English 'sæd', meaning sated, weary",
+      "tags": [
+        "emotion",
+        "sorrow",
+        "negative"
+      ]
+    }
+  },
+  {
+    "id": "anger",
+    "type": "word",
+    "label": "anger",
+    "label_cn": "愤怒",
+    "definition": "A strong feeling of annoyance, displeasure, or hostility",
+    "importance": 0.8,
+    "metadata": {
+      "category": "emotion",
+      "etymology": "Old Norse 'angr', meaning grief, sorrow",
+      "tags": [
+        "emotion",
+        "hostility",
+        "negative"
+      ]
+    }
+  },
+  {
+    "id": "fear",
+    "type": "word",
+    "label": "fear",
+    "label_cn": "恐惧",
+    "definition": "An unpleasant emotion caused by the belief that something is dangerous or threatening",
+    "importance": 0.85,
+    "metadata": {
+      "category": "emotion",
+      "etymology": "Old English 'fǣr', meaning calamity, danger",
+      "tags": [
+        "emotion",
+        "anxiety",
+        "survival"
+      ]
+    }
+  },
+  {
+    "id": "anxiety",
+    "type": "word",
+    "label": "anxiety",
+    "label_cn": "焦虑",
+    "definition": "A feeling of worry, nervousness, or unease about something with an uncertain outcome",
+    "importance": 0.75,
+    "metadata": {
+      "category": "emotion",
+      "etymology": "Latin 'anxietas', from 'anxius' meaning worried",
+      "tags": [
+        "emotion",
+        "stress",
+        "mental health"
+      ]
+    }
+  },
+  {
+    "id": "love",
+    "type": "word",
+    "label": "love",
+    "label_cn": "爱",
+    "definition": "An intense feeling of deep affection or strong attachment to someone or something",
+    "importance": 0.95,
+    "metadata": {
+      "category": "emotion",
+      "etymology": "Old English 'lufu', from Proto-Germanic 'lubo'",
+      "tags": [
+        "emotion",
+        "affection",
+        "relationship"
+      ]
+    }
+  },
+  {
+    "id": "stress",
+    "type": "word",
+    "label": "stress",
+    "label_cn": "压力",
+    "definition": "A state of mental or emotional strain resulting from demanding circumstances",
+    "importance": 0.85,
+    "metadata": {
+      "category": "mental health",
+      "etymology": "Latin 'strictus', meaning drawn tight",
+      "tags": [
+        "mental health",
+        "pressure",
+        "wellness"
+      ]
+    }
+  },
+  {
+    "id": "depression",
+    "type": "word",
+    "label": "depression",
+    "label_cn": "抑郁",
+    "definition": "A mental health disorder characterized by persistently depressed mood or loss of interest",
+    "importance": 0.7,
+    "metadata": {
+      "category": "mental health",
+      "etymology": "Latin 'depressio', meaning pressing down",
+      "tags": [
+        "mental health",
+        "illness",
+        "psychology"
+      ]
+    }
+  },
+  {
+    "id": "memory",
+    "type": "concept",
+    "label": "memory",
+    "label_cn": "记忆",
+    "definition": "The faculty by which the mind stores and remembers information",
+    "importance": 0.85,
+    "metadata": {
+      "category": "cognition",
+      "etymology": "Latin 'memoria', from 'memor' meaning mindful",
+      "tags": [
+        "cognition",
+        "brain",
+        "mental"
+      ]
+    }
+  },
+  {
+    "id": "consciousness",
+    "type": "concept",
+    "label": "consciousness",
+    "label_cn": "意识",
+    "definition": "The state of being awake and aware of one's surroundings and thoughts",
+    "importance": 0.75,
+    "metadata": {
+      "category": "cognition",
+      "etymology": "Latin 'conscius', meaning knowing with others",
+      "tags": [
+        "awareness",
+        "mind",
+        "cognition"
+      ]
+    }
+  },
+  {
+    "id": "breath",
+    "type": "word",
+    "label": "breath",
+    "label_cn": "呼吸",
+    "definition": "The air taken into or expelled from the lungs during respiration",
+    "importance": 0.8,
+    "metadata": {
+      "category": "physiology",
+      "etymology": "Old English 'brǣth', meaning odor, scent",
+      "tags": [
+        "respiratory",
+        "vital",
+        "life"
+      ]
+    }
+  },
+  {
+    "id": "pulse",
+    "type": "word",
+    "label": "pulse",
+    "label_cn": "脉搏",
+    "definition": "The rhythmic throbbing of arteries as blood is propelled through them",
+    "importance": 0.65,
+    "metadata": {
+      "category": "physiology",
+      "etymology": "Latin 'pulsus', meaning beating, striking",
+      "tags": [
+        "cardiovascular",
+        "rhythm",
+        "vital signs"
+      ]
+    }
+  },
+  {
+    "id": "muscle",
+    "type": "word",
+    "label": "muscle",
+    "label_cn": "肌肉",
+    "definition": "A tissue composed of cells capable of contracting to produce movement",
+    "importance": 0.8,
+    "metadata": {
+      "category": "anatomy",
+      "etymology": "Latin 'musculus', meaning little mouse (from muscle movement)",
+      "tags": [
+        "tissue",
+        "movement",
+        "anatomy"
+      ]
+    }
+  },
+  {
+    "id": "bone",
+    "type": "word",
+    "label": "bone",
+    "label_cn": "骨骼",
+    "definition": "Any of the hard pieces of tissue making up the skeleton in vertebrates",
+    "importance": 0.85,
+    "metadata": {
+      "category": "anatomy",
+      "etymology": "Old English 'bān', from Proto-Germanic 'bainam'",
+      "tags": [
+        "skeleton",
+        "structure",
+        "anatomy"
+      ]
+    }
+  },
+  {
+    "id": "blood",
+    "type": "word",
+    "label": "blood",
+    "label_cn": "血液",
+    "definition": "The red liquid that circulates through the body carrying oxygen and nutrients",
+    "importance": 0.9,
+    "metadata": {
+      "category": "physiology",
+      "etymology": "Old English 'blōd', from Proto-Germanic 'blotham'",
+      "tags": [
+        "circulatory",
+        "vital",
+        "life"
+      ]
+    }
+  },
+  {
+    "id": "nerve",
+    "type": "word",
+    "label": "nerve",
+    "label_cn": "神经",
+    "definition": "A fiber or bundle of fibers that transmits impulses between the brain and body",
+    "importance": 0.75,
+    "metadata": {
+      "category": "anatomy",
+      "etymology": "Latin 'nervus', meaning sinew, tendon, nerve",
+      "tags": [
+        "nervous system",
+        "signal",
+        "communication"
+      ]
+    }
+  },
+  {
+    "id": "immune",
+    "type": "concept",
+    "label": "immune",
+    "label_cn": "免疫",
+    "definition": "Protected against a particular disease or pathogen by antibodies or white blood cells",
+    "importance": 0.7,
+    "metadata": {
+      "category": "physiology",
+      "etymology": "Latin 'immunis', meaning exempt, free",
+      "tags": [
+        "defense",
+        "health",
+        "protection"
+      ]
+    }
+  },
+  {
+    "id": "society",
+    "type": "concept",
+    "label": "society",
+    "label_cn": "社会",
+    "definition": "An organized group of people living together in a community with shared laws, traditions, and values",
+    "importance": 1,
+    "metadata": {
+      "category": "social_science",
+      "etymology": "From Latin 'societas' meaning fellowship, from 'socius' meaning companion",
+      "tags": [
+        "fundamental",
+        "community",
+        "organization"
+      ]
+    }
+  },
+  {
+    "id": "economy",
+    "type": "concept",
+    "label": "economy",
+    "label_cn": "经济",
+    "definition": "The system of production, distribution, and consumption of goods and services in a society",
+    "importance": 1,
+    "metadata": {
+      "category": "economics",
+      "etymology": "From Greek 'oikonomia' meaning household management, from 'oikos' (house) + 'nomos' (law)",
+      "tags": [
+        "fundamental",
+        "finance",
+        "trade"
+      ]
+    }
+  },
+  {
+    "id": "education",
+    "type": "concept",
+    "label": "education",
+    "label_cn": "教育",
+    "definition": "The process of facilitating learning, acquiring knowledge, skills, values, and habits",
+    "importance": 1,
+    "metadata": {
+      "category": "education",
+      "etymology": "From Latin 'educatio' meaning a bringing up, from 'educare' to lead out, train",
+      "tags": [
+        "fundamental",
+        "learning",
+        "development"
+      ]
+    }
+  },
+  {
+    "id": "government",
+    "type": "concept",
+    "label": "government",
+    "label_cn": "政府",
+    "definition": "The system or group of people governing an organized community, typically a state",
+    "importance": 1,
+    "metadata": {
+      "category": "politics",
+      "etymology": "From Old French 'governement' from Latin 'gubernare' to steer, rule",
+      "tags": [
+        "fundamental",
+        "authority",
+        "politics"
+      ]
+    }
+  },
+  {
+    "id": "law",
+    "type": "concept",
+    "label": "law",
+    "label_cn": "法律",
+    "definition": "A system of rules created and enforced through social or governmental institutions to regulate behavior",
+    "importance": 1,
+    "metadata": {
+      "category": "legal",
+      "etymology": "From Old English 'lagu' from Old Norse 'lag' meaning something laid down or fixed",
+      "tags": [
+        "fundamental",
+        "justice",
+        "rules"
+      ]
+    }
+  },
+  {
+    "id": "democracy",
+    "type": "concept",
+    "label": "democracy",
+    "label_cn": "民主",
+    "definition": "A system of government in which power is vested in the people, who rule either directly or through elected representatives",
+    "importance": 0.95,
+    "metadata": {
+      "category": "politics",
+      "etymology": "From Greek 'demokratia' from 'demos' (people) + 'kratos' (power, rule)",
+      "tags": [
+        "government_system",
+        "political_theory",
+        "voting"
+      ]
+    }
+  },
+  {
+    "id": "capitalism",
+    "type": "concept",
+    "label": "capitalism",
+    "label_cn": "资本主义",
+    "definition": "An economic system based on private ownership of the means of production and their operation for profit",
+    "importance": 0.9,
+    "metadata": {
+      "category": "economics",
+      "etymology": "From 'capital' from Latin 'capitalis' meaning of the head, principal, from 'caput' (head)",
+      "tags": [
+        "economic_system",
+        "free_market",
+        "private_property"
+      ]
+    }
+  },
+  {
+    "id": "socialism",
+    "type": "concept",
+    "label": "socialism",
+    "label_cn": "社会主义",
+    "definition": "A political and economic theory advocating collective or governmental ownership and administration of production and distribution",
+    "importance": 0.85,
+    "metadata": {
+      "category": "economics",
+      "etymology": "From French 'socialisme' from 'social' relating to society",
+      "tags": [
+        "economic_system",
+        "political_theory",
+        "collective_ownership"
+      ]
+    }
+  },
+  {
+    "id": "citizen",
+    "type": "word",
+    "label": "citizen",
+    "label_cn": "公民",
+    "definition": "A legally recognized member of a state or nation with associated rights and obligations",
+    "importance": 0.9,
+    "metadata": {
+      "category": "politics",
+      "etymology": "From Old French 'citezein' from 'cité' (city), ultimately from Latin 'civitas'",
+      "tags": [
+        "identity",
+        "rights",
+        "membership"
+      ]
+    }
+  },
+  {
+    "id": "constitution",
+    "type": "concept",
+    "label": "constitution",
+    "label_cn": "宪法",
+    "definition": "The fundamental principles or established precedents according to which a state is governed",
+    "importance": 0.85,
+    "metadata": {
+      "category": "legal",
+      "etymology": "From Latin 'constitutio' meaning establishment, from 'constituere' to set up",
+      "tags": [
+        "fundamental_law",
+        "governance",
+        "framework"
+      ]
+    }
+  },
+  {
+    "id": "parliament",
+    "type": "word",
+    "label": "parliament",
+    "label_cn": "议会",
+    "definition": "A legislative body of government, typically consisting of elected representatives",
+    "importance": 0.8,
+    "metadata": {
+      "category": "politics",
+      "etymology": "From Old French 'parlement' meaning speaking, discussion, from 'parler' to speak",
+      "tags": [
+        "legislature",
+        "representation",
+        "lawmaking"
+      ]
+    }
+  },
+  {
+    "id": "congress",
+    "type": "word",
+    "label": "congress",
+    "label_cn": "国会",
+    "definition": "A formal meeting or assembly of representatives for discussion and decision-making, especially a national legislative body",
+    "importance": 0.8,
+    "metadata": {
+      "category": "politics",
+      "etymology": "From Latin 'congressus' meaning a meeting, from 'con-' (together) + 'gradi' (to walk)",
+      "tags": [
+        "legislature",
+        "assembly",
+        "lawmaking"
+      ]
+    }
+  },
+  {
+    "id": "election",
+    "type": "word",
+    "label": "election",
+    "label_cn": "选举",
+    "definition": "A formal process by which people choose a person or group to hold public office",
+    "importance": 0.85,
+    "metadata": {
+      "category": "politics",
+      "etymology": "From Latin 'electio' meaning choice, selection, from 'eligere' to pick out",
+      "tags": [
+        "voting",
+        "democracy",
+        "representation"
+      ]
+    }
+  },
+  {
+    "id": "policy",
+    "type": "word",
+    "label": "policy",
+    "label_cn": "政策",
+    "definition": "A course or principle of action adopted or proposed by a government, party, business, or individual",
+    "importance": 0.9,
+    "metadata": {
+      "category": "politics",
+      "etymology": "From Middle French 'police' meaning government, from Latin 'politia' from Greek 'politeia'",
+      "tags": [
+        "strategy",
+        "planning",
+        "governance"
+      ]
+    }
+  },
+  {
+    "id": "taxation",
+    "type": "concept",
+    "label": "taxation",
+    "label_cn": "税收",
+    "definition": "The imposition of compulsory levies on individuals or entities by governments to fund public expenditure",
+    "importance": 0.85,
+    "metadata": {
+      "category": "economics",
+      "etymology": "From Latin 'taxare' meaning to estimate, assess, from 'tangere' to touch",
+      "tags": [
+        "revenue",
+        "fiscal_policy",
+        "public_finance"
+      ]
+    }
+  },
+  {
+    "id": "budget",
+    "type": "word",
+    "label": "budget",
+    "label_cn": "预算",
+    "definition": "An estimate of income and expenditure for a set period of time, especially for government operations",
+    "importance": 0.8,
+    "metadata": {
+      "category": "economics",
+      "etymology": "From Middle French 'bougette' meaning small bag, diminutive of 'bouge' leather bag",
+      "tags": [
+        "planning",
+        "finance",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "inflation",
+    "type": "concept",
+    "label": "inflation",
+    "label_cn": "通货膨胀",
+    "definition": "A sustained increase in the general price level of goods and services, reducing purchasing power",
+    "importance": 0.8,
+    "metadata": {
+      "category": "economics",
+      "etymology": "From Latin 'inflatio' meaning a puffing up, from 'inflare' to blow into",
+      "tags": [
+        "monetary_policy",
+        "economics",
+        "prices"
+      ]
+    }
+  },
+  {
+    "id": "unemployment",
+    "type": "concept",
+    "label": "unemployment",
+    "label_cn": "失业",
+    "definition": "The state of being without paid work but available and seeking employment",
+    "importance": 0.8,
+    "metadata": {
+      "category": "economics",
+      "etymology": "From 'un-' (not) + 'employment' from French 'emploi' meaning use, work",
+      "tags": [
+        "labor_market",
+        "economy",
+        "social_issue"
+      ]
+    }
+  },
+  {
+    "id": "gdp",
+    "type": "concept",
+    "label": "GDP",
+    "label_cn": "国内生产总值",
+    "definition": "Gross Domestic Product - the total monetary value of all goods and services produced within a country during a specific period",
+    "importance": 0.85,
+    "metadata": {
+      "category": "economics",
+      "etymology": "Acronym from Gross Domestic Product, 'gross' from Latin 'grossus' meaning thick, large",
+      "tags": [
+        "economic_indicator",
+        "measurement",
+        "productivity"
+      ]
+    }
+  },
+  {
+    "id": "trade",
+    "type": "word",
+    "label": "trade",
+    "label_cn": "贸易",
+    "definition": "The action of buying and selling goods and services between countries or entities",
+    "importance": 0.85,
+    "metadata": {
+      "category": "economics",
+      "etymology": "From Middle Low German 'trade' meaning track, course",
+      "tags": [
+        "commerce",
+        "exchange",
+        "international"
+      ]
+    }
+  },
+  {
+    "id": "market",
+    "type": "word",
+    "label": "market",
+    "label_cn": "市场",
+    "definition": "A system or place where buyers and sellers interact to exchange goods, services, or information",
+    "importance": 0.9,
+    "metadata": {
+      "category": "economics",
+      "etymology": "From Latin 'mercatus' meaning trading, marketplace, from 'mercari' to trade",
+      "tags": [
+        "commerce",
+        "exchange",
+        "economy"
+      ]
+    }
+  },
+  {
+    "id": "currency",
+    "type": "word",
+    "label": "currency",
+    "label_cn": "货币",
+    "definition": "A system of money in general use in a particular country or economic context",
+    "importance": 0.85,
+    "metadata": {
+      "category": "economics",
+      "etymology": "From Latin 'currens' meaning running, flowing, present participle of 'currere' to run",
+      "tags": [
+        "money",
+        "exchange",
+        "finance"
+      ]
+    }
+  },
+  {
+    "id": "regulation",
+    "type": "concept",
+    "label": "regulation",
+    "label_cn": "监管",
+    "definition": "A rule or directive made and maintained by an authority to control or govern conduct",
+    "importance": 0.8,
+    "metadata": {
+      "category": "legal",
+      "etymology": "From Late Latin 'regulatio' meaning a regulating, from 'regulare' to control by rule",
+      "tags": [
+        "control",
+        "governance",
+        "compliance"
+      ]
+    }
+  },
+  {
+    "id": "justice",
+    "type": "concept",
+    "label": "justice",
+    "label_cn": "正义",
+    "definition": "The quality of being fair and reasonable, or the administration of law according to prescribed principles",
+    "importance": 0.9,
+    "metadata": {
+      "category": "legal",
+      "etymology": "From Latin 'justitia' meaning righteousness, equity, from 'justus' meaning just, right",
+      "tags": [
+        "fairness",
+        "legal_system",
+        "ethics"
+      ]
+    }
+  },
+  {
+    "id": "court",
+    "type": "word",
+    "label": "court",
+    "label_cn": "法院",
+    "definition": "A tribunal presided over by a judge or judges with authority to hear and decide legal cases",
+    "importance": 0.85,
+    "metadata": {
+      "category": "legal",
+      "etymology": "From Old French 'court' from Latin 'cohors' meaning enclosed yard, company of soldiers",
+      "tags": [
+        "judiciary",
+        "legal_system",
+        "institution"
+      ]
+    }
+  },
+  {
+    "id": "judge",
+    "type": "word",
+    "label": "judge",
+    "label_cn": "法官",
+    "definition": "A public official appointed to decide cases in a court of law",
+    "importance": 0.8,
+    "metadata": {
+      "category": "legal",
+      "etymology": "From Old French 'jugier' from Latin 'judicare' to judge, from 'judex' meaning judge",
+      "tags": [
+        "judiciary",
+        "authority",
+        "decision_maker"
+      ]
+    }
+  },
+  {
+    "id": "rights",
+    "type": "concept",
+    "label": "rights",
+    "label_cn": "权利",
+    "definition": "Legal, social, or ethical principles of freedom or entitlement that belong to individuals or groups",
+    "importance": 0.95,
+    "metadata": {
+      "category": "legal",
+      "etymology": "From Old English 'riht' meaning just, good, proper, from Proto-Germanic 'rekhtaz'",
+      "tags": [
+        "fundamental",
+        "freedom",
+        "entitlement"
+      ]
+    }
+  },
+  {
+    "id": "freedom",
+    "type": "concept",
+    "label": "freedom",
+    "label_cn": "自由",
+    "definition": "The power or right to act, speak, or think as one wants without hindrance or restraint",
+    "importance": 0.95,
+    "metadata": {
+      "category": "politics",
+      "etymology": "From Old English 'freodom' meaning power of self-determination, from 'freo' meaning free",
+      "tags": [
+        "liberty",
+        "autonomy",
+        "fundamental"
+      ]
+    }
+  },
+  {
+    "id": "literacy",
+    "type": "concept",
+    "label": "literacy",
+    "label_cn": "识字能力",
+    "definition": "The ability to read and write, or competence in a particular area of knowledge",
+    "importance": 0.8,
+    "metadata": {
+      "category": "education",
+      "etymology": "From Latin 'litteratus' meaning educated, learned, from 'littera' meaning letter",
+      "tags": [
+        "skill",
+        "learning",
+        "competence"
+      ]
+    }
+  },
+  {
+    "id": "curriculum",
+    "type": "word",
+    "label": "curriculum",
+    "label_cn": "课程",
+    "definition": "The subjects comprising a course of study in a school or college",
+    "importance": 0.75,
+    "metadata": {
+      "category": "education",
+      "etymology": "From Latin 'curriculum' meaning a running, course, career, from 'currere' to run",
+      "tags": [
+        "academic",
+        "program",
+        "planning"
+      ]
+    }
+  },
+  {
+    "id": "university",
+    "type": "word",
+    "label": "university",
+    "label_cn": "大学",
+    "definition": "An institution of higher education and research that grants academic degrees",
+    "importance": 0.85,
+    "metadata": {
+      "category": "education",
+      "etymology": "From Latin 'universitas' meaning the whole, aggregate, from 'universus' meaning whole",
+      "tags": [
+        "institution",
+        "higher_education",
+        "academic"
+      ]
+    }
+  },
+  {
+    "id": "scholarship",
+    "type": "word",
+    "label": "scholarship",
+    "label_cn": "奖学金",
+    "definition": "A grant or payment made to support a student's education, or academic achievement and learning",
+    "importance": 0.7,
+    "metadata": {
+      "category": "education",
+      "etymology": "From Old English 'scolere' meaning student + 'ship' indicating state or condition",
+      "tags": [
+        "funding",
+        "academic",
+        "support"
+      ]
+    }
+  },
+  {
+    "id": "diploma",
+    "type": "word",
+    "label": "diploma",
+    "label_cn": "文凭",
+    "definition": "A certificate awarded by an educational institution to show that someone has successfully completed a course of study",
+    "importance": 0.75,
+    "metadata": {
+      "category": "education",
+      "etymology": "From Latin 'diploma' from Greek 'diploma' meaning folded paper, letter of recommendation",
+      "tags": [
+        "credential",
+        "certification",
+        "achievement"
+      ]
+    }
+  },
+  {
+    "id": "tuition",
+    "type": "word",
+    "label": "tuition",
+    "label_cn": "学费",
+    "definition": "The fee charged for teaching or instruction, especially at a formal educational institution",
+    "importance": 0.75,
+    "metadata": {
+      "category": "education",
+      "etymology": "From Latin 'tuitio' meaning a looking after, protection, from 'tueri' to watch, guard",
+      "tags": [
+        "cost",
+        "payment",
+        "education"
+      ]
+    }
+  },
+  {
+    "id": "pedagogy",
+    "type": "concept",
+    "label": "pedagogy",
+    "label_cn": "教育学",
+    "definition": "The method and practice of teaching, especially as an academic subject or theoretical concept",
+    "importance": 0.7,
+    "metadata": {
+      "category": "education",
+      "etymology": "From Greek 'paidagogos' meaning teacher of children, from 'pais' (child) + 'agogos' (leader)",
+      "tags": [
+        "teaching_method",
+        "theory",
+        "instruction"
+      ]
+    }
+  },
+  {
+    "id": "welfare",
+    "type": "concept",
+    "label": "welfare",
+    "label_cn": "福利",
+    "definition": "Statutory procedure or social effort designed to promote the basic well-being of people in need",
+    "importance": 0.8,
+    "metadata": {
+      "category": "social_science",
+      "etymology": "From Middle English 'wel faren' meaning to fare well, from 'wel' (well) + 'faren' (to go)",
+      "tags": [
+        "social_support",
+        "assistance",
+        "well-being"
+      ]
+    }
+  },
+  {
+    "id": "equality",
+    "type": "concept",
+    "label": "equality",
+    "label_cn": "平等",
+    "definition": "The state of being equal in status, rights, and opportunities",
+    "importance": 0.9,
+    "metadata": {
+      "category": "social_science",
+      "etymology": "From Latin 'aequalitas' from 'aequalis' meaning equal, from 'aequus' level, even",
+      "tags": [
+        "fundamental",
+        "fairness",
+        "social_justice"
+      ]
+    }
+  },
+  {
+    "id": "poverty",
+    "type": "concept",
+    "label": "poverty",
+    "label_cn": "贫困",
+    "definition": "The state of being extremely poor, lacking sufficient money or resources for basic living conditions",
+    "importance": 0.8,
+    "metadata": {
+      "category": "social_science",
+      "etymology": "From Old French 'poverte' from Latin 'paupertas' meaning poverty, from 'pauper' poor",
+      "tags": [
+        "social_issue",
+        "economics",
+        "deprivation"
+      ]
+    }
+  },
+  {
+    "id": "prosperity",
+    "type": "concept",
+    "label": "prosperity",
+    "label_cn": "繁荣",
+    "definition": "The state of being prosperous, successful, or thriving, especially in financial terms",
+    "importance": 0.75,
+    "metadata": {
+      "category": "economics",
+      "etymology": "From Latin 'prosperitas' from 'prosperus' meaning doing well, favorable",
+      "tags": [
+        "success",
+        "wealth",
+        "growth"
+      ]
+    }
+  },
+  {
+    "id": "reform",
+    "type": "concept",
+    "label": "reform",
+    "label_cn": "改革",
+    "definition": "The action or process of reforming an institution or practice to improve it",
+    "importance": 0.8,
+    "metadata": {
+      "category": "politics",
+      "etymology": "From Latin 're-' (again) + 'formare' to form, from 'forma' meaning form, shape",
+      "tags": [
+        "change",
+        "improvement",
+        "transformation"
+      ]
+    }
+  },
+  {
+    "id": "time",
+    "type": "concept",
+    "label": "time",
+    "label_cn": "时间",
+    "definition": "The indefinite continued progress of existence and events in the past, present, and future regarded as a whole.",
+    "importance": 1,
+    "metadata": {
+      "category": "fundamental_concept",
+      "etymology": "From Old English 'tima', related to 'tide'",
+      "tags": [
+        "basic",
+        "abstract",
+        "measurement"
+      ]
+    }
+  },
+  {
+    "id": "history",
+    "type": "concept",
+    "label": "history",
+    "label_cn": "历史",
+    "definition": "The study of past events, particularly in human affairs, and the continuous record of important events.",
+    "importance": 0.95,
+    "metadata": {
+      "category": "academic_field",
+      "etymology": "From Greek 'historia' meaning inquiry or knowledge acquired by investigation",
+      "tags": [
+        "academic",
+        "past",
+        "record"
+      ]
+    }
+  },
+  {
+    "id": "season",
+    "type": "concept",
+    "label": "season",
+    "label_cn": "季节",
+    "definition": "Each of the four divisions of the year (spring, summer, autumn, and winter) marked by particular weather patterns and daylight hours.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "natural_cycle",
+      "etymology": "From Old French 'seison', from Latin 'satio' meaning sowing or planting",
+      "tags": [
+        "nature",
+        "cycle",
+        "weather"
+      ]
+    }
+  },
+  {
+    "id": "cycle",
+    "type": "concept",
+    "label": "cycle",
+    "label_cn": "周期",
+    "definition": "A series of events that are regularly repeated in the same order, returning to the starting point.",
+    "importance": 0.88,
+    "metadata": {
+      "category": "pattern",
+      "etymology": "From Greek 'kyklos' meaning circle or wheel",
+      "tags": [
+        "pattern",
+        "repetition",
+        "circular"
+      ]
+    }
+  },
+  {
+    "id": "period",
+    "type": "concept",
+    "label": "period",
+    "label_cn": "时期",
+    "definition": "A length or portion of time with a particular characteristic or defined by specific events.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "time_division",
+      "etymology": "From Greek 'periodos' meaning recurring cycle, circuit",
+      "tags": [
+        "duration",
+        "interval",
+        "era"
+      ]
+    }
+  },
+  {
+    "id": "century",
+    "type": "word",
+    "label": "century",
+    "label_cn": "世纪",
+    "definition": "A period of one hundred years, used as a unit for measuring historical time.",
+    "importance": 0.82,
+    "metadata": {
+      "category": "time_measurement",
+      "etymology": "From Latin 'centum' meaning hundred",
+      "tags": [
+        "measurement",
+        "long_duration",
+        "historical"
+      ]
+    }
+  },
+  {
+    "id": "decade",
+    "type": "word",
+    "label": "decade",
+    "label_cn": "十年",
+    "definition": "A period of ten years, especially one beginning with a year ending in 0.",
+    "importance": 0.78,
+    "metadata": {
+      "category": "time_measurement",
+      "etymology": "From Greek 'dekas' meaning group of ten",
+      "tags": [
+        "measurement",
+        "medium_duration"
+      ]
+    }
+  },
+  {
+    "id": "millennium",
+    "type": "word",
+    "label": "millennium",
+    "label_cn": "千年",
+    "definition": "A period of one thousand years, especially when calculated from the birth of Christ.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "time_measurement",
+      "etymology": "From Latin 'mille' (thousand) + 'annus' (year)",
+      "tags": [
+        "measurement",
+        "very_long_duration",
+        "historical"
+      ]
+    }
+  },
+  {
+    "id": "era",
+    "type": "word",
+    "label": "era",
+    "label_cn": "纪元",
+    "definition": "A long and distinct period of history with a particular feature or characteristic.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "historical_period",
+      "etymology": "From Latin 'aera' meaning counters used for calculation, fixed date",
+      "tags": [
+        "historical",
+        "long_period",
+        "distinctive"
+      ]
+    }
+  },
+  {
+    "id": "epoch",
+    "type": "word",
+    "label": "epoch",
+    "label_cn": "时代",
+    "definition": "A particular period of time in history or a person's life marked by notable events or characteristics.",
+    "importance": 0.72,
+    "metadata": {
+      "category": "historical_period",
+      "etymology": "From Greek 'epokhe' meaning fixed point in time, cessation",
+      "tags": [
+        "historical",
+        "significant",
+        "turning_point"
+      ]
+    }
+  },
+  {
+    "id": "chronology",
+    "type": "word",
+    "label": "chronology",
+    "label_cn": "年代学",
+    "definition": "The science of arranging events in their order of occurrence in time and the study of time measurement.",
+    "importance": 0.68,
+    "metadata": {
+      "category": "academic_discipline",
+      "etymology": "From Greek 'khronos' (time) + 'logia' (study)",
+      "tags": [
+        "academic",
+        "sequence",
+        "methodology"
+      ]
+    }
+  },
+  {
+    "id": "eternal",
+    "type": "word",
+    "label": "eternal",
+    "label_cn": "永恒的",
+    "definition": "Lasting or existing forever, without end or beginning; timeless.",
+    "importance": 0.76,
+    "metadata": {
+      "category": "temporal_quality",
+      "etymology": "From Latin 'aeternalis', from 'aeternus' meaning everlasting",
+      "tags": [
+        "infinite",
+        "philosophical",
+        "timeless"
+      ]
+    }
+  },
+  {
+    "id": "temporal",
+    "type": "word",
+    "label": "temporal",
+    "label_cn": "时间的",
+    "definition": "Relating to worldly as opposed to spiritual affairs; relating to time.",
+    "importance": 0.65,
+    "metadata": {
+      "category": "descriptive",
+      "etymology": "From Latin 'temporalis', from 'tempus' meaning time",
+      "tags": [
+        "time_related",
+        "worldly",
+        "transient"
+      ]
+    }
+  },
+  {
+    "id": "antiquity",
+    "type": "word",
+    "label": "antiquity",
+    "label_cn": "古代",
+    "definition": "The ancient past, especially the period before the Middle Ages; great age.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "historical_period",
+      "etymology": "From Latin 'antiquitas', from 'antiquus' meaning ancient",
+      "tags": [
+        "ancient",
+        "historical",
+        "classical"
+      ]
+    }
+  },
+  {
+    "id": "medieval",
+    "type": "word",
+    "label": "medieval",
+    "label_cn": "中世纪的",
+    "definition": "Relating to the Middle Ages, the period of European history from about 500 to 1500 AD.",
+    "importance": 0.73,
+    "metadata": {
+      "category": "historical_period",
+      "etymology": "From Latin 'medium' (middle) + 'aevum' (age)",
+      "tags": [
+        "historical",
+        "european",
+        "middle_ages"
+      ]
+    }
+  },
+  {
+    "id": "contemporary",
+    "type": "word",
+    "label": "contemporary",
+    "label_cn": "当代的",
+    "definition": "Living or occurring at the same time; belonging to or occurring in the present.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "temporal_relation",
+      "etymology": "From Latin 'con-' (together) + 'tempus' (time)",
+      "tags": [
+        "modern",
+        "current",
+        "simultaneous"
+      ]
+    }
+  },
+  {
+    "id": "solstice",
+    "type": "word",
+    "label": "solstice",
+    "label_cn": "至日",
+    "definition": "Either of the two times in the year when the sun reaches its highest or lowest point in the sky at noon, marking the longest and shortest days.",
+    "importance": 0.66,
+    "metadata": {
+      "category": "astronomical_event",
+      "etymology": "From Latin 'solstitium', from 'sol' (sun) + 'sistere' (to stand still)",
+      "tags": [
+        "astronomy",
+        "seasonal",
+        "solar"
+      ]
+    }
+  },
+  {
+    "id": "equinox",
+    "type": "word",
+    "label": "equinox",
+    "label_cn": "分点",
+    "definition": "The time or date twice each year when day and night are of equal length, occurring in spring and autumn.",
+    "importance": 0.64,
+    "metadata": {
+      "category": "astronomical_event",
+      "etymology": "From Latin 'aequinoctium', from 'aequus' (equal) + 'nox' (night)",
+      "tags": [
+        "astronomy",
+        "seasonal",
+        "balance"
+      ]
+    }
+  },
+  {
+    "id": "perennial",
+    "type": "word",
+    "label": "perennial",
+    "label_cn": "常年的",
+    "definition": "Lasting or existing for a long or apparently infinite time; enduring or continually recurring.",
+    "importance": 0.62,
+    "metadata": {
+      "category": "temporal_quality",
+      "etymology": "From Latin 'perennis', from 'per-' (through) + 'annus' (year)",
+      "tags": [
+        "lasting",
+        "recurring",
+        "continuous"
+      ]
+    }
+  },
+  {
+    "id": "chronological",
+    "type": "word",
+    "label": "chronological",
+    "label_cn": "按时间顺序的",
+    "definition": "Following the order in which events occurred; arranged in the order of time.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "ordering_method",
+      "etymology": "From Greek 'khronos' (time) + 'logos' (order)",
+      "tags": [
+        "sequence",
+        "ordered",
+        "temporal"
+      ]
+    }
+  },
+  {
+    "id": "anachronism",
+    "type": "word",
+    "label": "anachronism",
+    "label_cn": "时代错误",
+    "definition": "A thing belonging or appropriate to a period other than that in which it exists, especially a thing that is conspicuously old-fashioned.",
+    "importance": 0.58,
+    "metadata": {
+      "category": "temporal_error",
+      "etymology": "From Greek 'ana-' (against) + 'khronos' (time)",
+      "tags": [
+        "error",
+        "out_of_place",
+        "temporal_mismatch"
+      ]
+    }
+  },
+  {
+    "id": "prehistoric",
+    "type": "word",
+    "label": "prehistoric",
+    "label_cn": "史前的",
+    "definition": "Relating to or denoting the period before written records, before history was documented.",
+    "importance": 0.68,
+    "metadata": {
+      "category": "historical_period",
+      "etymology": "From 'pre-' (before) + 'historic'",
+      "tags": [
+        "ancient",
+        "before_writing",
+        "early_human"
+      ]
+    }
+  },
+  {
+    "id": "renaissance",
+    "type": "word",
+    "label": "renaissance",
+    "label_cn": "文艺复兴",
+    "definition": "The revival of art and literature under the influence of classical models in the 14th-16th centuries; a revival or renewed interest.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "historical_period",
+      "etymology": "From French, literally 'rebirth', from Latin 're-' (again) + 'nasci' (be born)",
+      "tags": [
+        "cultural",
+        "european",
+        "rebirth"
+      ]
+    }
+  },
+  {
+    "id": "duration",
+    "type": "word",
+    "label": "duration",
+    "label_cn": "持续时间",
+    "definition": "The time during which something continues or exists; the length of time something lasts.",
+    "importance": 0.77,
+    "metadata": {
+      "category": "time_measurement",
+      "etymology": "From Latin 'durare' meaning to last, harden",
+      "tags": [
+        "length",
+        "span",
+        "continuance"
+      ]
+    }
+  },
+  {
+    "id": "interim",
+    "type": "word",
+    "label": "interim",
+    "label_cn": "过渡期",
+    "definition": "The intervening time between two periods; a temporary or provisional arrangement.",
+    "importance": 0.63,
+    "metadata": {
+      "category": "time_interval",
+      "etymology": "From Latin 'interim' meaning meanwhile",
+      "tags": [
+        "temporary",
+        "between",
+        "transitional"
+      ]
+    }
+  },
+  {
+    "id": "perpetual",
+    "type": "word",
+    "label": "perpetual",
+    "label_cn": "永久的",
+    "definition": "Never ending or changing; occurring repeatedly without interruption; continuous.",
+    "importance": 0.67,
+    "metadata": {
+      "category": "temporal_quality",
+      "etymology": "From Latin 'perpetualis', from 'perpetuus' meaning continuous",
+      "tags": [
+        "continuous",
+        "unending",
+        "constant"
+      ]
+    }
+  },
+  {
+    "id": "transient",
+    "type": "word",
+    "label": "transient",
+    "label_cn": "短暂的",
+    "definition": "Lasting only for a short time; impermanent; passing quickly.",
+    "importance": 0.64,
+    "metadata": {
+      "category": "temporal_quality",
+      "etymology": "From Latin 'transire' meaning to go across, pass",
+      "tags": [
+        "temporary",
+        "brief",
+        "fleeting"
+      ]
+    }
+  },
+  {
+    "id": "chronometer",
+    "type": "word",
+    "label": "chronometer",
+    "label_cn": "精密计时器",
+    "definition": "An instrument for measuring time, especially one designed to be accurate in all conditions.",
+    "importance": 0.55,
+    "metadata": {
+      "category": "measurement_device",
+      "etymology": "From Greek 'khronos' (time) + 'metron' (measure)",
+      "tags": [
+        "device",
+        "precision",
+        "navigation"
+      ]
+    }
+  },
+  {
+    "id": "synchronize",
+    "type": "word",
+    "label": "synchronize",
+    "label_cn": "同步",
+    "definition": "To cause to occur or operate at the same time or rate; to coordinate in time.",
+    "importance": 0.74,
+    "metadata": {
+      "category": "temporal_action",
+      "etymology": "From Greek 'syn-' (together) + 'khronos' (time)",
+      "tags": [
+        "coordination",
+        "simultaneous",
+        "timing"
+      ]
+    }
+  },
+  {
+    "id": "vicissitude",
+    "type": "word",
+    "label": "vicissitude",
+    "label_cn": "变迁",
+    "definition": "A change of circumstances or fortune, typically one that is unwelcome or unpleasant; alternation between opposite states.",
+    "importance": 0.52,
+    "metadata": {
+      "category": "change_pattern",
+      "etymology": "From Latin 'vicissitudo', from 'vicis' meaning change, turn",
+      "tags": [
+        "change",
+        "alternation",
+        "fortune"
+      ]
+    }
+  },
+  {
+    "id": "philosophy",
+    "type": "concept",
+    "label": "philosophy",
+    "label_cn": "哲学",
+    "definition": "The study of fundamental questions about existence, knowledge, values, reason, mind, and language through critical and systematic approaches.",
+    "importance": 1,
+    "metadata": {
+      "category": "academic_discipline",
+      "etymology": "From Greek 'philosophia' meaning 'love of wisdom', from 'philos' (loving) + 'sophia' (wisdom)",
+      "tags": [
+        "core_concept",
+        "academic",
+        "wisdom"
+      ]
+    }
+  },
+  {
+    "id": "logic",
+    "type": "concept",
+    "label": "logic",
+    "label_cn": "逻辑",
+    "definition": "The systematic study of valid reasoning and inference, including the principles that distinguish correct from incorrect arguments.",
+    "importance": 0.95,
+    "metadata": {
+      "category": "reasoning",
+      "etymology": "From Greek 'logike' meaning 'reasoning', from 'logos' (word, reason)",
+      "tags": [
+        "reasoning",
+        "methodology",
+        "critical_thinking"
+      ]
+    }
+  },
+  {
+    "id": "ethics",
+    "type": "concept",
+    "label": "ethics",
+    "label_cn": "伦理学",
+    "definition": "The branch of philosophy that studies moral principles, values, and codes of conduct that govern individual and collective behavior.",
+    "importance": 0.98,
+    "metadata": {
+      "category": "moral_philosophy",
+      "etymology": "From Greek 'ethikos' meaning 'moral', from 'ethos' (character, custom)",
+      "tags": [
+        "morality",
+        "values",
+        "conduct"
+      ]
+    }
+  },
+  {
+    "id": "truth",
+    "type": "concept",
+    "label": "truth",
+    "label_cn": "真理",
+    "definition": "The quality or state of being in accordance with fact or reality; a verified or indisputable fact, proposition, or principle.",
+    "importance": 0.92,
+    "metadata": {
+      "category": "epistemology",
+      "etymology": "From Old English 'triewth' meaning 'faithfulness, veracity', related to 'true'",
+      "tags": [
+        "knowledge",
+        "reality",
+        "verification"
+      ]
+    }
+  },
+  {
+    "id": "wisdom",
+    "type": "concept",
+    "label": "wisdom",
+    "label_cn": "智慧",
+    "definition": "The ability to apply knowledge, experience, and good judgment to make sound decisions and understand deep truths about life and nature.",
+    "importance": 0.88,
+    "metadata": {
+      "category": "virtue",
+      "etymology": "From Old English 'wisdom', from 'wis' (wise) + '-dom' (suffix denoting state or condition)",
+      "tags": [
+        "virtue",
+        "knowledge",
+        "judgment"
+      ]
+    }
+  },
+  {
+    "id": "metaphysics",
+    "type": "concept",
+    "label": "metaphysics",
+    "label_cn": "形而上学",
+    "definition": "The branch of philosophy that examines the fundamental nature of reality, including the relationship between mind and matter, substance and attribute, and possibility and actuality.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "philosophical_branch",
+      "etymology": "From Greek 'meta' (beyond) + 'physika' (physics), literally 'beyond the physical'",
+      "tags": [
+        "reality",
+        "existence",
+        "ontology"
+      ]
+    }
+  },
+  {
+    "id": "epistemology",
+    "type": "concept",
+    "label": "epistemology",
+    "label_cn": "认识论",
+    "definition": "The philosophical study of knowledge, including its nature, sources, limitations, and validity.",
+    "importance": 0.72,
+    "metadata": {
+      "category": "philosophical_branch",
+      "etymology": "From Greek 'episteme' (knowledge) + 'logos' (study)",
+      "tags": [
+        "knowledge",
+        "theory",
+        "justification"
+      ]
+    }
+  },
+  {
+    "id": "morality",
+    "type": "concept",
+    "label": "morality",
+    "label_cn": "道德",
+    "definition": "Principles concerning the distinction between right and wrong or good and bad behavior; a system of values and principles of conduct.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "ethics",
+      "etymology": "From Latin 'moralitas' meaning 'manner, character', from 'mos' (custom, manner)",
+      "tags": [
+        "conduct",
+        "values",
+        "right_and_wrong"
+      ]
+    }
+  },
+  {
+    "id": "virtue",
+    "type": "concept",
+    "label": "virtue",
+    "label_cn": "美德",
+    "definition": "A morally excellent quality or trait; behavior showing high moral standards such as courage, compassion, honesty, and justice.",
+    "importance": 0.82,
+    "metadata": {
+      "category": "moral_quality",
+      "etymology": "From Latin 'virtus' meaning 'moral strength, excellence', from 'vir' (man)",
+      "tags": [
+        "character",
+        "excellence",
+        "morality"
+      ]
+    }
+  },
+  {
+    "id": "reason",
+    "type": "concept",
+    "label": "reason",
+    "label_cn": "理性",
+    "definition": "The capacity for logical, rational thought and inference; the mental faculty that enables humans to think, understand, and form judgments logically.",
+    "importance": 0.87,
+    "metadata": {
+      "category": "cognitive_faculty",
+      "etymology": "From Latin 'ratio' meaning 'reckoning, calculation, reason'",
+      "tags": [
+        "rationality",
+        "thinking",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "dialectic",
+    "type": "concept",
+    "label": "dialectic",
+    "label_cn": "辩证法",
+    "definition": "A method of philosophical argument that involves contradiction and resolution, typically used to establish truth through reasoned discussion between opposing viewpoints.",
+    "importance": 0.68,
+    "metadata": {
+      "category": "methodology",
+      "etymology": "From Greek 'dialektike' meaning 'art of debate', from 'dialegesthai' (to converse)",
+      "tags": [
+        "methodology",
+        "debate",
+        "reasoning"
+      ]
+    }
+  },
+  {
+    "id": "syllogism",
+    "type": "concept",
+    "label": "syllogism",
+    "label_cn": "三段论",
+    "definition": "A form of deductive reasoning consisting of a major premise, a minor premise, and a conclusion that logically follows from the two premises.",
+    "importance": 0.65,
+    "metadata": {
+      "category": "logical_form",
+      "etymology": "From Greek 'syllogismos' meaning 'inference, deduction', from 'syllogizesthai' (to reckon together)",
+      "tags": [
+        "logic",
+        "deduction",
+        "reasoning"
+      ]
+    }
+  },
+  {
+    "id": "premise",
+    "type": "concept",
+    "label": "premise",
+    "label_cn": "前提",
+    "definition": "A proposition or statement that forms the basis for an argument or theory; an assumption upon which reasoning is based.",
+    "importance": 0.78,
+    "metadata": {
+      "category": "logical_component",
+      "etymology": "From Latin 'praemissa' meaning 'things mentioned before', from 'praemittere' (to send before)",
+      "tags": [
+        "logic",
+        "argument",
+        "foundation"
+      ]
+    }
+  },
+  {
+    "id": "inference",
+    "type": "concept",
+    "label": "inference",
+    "label_cn": "推理",
+    "definition": "The process of deriving logical conclusions from premises known or assumed to be true; reasoning from evidence to reach a conclusion.",
+    "importance": 0.76,
+    "metadata": {
+      "category": "reasoning_process",
+      "etymology": "From Latin 'inferre' meaning 'to bring in, carry in', from 'in-' + 'ferre' (to carry)",
+      "tags": [
+        "reasoning",
+        "deduction",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "fallacy",
+    "type": "concept",
+    "label": "fallacy",
+    "label_cn": "谬误",
+    "definition": "A mistaken belief or flawed argument based on unsound reasoning; an error in logic that renders an argument invalid.",
+    "importance": 0.73,
+    "metadata": {
+      "category": "logical_error",
+      "etymology": "From Latin 'fallacia' meaning 'deception, trick', from 'fallere' (to deceive)",
+      "tags": [
+        "error",
+        "logic",
+        "invalid_reasoning"
+      ]
+    }
+  },
+  {
+    "id": "deduction",
+    "type": "concept",
+    "label": "deduction",
+    "label_cn": "演绎",
+    "definition": "A form of logical reasoning that moves from general principles to specific conclusions; if the premises are true, the conclusion must be true.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "reasoning_method",
+      "etymology": "From Latin 'deductio' meaning 'a leading down', from 'deducere' (to lead down)",
+      "tags": [
+        "logic",
+        "reasoning",
+        "methodology"
+      ]
+    }
+  },
+  {
+    "id": "induction",
+    "type": "concept",
+    "label": "induction",
+    "label_cn": "归纳",
+    "definition": "A form of reasoning that moves from specific observations to broader generalizations; reasoning from particular instances to universal principles.",
+    "importance": 0.79,
+    "metadata": {
+      "category": "reasoning_method",
+      "etymology": "From Latin 'inductio' meaning 'a leading in', from 'inducere' (to lead in)",
+      "tags": [
+        "logic",
+        "reasoning",
+        "generalization"
+      ]
+    }
+  },
+  {
+    "id": "axiom",
+    "type": "concept",
+    "label": "axiom",
+    "label_cn": "公理",
+    "definition": "A self-evident truth or fundamental principle that is accepted without proof and serves as a starting point for further reasoning.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "foundational_principle",
+      "etymology": "From Greek 'axioma' meaning 'that which is thought worthy', from 'axios' (worthy)",
+      "tags": [
+        "principle",
+        "foundation",
+        "self_evident"
+      ]
+    }
+  },
+  {
+    "id": "paradox",
+    "type": "concept",
+    "label": "paradox",
+    "label_cn": "悖论",
+    "definition": "A statement or proposition that seems self-contradictory or absurd but may express a possible truth; a situation with contradictory yet interrelated elements.",
+    "importance": 0.74,
+    "metadata": {
+      "category": "logical_puzzle",
+      "etymology": "From Greek 'paradoxon' meaning 'contrary to expectation', from 'para' (beyond) + 'doxa' (opinion)",
+      "tags": [
+        "contradiction",
+        "puzzle",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "utilitarianism",
+    "type": "concept",
+    "label": "utilitarianism",
+    "label_cn": "功利主义",
+    "definition": "An ethical theory that determines right from wrong by focusing on outcomes; actions are morally right if they maximize overall happiness or utility.",
+    "importance": 0.71,
+    "metadata": {
+      "category": "ethical_theory",
+      "etymology": "From 'utility' + '-arian' + '-ism', coined in 19th century to describe consequentialist ethics",
+      "tags": [
+        "ethics",
+        "consequentialism",
+        "happiness"
+      ]
+    }
+  },
+  {
+    "id": "categorical imperative",
+    "type": "concept",
+    "label": "categorical imperative",
+    "label_cn": "绝对命令",
+    "definition": "Kant's principle that one should act only according to maxims that could become universal laws; an unconditional moral obligation binding in all circumstances.",
+    "importance": 0.66,
+    "metadata": {
+      "category": "ethical_principle",
+      "etymology": "From Latin 'categoricus' (absolute) + 'imperativus' (commanding), formulated by Immanuel Kant",
+      "tags": [
+        "Kant",
+        "duty",
+        "universal_law"
+      ]
+    }
+  },
+  {
+    "id": "empiricism",
+    "type": "concept",
+    "label": "empiricism",
+    "label_cn": "经验主义",
+    "definition": "The philosophical theory that all knowledge is derived from sensory experience; the view that evidence from the senses is the primary source of knowledge.",
+    "importance": 0.69,
+    "metadata": {
+      "category": "epistemological_theory",
+      "etymology": "From Greek 'empeiria' meaning 'experience', from 'empeiros' (experienced)",
+      "tags": [
+        "knowledge",
+        "experience",
+        "epistemology"
+      ]
+    }
+  },
+  {
+    "id": "rationalism",
+    "type": "concept",
+    "label": "rationalism",
+    "label_cn": "理性主义",
+    "definition": "The philosophical view that reason and innate ideas, rather than sensory experience, are the primary sources of knowledge and justification.",
+    "importance": 0.68,
+    "metadata": {
+      "category": "epistemological_theory",
+      "etymology": "From Latin 'rationalis' meaning 'of or belonging to reason', from 'ratio' (reason)",
+      "tags": [
+        "reason",
+        "knowledge",
+        "epistemology"
+      ]
+    }
+  },
+  {
+    "id": "skepticism",
+    "type": "concept",
+    "label": "skepticism",
+    "label_cn": "怀疑主义",
+    "definition": "The philosophical position that questions the possibility of certainty in knowledge; the practice of doubting claims and requiring evidence before acceptance.",
+    "importance": 0.72,
+    "metadata": {
+      "category": "epistemological_stance",
+      "etymology": "From Greek 'skeptikos' meaning 'inquiring, reflective', from 'skeptesthai' (to look, consider)",
+      "tags": [
+        "doubt",
+        "inquiry",
+        "critical_thinking"
+      ]
+    }
+  },
+  {
+    "id": "ontology",
+    "type": "concept",
+    "label": "ontology",
+    "label_cn": "本体论",
+    "definition": "The philosophical study of being, existence, and reality; the branch of metaphysics concerned with the nature and categories of what exists.",
+    "importance": 0.64,
+    "metadata": {
+      "category": "philosophical_branch",
+      "etymology": "From Greek 'on' (being) + 'logos' (study), meaning 'the study of being'",
+      "tags": [
+        "existence",
+        "reality",
+        "metaphysics"
+      ]
+    }
+  },
+  {
+    "id": "determinism",
+    "type": "concept",
+    "label": "determinism",
+    "label_cn": "决定论",
+    "definition": "The philosophical view that all events, including human actions, are ultimately determined by causes external to the will; the doctrine that every event has a cause.",
+    "importance": 0.67,
+    "metadata": {
+      "category": "metaphysical_theory",
+      "etymology": "From Latin 'determinare' meaning 'to set bounds to, limit', from 'de-' + 'terminus' (boundary)",
+      "tags": [
+        "causation",
+        "free_will",
+        "necessity"
+      ]
+    }
+  },
+  {
+    "id": "free will",
+    "type": "concept",
+    "label": "free will",
+    "label_cn": "自由意志",
+    "definition": "The capacity of agents to choose between different possible courses of action unimpeded; the power to make choices unconstrained by external forces or fate.",
+    "importance": 0.83,
+    "metadata": {
+      "category": "metaphysical_concept",
+      "etymology": "From Old English 'freo' (free) + 'will' (desire, intention), expressing autonomous choice",
+      "tags": [
+        "autonomy",
+        "choice",
+        "agency"
+      ]
+    }
+  },
+  {
+    "id": "consciousness",
+    "type": "concept",
+    "label": "consciousness",
+    "label_cn": "意识",
+    "definition": "The state of being aware of and responsive to one's surroundings; the quality of subjective experience and awareness of internal and external existence.",
+    "importance": 0.86,
+    "metadata": {
+      "category": "mind_philosophy",
+      "etymology": "From Latin 'conscius' meaning 'knowing with others, aware', from 'con-' (with) + 'scire' (to know)",
+      "tags": [
+        "awareness",
+        "mind",
+        "experience"
+      ]
+    }
+  },
+  {
+    "id": "justice",
+    "type": "concept",
+    "label": "justice",
+    "label_cn": "正义",
+    "definition": "The quality of being fair and reasonable; the principle of moral rightness and equitable treatment based on ethics, rationality, law, and fairness.",
+    "importance": 0.91,
+    "metadata": {
+      "category": "ethical_concept",
+      "etymology": "From Latin 'justitia' meaning 'righteousness, equity', from 'justus' (just, fair)",
+      "tags": [
+        "fairness",
+        "ethics",
+        "rights"
+      ]
+    }
+  },
+  {
+    "id": "existentialism",
+    "type": "concept",
+    "label": "existentialism",
+    "label_cn": "存在主义",
+    "definition": "A philosophical movement emphasizing individual existence, freedom, and choice; the view that individuals create their own meaning and essence through free will and actions.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "philosophical_movement",
+      "etymology": "From Latin 'existere' meaning 'to come into being', emphasizing existence preceding essence",
+      "tags": [
+        "existence",
+        "freedom",
+        "authenticity"
+      ]
+    }
+  },
+  {
+    "id": "nihilism",
+    "type": "concept",
+    "label": "nihilism",
+    "label_cn": "虚无主义",
+    "definition": "The philosophical belief that life is without objective meaning, purpose, or intrinsic value; the rejection of all religious and moral principles.",
+    "importance": 0.63,
+    "metadata": {
+      "category": "philosophical_stance",
+      "etymology": "From Latin 'nihil' meaning 'nothing', expressing the negation of meaning and value",
+      "tags": [
+        "meaninglessness",
+        "rejection",
+        "pessimism"
+      ]
+    }
+  },
+  {
+    "id": "altruism",
+    "type": "concept",
+    "label": "altruism",
+    "label_cn": "利他主义",
+    "definition": "The principle or practice of unselfish concern for or devotion to the welfare of others; behavior motivated by concern for others rather than self-interest.",
+    "importance": 0.77,
+    "metadata": {
+      "category": "ethical_concept",
+      "etymology": "From French 'altruisme', from Italian 'altrui' meaning 'of others', from Latin 'alter' (other)",
+      "tags": [
+        "selflessness",
+        "compassion",
+        "ethics"
+      ]
+    }
+  },
+  {
+    "id": "autonomy",
+    "type": "concept",
+    "label": "autonomy",
+    "label_cn": "自主",
+    "definition": "The capacity to make informed, uncoerced decisions; self-governance and the right to self-determination without external control or interference.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "ethical_principle",
+      "etymology": "From Greek 'autonomia' meaning 'self-rule', from 'autos' (self) + 'nomos' (law)",
+      "tags": [
+        "independence",
+        "self_governance",
+        "freedom"
+      ]
+    }
+  },
+  {
+    "id": "doctrine",
+    "type": "concept",
+    "label": "doctrine",
+    "label_cn": "学说",
+    "definition": "A set of beliefs or principles taught and advocated by a philosophical, religious, or political group; a body of teachings on a particular subject.",
+    "importance": 0.71,
+    "metadata": {
+      "category": "belief_system",
+      "etymology": "From Latin 'doctrina' meaning 'teaching, instruction', from 'docere' (to teach)",
+      "tags": [
+        "teaching",
+        "belief",
+        "system"
+      ]
+    }
+  },
+  {
+    "id": "ideology",
+    "type": "concept",
+    "label": "ideology",
+    "label_cn": "意识形态",
+    "definition": "A system of ideas and ideals forming the basis of economic or political theory and policy; a comprehensive vision or worldview guiding individual or collective action.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "belief_system",
+      "etymology": "From French 'idéologie', from Greek 'idea' (form, pattern) + 'logos' (study)",
+      "tags": [
+        "worldview",
+        "belief_system",
+        "political_philosophy"
+      ]
+    }
+  },
+  {
+    "id": "sophistry",
+    "type": "concept",
+    "label": "sophistry",
+    "label_cn": "诡辩",
+    "definition": "The use of clever but false arguments, especially with the intention to deceive; reasoning that seems plausible but is actually fallacious or misleading.",
+    "importance": 0.58,
+    "metadata": {
+      "category": "logical_error",
+      "etymology": "From Greek 'sophistes' meaning 'wise man, expert', later acquiring negative connotation of deceitful reasoning",
+      "tags": [
+        "deception",
+        "fallacy",
+        "rhetoric"
+      ]
+    }
+  },
+  {
+    "id": "stoicism",
+    "type": "concept",
+    "label": "stoicism",
+    "label_cn": "斯多葛主义",
+    "definition": "An ancient Greek philosophy teaching that virtue, the highest good, is based on knowledge; advocates accepting events calmly and cultivating self-control and fortitude.",
+    "importance": 0.69,
+    "metadata": {
+      "category": "philosophical_school",
+      "etymology": "From Greek 'Stoa' (porch), where the philosopher Zeno taught, meaning 'of the porch'",
+      "tags": [
+        "ancient_philosophy",
+        "virtue",
+        "self_control"
+      ]
+    }
+  },
+  {
+    "id": "hedonism",
+    "type": "concept",
+    "label": "hedonism",
+    "label_cn": "享乐主义",
+    "definition": "The ethical theory that pleasure or happiness is the highest good and proper aim of human life; the pursuit of pleasure as a way of life.",
+    "importance": 0.66,
+    "metadata": {
+      "category": "ethical_theory",
+      "etymology": "From Greek 'hedone' meaning 'pleasure', from 'hedys' (sweet, pleasant)",
+      "tags": [
+        "pleasure",
+        "happiness",
+        "ethics"
+      ]
+    }
+  },
+  {
+    "id": "pragmatism",
+    "type": "concept",
+    "label": "pragmatism",
+    "label_cn": "实用主义",
+    "definition": "A philosophical tradition that views truth as what works in practice; the doctrine that the meaning and truth of ideas lie in their practical consequences and applications.",
+    "importance": 0.72,
+    "metadata": {
+      "category": "philosophical_movement",
+      "etymology": "From Greek 'pragma' meaning 'deed, act', emphasizing practical action over theory",
+      "tags": [
+        "practicality",
+        "consequences",
+        "American_philosophy"
+      ]
+    }
+  },
+  {
+    "id": "transcendence",
+    "type": "concept",
+    "label": "transcendence",
+    "label_cn": "超越",
+    "definition": "The state of existing beyond or above the physical or material realm; surpassing usual limits or going beyond ordinary experience or understanding.",
+    "importance": 0.65,
+    "metadata": {
+      "category": "metaphysical_concept",
+      "etymology": "From Latin 'transcendere' meaning 'to climb over, surpass', from 'trans-' (across) + 'scandere' (to climb)",
+      "tags": [
+        "beyond",
+        "spiritual",
+        "metaphysics"
+      ]
+    }
+  },
+  {
+    "id": "computer",
+    "type": "concept",
+    "label": "computer",
+    "label_cn": "计算机",
+    "definition": "An electronic device that processes data according to programmed instructions, capable of storing, retrieving, and manipulating information.",
+    "importance": 1,
+    "metadata": {
+      "category": "hardware",
+      "etymology": "From Latin 'computare' meaning 'to calculate, reckon'",
+      "tags": [
+        "hardware",
+        "technology",
+        "fundamentals"
+      ]
+    }
+  },
+  {
+    "id": "internet",
+    "type": "concept",
+    "label": "internet",
+    "label_cn": "互联网",
+    "definition": "A global network of interconnected computers that communicate using standardized protocols, enabling information sharing and digital services worldwide.",
+    "importance": 1,
+    "metadata": {
+      "category": "network",
+      "etymology": "From 'interconnected network', coined in 1974",
+      "tags": [
+        "network",
+        "infrastructure",
+        "communication"
+      ]
+    }
+  },
+  {
+    "id": "software",
+    "type": "concept",
+    "label": "software",
+    "label_cn": "软件",
+    "definition": "A collection of programs, data, and instructions that tell a computer how to perform specific tasks, as opposed to physical hardware.",
+    "importance": 0.95,
+    "metadata": {
+      "category": "software",
+      "etymology": "Coined in 1958 by statistician John Tukey as contrast to 'hardware'",
+      "tags": [
+        "programming",
+        "application",
+        "fundamentals"
+      ]
+    }
+  },
+  {
+    "id": "data",
+    "type": "concept",
+    "label": "data",
+    "label_cn": "数据",
+    "definition": "Facts, statistics, or information collected together for reference, analysis, or processing by computer systems.",
+    "importance": 0.95,
+    "metadata": {
+      "category": "information",
+      "etymology": "From Latin 'datum' meaning 'something given'",
+      "tags": [
+        "information",
+        "storage",
+        "fundamentals"
+      ]
+    }
+  },
+  {
+    "id": "algorithm",
+    "type": "concept",
+    "label": "algorithm",
+    "label_cn": "算法",
+    "definition": "A step-by-step procedure or formula for solving a problem or completing a task, especially by a computer.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "computer science",
+      "etymology": "From name of Persian mathematician Al-Khwarizmi (9th century)",
+      "tags": [
+        "programming",
+        "logic",
+        "mathematics"
+      ]
+    }
+  },
+  {
+    "id": "artificial_intelligence",
+    "type": "concept",
+    "label": "artificial intelligence",
+    "label_cn": "人工智能",
+    "definition": "The simulation of human intelligence processes by machines, especially computer systems, including learning, reasoning, and self-correction.",
+    "importance": 0.95,
+    "metadata": {
+      "category": "AI",
+      "etymology": "Term coined by John McCarthy in 1956 at Dartmouth Conference",
+      "tags": [
+        "AI",
+        "machine learning",
+        "automation"
+      ]
+    }
+  },
+  {
+    "id": "machine_learning",
+    "type": "concept",
+    "label": "machine learning",
+    "label_cn": "机器学习",
+    "definition": "A subset of AI that enables systems to learn and improve from experience without being explicitly programmed.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "AI",
+      "etymology": "Term popularized by Arthur Samuel in 1959",
+      "tags": [
+        "AI",
+        "data science",
+        "prediction"
+      ]
+    }
+  },
+  {
+    "id": "neural_network",
+    "type": "concept",
+    "label": "neural network",
+    "label_cn": "神经网络",
+    "definition": "A computing system inspired by biological neural networks, consisting of interconnected nodes that process information.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "AI",
+      "etymology": "Named after biological neurons in animal brains",
+      "tags": [
+        "AI",
+        "deep learning",
+        "architecture"
+      ]
+    }
+  },
+  {
+    "id": "database",
+    "type": "concept",
+    "label": "database",
+    "label_cn": "数据库",
+    "definition": "An organized collection of structured data stored electronically, typically accessed and managed through a database management system.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "data storage",
+      "etymology": "Compound of 'data' + 'base', emerged in 1960s",
+      "tags": [
+        "storage",
+        "data management",
+        "infrastructure"
+      ]
+    }
+  },
+  {
+    "id": "programming",
+    "type": "concept",
+    "label": "programming",
+    "label_cn": "编程",
+    "definition": "The process of writing instructions for computers to execute, using specific programming languages and syntax.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "software development",
+      "etymology": "From 'program' (Greek 'programma' - written public notice)",
+      "tags": [
+        "coding",
+        "development",
+        "software"
+      ]
+    }
+  },
+  {
+    "id": "website",
+    "type": "concept",
+    "label": "website",
+    "label_cn": "网站",
+    "definition": "A collection of related web pages located under a single domain name, accessible via the internet.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "web",
+      "etymology": "Compound of 'web' + 'site', emerged in early 1990s",
+      "tags": [
+        "web",
+        "internet",
+        "content"
+      ]
+    }
+  },
+  {
+    "id": "server",
+    "type": "concept",
+    "label": "server",
+    "label_cn": "服务器",
+    "definition": "A computer or system that provides resources, data, services, or programs to other computers (clients) over a network.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "infrastructure",
+      "etymology": "From 'serve' + agent suffix '-er'",
+      "tags": [
+        "network",
+        "infrastructure",
+        "backend"
+      ]
+    }
+  },
+  {
+    "id": "cloud_computing",
+    "type": "concept",
+    "label": "cloud computing",
+    "label_cn": "云计算",
+    "definition": "The delivery of computing services over the internet, including storage, processing power, and applications.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "infrastructure",
+      "etymology": "Cloud metaphor from network diagrams in 1990s",
+      "tags": [
+        "infrastructure",
+        "internet",
+        "service"
+      ]
+    }
+  },
+  {
+    "id": "encryption",
+    "type": "concept",
+    "label": "encryption",
+    "label_cn": "加密",
+    "definition": "The process of converting information into a coded format to prevent unauthorized access.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "security",
+      "etymology": "From Greek 'kryptos' meaning 'hidden'",
+      "tags": [
+        "security",
+        "cryptography",
+        "privacy"
+      ]
+    }
+  },
+  {
+    "id": "cybersecurity",
+    "type": "concept",
+    "label": "cybersecurity",
+    "label_cn": "网络安全",
+    "definition": "The practice of protecting systems, networks, and programs from digital attacks and unauthorized access.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "security",
+      "etymology": "'Cyber' from 'cybernetics' + 'security'",
+      "tags": [
+        "security",
+        "protection",
+        "network"
+      ]
+    }
+  },
+  {
+    "id": "protocol",
+    "type": "concept",
+    "label": "protocol",
+    "label_cn": "协议",
+    "definition": "A set of rules governing the exchange or transmission of data between devices in a network.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "network",
+      "etymology": "From Greek 'protokollon' meaning 'first sheet glued to manuscript'",
+      "tags": [
+        "network",
+        "standard",
+        "communication"
+      ]
+    }
+  },
+  {
+    "id": "bandwidth",
+    "type": "concept",
+    "label": "bandwidth",
+    "label_cn": "带宽",
+    "definition": "The maximum rate of data transfer across a given path, typically measured in bits per second.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "network",
+      "etymology": "From radio frequency engineering term",
+      "tags": [
+        "network",
+        "performance",
+        "capacity"
+      ]
+    }
+  },
+  {
+    "id": "debugging",
+    "type": "concept",
+    "label": "debugging",
+    "label_cn": "调试",
+    "definition": "The process of finding and fixing errors or bugs in computer programs.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "software development",
+      "etymology": "Attributed to Grace Hopper removing a moth from computer in 1947",
+      "tags": [
+        "programming",
+        "testing",
+        "development"
+      ]
+    }
+  },
+  {
+    "id": "API",
+    "type": "concept",
+    "label": "API",
+    "label_cn": "应用程序接口",
+    "definition": "Application Programming Interface - a set of protocols and tools for building software applications and enabling communication between different programs.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "software architecture",
+      "etymology": "Acronym coined in 1960s-1970s",
+      "tags": [
+        "integration",
+        "interface",
+        "development"
+      ]
+    }
+  },
+  {
+    "id": "binary",
+    "type": "concept",
+    "label": "binary",
+    "label_cn": "二进制",
+    "definition": "A number system using only two digits (0 and 1), forming the foundation of all computer operations.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "computer science",
+      "etymology": "From Latin 'binarius' meaning 'consisting of two'",
+      "tags": [
+        "fundamentals",
+        "mathematics",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "CPU",
+    "type": "concept",
+    "label": "CPU",
+    "label_cn": "中央处理器",
+    "definition": "Central Processing Unit - the primary component of a computer that performs instructions and processes data.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "hardware",
+      "etymology": "Term emerged in 1960s with computer architecture",
+      "tags": [
+        "hardware",
+        "processor",
+        "computing"
+      ]
+    }
+  },
+  {
+    "id": "memory",
+    "type": "concept",
+    "label": "memory",
+    "label_cn": "内存",
+    "definition": "Computer hardware that stores data and instructions for quick access by the processor.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "hardware",
+      "etymology": "From Latin 'memoria' meaning 'mindful, remembering'",
+      "tags": [
+        "hardware",
+        "storage",
+        "RAM"
+      ]
+    }
+  },
+  {
+    "id": "operating_system",
+    "type": "concept",
+    "label": "operating system",
+    "label_cn": "操作系统",
+    "definition": "System software that manages computer hardware and provides services for computer programs.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "software",
+      "etymology": "Term emerged in 1950s-1960s",
+      "tags": [
+        "software",
+        "system",
+        "infrastructure"
+      ]
+    }
+  },
+  {
+    "id": "compiler",
+    "type": "concept",
+    "label": "compiler",
+    "label_cn": "编译器",
+    "definition": "A program that translates source code written in a high-level programming language into machine code.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "software development",
+      "etymology": "From Latin 'compilare' meaning 'to plunder, collect'",
+      "tags": [
+        "programming",
+        "translation",
+        "tooling"
+      ]
+    }
+  },
+  {
+    "id": "framework",
+    "type": "concept",
+    "label": "framework",
+    "label_cn": "框架",
+    "definition": "A platform providing a foundation and structure for developing software applications with pre-built components.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "software development",
+      "etymology": "From 'frame' + 'work' - structural foundation",
+      "tags": [
+        "development",
+        "library",
+        "structure"
+      ]
+    }
+  },
+  {
+    "id": "open_source",
+    "type": "concept",
+    "label": "open source",
+    "label_cn": "开源",
+    "definition": "Software with source code that anyone can inspect, modify, and enhance, typically developed collaboratively.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "software philosophy",
+      "etymology": "Term coined in 1998 by Christine Peterson",
+      "tags": [
+        "collaboration",
+        "licensing",
+        "community"
+      ]
+    }
+  },
+  {
+    "id": "repository",
+    "type": "concept",
+    "label": "repository",
+    "label_cn": "代码仓库",
+    "definition": "A central location where code and related files are stored and managed, often using version control systems.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "software development",
+      "etymology": "From Latin 'repositorium' meaning 'storehouse'",
+      "tags": [
+        "version control",
+        "storage",
+        "collaboration"
+      ]
+    }
+  },
+  {
+    "id": "blockchain",
+    "type": "concept",
+    "label": "blockchain",
+    "label_cn": "区块链",
+    "definition": "A distributed ledger technology that records transactions across multiple computers in a tamper-resistant manner.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "distributed systems",
+      "etymology": "Compound describing chain of blocks containing data",
+      "tags": [
+        "cryptocurrency",
+        "distributed",
+        "security"
+      ]
+    }
+  },
+  {
+    "id": "virtualization",
+    "type": "concept",
+    "label": "virtualization",
+    "label_cn": "虚拟化",
+    "definition": "Technology that creates simulated computing environments, allowing multiple virtual systems to run on a single physical machine.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "infrastructure",
+      "etymology": "From 'virtual' (Latin 'virtus' - excellence, power)",
+      "tags": [
+        "infrastructure",
+        "cloud",
+        "efficiency"
+      ]
+    }
+  },
+  {
+    "id": "latency",
+    "type": "concept",
+    "label": "latency",
+    "label_cn": "延迟",
+    "definition": "The time delay between a request and response in a computer system or network.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "performance",
+      "etymology": "From Latin 'latens' meaning 'lying hidden'",
+      "tags": [
+        "performance",
+        "network",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "pixel",
+    "type": "word",
+    "label": "pixel",
+    "label_cn": "像素",
+    "definition": "The smallest controllable element of a digital image or display, short for 'picture element'.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "graphics",
+      "etymology": "Portmanteau of 'picture' + 'element', coined in 1965",
+      "tags": [
+        "graphics",
+        "display",
+        "image"
+      ]
+    }
+  },
+  {
+    "id": "router",
+    "type": "concept",
+    "label": "router",
+    "label_cn": "路由器",
+    "definition": "A networking device that forwards data packets between computer networks.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "network hardware",
+      "etymology": "From 'route' + agent suffix '-er'",
+      "tags": [
+        "network",
+        "hardware",
+        "infrastructure"
+      ]
+    }
+  },
+  {
+    "id": "syntax",
+    "type": "concept",
+    "label": "syntax",
+    "label_cn": "语法",
+    "definition": "The set of rules that defines the combinations of symbols in a programming language.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "programming",
+      "etymology": "From Greek 'syntaxis' meaning 'arrangement'",
+      "tags": [
+        "programming",
+        "language",
+        "structure"
+      ]
+    }
+  },
+  {
+    "id": "cache",
+    "type": "concept",
+    "label": "cache",
+    "label_cn": "缓存",
+    "definition": "A hardware or software component that stores data temporarily to speed up future requests for that data.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "performance",
+      "etymology": "From French 'cacher' meaning 'to hide'",
+      "tags": [
+        "performance",
+        "storage",
+        "optimization"
+      ]
+    }
+  },
+  {
+    "id": "authentication",
+    "type": "concept",
+    "label": "authentication",
+    "label_cn": "身份验证",
+    "definition": "The process of verifying the identity of a user or system before granting access.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "security",
+      "etymology": "From Greek 'authentikos' meaning 'genuine'",
+      "tags": [
+        "security",
+        "access control",
+        "identity"
+      ]
+    }
+  },
+  {
+    "id": "scalability",
+    "type": "concept",
+    "label": "scalability",
+    "label_cn": "可扩展性",
+    "definition": "The capability of a system to handle growing amounts of work or accommodate expansion.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "architecture",
+      "etymology": "From 'scale' + '-ability'",
+      "tags": [
+        "architecture",
+        "performance",
+        "growth"
+      ]
+    }
+  },
+  {
+    "id": "backup",
+    "type": "concept",
+    "label": "backup",
+    "label_cn": "备份",
+    "definition": "A copy of data stored separately to protect against loss or corruption of the original.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "data management",
+      "etymology": "From 'back' + 'up' - support in reserve",
+      "tags": [
+        "storage",
+        "recovery",
+        "safety"
+      ]
+    }
+  },
+  {
+    "id": "firewall",
+    "type": "concept",
+    "label": "firewall",
+    "label_cn": "防火墙",
+    "definition": "A network security system that monitors and controls incoming and outgoing network traffic based on security rules.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "security",
+      "etymology": "Metaphor from physical fire-prevention walls in buildings",
+      "tags": [
+        "security",
+        "network",
+        "protection"
+      ]
+    }
+  },
+  {
+    "id": "kernel",
+    "type": "concept",
+    "label": "kernel",
+    "label_cn": "内核",
+    "definition": "The core component of an operating system that manages system resources and hardware-software communication.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "operating systems",
+      "etymology": "From Old English 'cyrnel' - seed, core",
+      "tags": [
+        "OS",
+        "system",
+        "core"
+      ]
+    }
+  },
+  {
+    "id": "malware",
+    "type": "concept",
+    "label": "malware",
+    "label_cn": "恶意软件",
+    "definition": "Malicious software designed to damage, disrupt, or gain unauthorized access to computer systems.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "security threats",
+      "etymology": "Portmanteau of 'malicious' + 'software', coined in 1990",
+      "tags": [
+        "security",
+        "threat",
+        "virus"
+      ]
+    }
+  },
+  {
+    "id": "bandwidth_throttling",
+    "type": "concept",
+    "label": "throttling",
+    "label_cn": "限流",
+    "definition": "The intentional slowing or limiting of data transfer rate in a network or API to prevent overload.",
+    "importance": 0.65,
+    "metadata": {
+      "category": "network management",
+      "etymology": "From 'throttle' - device controlling flow",
+      "tags": [
+        "network",
+        "control",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "interface",
+    "type": "concept",
+    "label": "interface",
+    "label_cn": "界面/接口",
+    "definition": "A point of interaction between a user and a computer system, or between different software components.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "design",
+      "etymology": "From Latin 'inter' (between) + 'facies' (face)",
+      "tags": [
+        "UI",
+        "UX",
+        "interaction"
+      ]
+    }
+  },
+  {
+    "id": "render",
+    "type": "concept",
+    "label": "render",
+    "label_cn": "渲染",
+    "definition": "The process of generating an image or display from a model or data structure.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "graphics",
+      "etymology": "From Old French 'rendre' meaning 'give back'",
+      "tags": [
+        "graphics",
+        "display",
+        "processing"
+      ]
+    }
+  },
+  {
+    "id": "query",
+    "type": "concept",
+    "label": "query",
+    "label_cn": "查询",
+    "definition": "A request for information or data from a database or system.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "databases",
+      "etymology": "From Latin 'quaerere' meaning 'to ask, seek'",
+      "tags": [
+        "database",
+        "search",
+        "retrieval"
+      ]
+    }
+  },
+  {
+    "id": "recursion",
+    "type": "concept",
+    "label": "recursion",
+    "label_cn": "递归",
+    "definition": "A programming technique where a function calls itself to solve a problem by breaking it into smaller instances.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "programming concepts",
+      "etymology": "From Latin 'recurrere' meaning 'to run back'",
+      "tags": [
+        "programming",
+        "algorithm",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "refactoring",
+    "type": "concept",
+    "label": "refactoring",
+    "label_cn": "重构",
+    "definition": "The process of restructuring existing code without changing its external behavior to improve readability and maintainability.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "software development",
+      "etymology": "From 're-' + 'factoring' (breaking into factors)",
+      "tags": [
+        "development",
+        "code quality",
+        "maintenance"
+      ]
+    }
+  },
+  {
+    "id": "throughput",
+    "type": "concept",
+    "label": "throughput",
+    "label_cn": "吞吐量",
+    "definition": "The amount of data or number of operations processed by a system in a given time period.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "performance",
+      "etymology": "From 'through' + 'put' - amount passed through",
+      "tags": [
+        "performance",
+        "metrics",
+        "capacity"
+      ]
+    }
+  },
+  {
+    "id": "token",
+    "type": "concept",
+    "label": "token",
+    "label_cn": "令牌",
+    "definition": "A piece of data used for authentication or as a basic unit in text processing and programming languages.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "security and parsing",
+      "etymology": "From Old English 'tacen' meaning 'sign, symbol'",
+      "tags": [
+        "security",
+        "authentication",
+        "parsing"
+      ]
+    }
+  },
+  {
+    "id": "deployment",
+    "type": "concept",
+    "label": "deployment",
+    "label_cn": "部署",
+    "definition": "The process of making software available for use in a production environment.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "software development",
+      "etymology": "From French 'deployer' meaning 'to unfold, spread out'",
+      "tags": [
+        "DevOps",
+        "release",
+        "production"
+      ]
+    }
+  },
+  {
+    "id": "pipeline",
+    "type": "concept",
+    "label": "pipeline",
+    "label_cn": "管道/流水线",
+    "definition": "A series of automated processes that move data or code through stages of processing, testing, or deployment.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "software architecture",
+      "etymology": "Metaphor from physical pipelines for fluid transport",
+      "tags": [
+        "CI/CD",
+        "automation",
+        "workflow"
+      ]
+    }
+  },
+  {
+    "id": "art",
+    "type": "concept",
+    "label": "art",
+    "label_cn": "艺术",
+    "definition": "The expression or application of human creative skill and imagination, typically in visual form such as painting or sculpture, producing works to be appreciated primarily for their beauty or emotional power.",
+    "importance": 1,
+    "metadata": {
+      "category": "concept",
+      "etymology": "From Latin 'ars' (art, skill, craft)",
+      "tags": [
+        "creativity",
+        "visual",
+        "expression",
+        "culture"
+      ]
+    }
+  },
+  {
+    "id": "music",
+    "type": "concept",
+    "label": "music",
+    "label_cn": "音乐",
+    "definition": "The art of arranging sounds in time through the elements of melody, harmony, rhythm, and timbre to express ideas and emotions.",
+    "importance": 1,
+    "metadata": {
+      "category": "concept",
+      "etymology": "From Greek 'mousike' (art of the Muses)",
+      "tags": [
+        "sound",
+        "rhythm",
+        "melody",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "literature",
+    "type": "concept",
+    "label": "literature",
+    "label_cn": "文学",
+    "definition": "Written works, especially those considered of superior or lasting artistic merit, including poetry, drama, fiction, and nonfiction.",
+    "importance": 1,
+    "metadata": {
+      "category": "concept",
+      "etymology": "From Latin 'litteratura' (writing, grammar, learning)",
+      "tags": [
+        "writing",
+        "books",
+        "poetry",
+        "fiction"
+      ]
+    }
+  },
+  {
+    "id": "culture",
+    "type": "concept",
+    "label": "culture",
+    "label_cn": "文化",
+    "definition": "The arts, customs, and habits that characterize a particular society or nation; the collective manifestation of human intellectual achievement.",
+    "importance": 1,
+    "metadata": {
+      "category": "concept",
+      "etymology": "From Latin 'cultura' (cultivation, agriculture)",
+      "tags": [
+        "society",
+        "tradition",
+        "customs",
+        "civilization"
+      ]
+    }
+  },
+  {
+    "id": "history",
+    "type": "concept",
+    "label": "history",
+    "label_cn": "历史",
+    "definition": "The study of past events, particularly in human affairs; a continuous, systematic narrative of past events as relating to a particular people, country, period, or subject.",
+    "importance": 0.95,
+    "metadata": {
+      "category": "concept",
+      "etymology": "From Greek 'historia' (inquiry, knowledge acquired by investigation)",
+      "tags": [
+        "past",
+        "events",
+        "timeline",
+        "records"
+      ]
+    }
+  },
+  {
+    "id": "painting",
+    "type": "concept",
+    "label": "painting",
+    "label_cn": "绘画",
+    "definition": "The practice of applying pigment suspended in a medium to a surface such as canvas, paper, or wall, creating visual art through color and form.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "visual art",
+      "etymology": "From Latin 'pingere' (to paint)",
+      "tags": [
+        "visual art",
+        "canvas",
+        "color",
+        "technique"
+      ]
+    }
+  },
+  {
+    "id": "sculpture",
+    "type": "concept",
+    "label": "sculpture",
+    "label_cn": "雕塑",
+    "definition": "The art of making three-dimensional representative or abstract forms by carving, modeling, or casting in various materials such as stone, metal, or wood.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "visual art",
+      "etymology": "From Latin 'sculptura' (carving, sculpture)",
+      "tags": [
+        "three-dimensional",
+        "carving",
+        "statue",
+        "form"
+      ]
+    }
+  },
+  {
+    "id": "symphony",
+    "type": "word",
+    "label": "symphony",
+    "label_cn": "交响乐",
+    "definition": "An elaborate musical composition for full orchestra, typically in four movements, at least one of which is in sonata form.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "music",
+      "etymology": "From Greek 'symphonia' (agreement of sound, harmony)",
+      "tags": [
+        "orchestra",
+        "classical",
+        "composition",
+        "harmony"
+      ]
+    }
+  },
+  {
+    "id": "novel",
+    "type": "word",
+    "label": "novel",
+    "label_cn": "小说",
+    "definition": "A fictitious prose narrative of book length, typically representing character and action with some degree of realism and complexity.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "literature",
+      "etymology": "From Italian 'novella' (new story)",
+      "tags": [
+        "fiction",
+        "prose",
+        "narrative",
+        "story"
+      ]
+    }
+  },
+  {
+    "id": "poetry",
+    "type": "concept",
+    "label": "poetry",
+    "label_cn": "诗歌",
+    "definition": "Literary work in which special intensity is given to the expression of feelings and ideas by the use of distinctive style, rhythm, and metaphor.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "literature",
+      "etymology": "From Greek 'poiesis' (making, creation)",
+      "tags": [
+        "verse",
+        "rhythm",
+        "metaphor",
+        "lyric"
+      ]
+    }
+  },
+  {
+    "id": "renaissance",
+    "type": "topic",
+    "label": "Renaissance",
+    "label_cn": "文艺复兴",
+    "definition": "The revival of art and literature under the influence of classical models in the 14th-16th centuries, marking the transition from medieval to modern times in Europe.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "historical period",
+      "etymology": "From French 'renaissance' (rebirth)",
+      "tags": [
+        "revival",
+        "classical",
+        "European",
+        "humanism"
+      ]
+    }
+  },
+  {
+    "id": "shakespeare",
+    "type": "person",
+    "label": "Shakespeare",
+    "label_cn": "莎士比亚",
+    "definition": "William Shakespeare (1564-1616), English playwright and poet, widely regarded as the greatest writer in the English language and the world's greatest dramatist.",
+    "importance": 0.95,
+    "metadata": {
+      "category": "author",
+      "etymology": "English surname meaning 'shake spear'",
+      "tags": [
+        "playwright",
+        "poet",
+        "English",
+        "drama"
+      ]
+    }
+  },
+  {
+    "id": "mozart",
+    "type": "person",
+    "label": "Mozart",
+    "label_cn": "莫扎特",
+    "definition": "Wolfgang Amadeus Mozart (1756-1791), prolific and influential Austrian composer of the Classical period, known for his mastery of all musical genres.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "composer",
+      "etymology": "German surname",
+      "tags": [
+        "composer",
+        "classical",
+        "Austrian",
+        "prodigy"
+      ]
+    }
+  },
+  {
+    "id": "museum",
+    "type": "word",
+    "label": "museum",
+    "label_cn": "博物馆",
+    "definition": "A building in which objects of historical, scientific, artistic, or cultural interest are stored and exhibited to the public.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "institution",
+      "etymology": "From Greek 'mouseion' (seat of the Muses)",
+      "tags": [
+        "exhibition",
+        "collection",
+        "artifacts",
+        "preservation"
+      ]
+    }
+  },
+  {
+    "id": "canvas",
+    "type": "word",
+    "label": "canvas",
+    "label_cn": "画布",
+    "definition": "A strong, coarse unbleached cloth made from hemp, flax, or cotton, used especially for painting on or as a surface for oil paintings.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "material",
+      "etymology": "From Latin 'cannabis' (hemp)",
+      "tags": [
+        "material",
+        "painting",
+        "surface",
+        "art"
+      ]
+    }
+  },
+  {
+    "id": "melody",
+    "type": "word",
+    "label": "melody",
+    "label_cn": "旋律",
+    "definition": "A sequence of single notes that is musically satisfying; the principal part in harmonized music; a tune.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "music element",
+      "etymology": "From Greek 'meloidia' (singing, chanting)",
+      "tags": [
+        "tune",
+        "sequence",
+        "notes",
+        "harmony"
+      ]
+    }
+  },
+  {
+    "id": "rhythm",
+    "type": "word",
+    "label": "rhythm",
+    "label_cn": "节奏",
+    "definition": "A strong, regular, repeated pattern of movement or sound in music; the systematic arrangement of musical sounds according to duration and periodic stress.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "music element",
+      "etymology": "From Greek 'rhythmos' (measured flow)",
+      "tags": [
+        "pattern",
+        "beat",
+        "tempo",
+        "timing"
+      ]
+    }
+  },
+  {
+    "id": "masterpiece",
+    "type": "word",
+    "label": "masterpiece",
+    "label_cn": "杰作",
+    "definition": "A work of outstanding artistry, skill, or workmanship; an artist's or craftsman's best piece of work.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "achievement",
+      "etymology": "From Dutch 'meesterstuk' (master's piece)",
+      "tags": [
+        "excellence",
+        "skill",
+        "achievement",
+        "art"
+      ]
+    }
+  },
+  {
+    "id": "gallery",
+    "type": "word",
+    "label": "gallery",
+    "label_cn": "画廊",
+    "definition": "A room or building for the display or sale of works of art; a collection of pictures or other artworks.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "institution",
+      "etymology": "From Medieval Latin 'galeria' (covered walkway)",
+      "tags": [
+        "exhibition",
+        "art",
+        "display",
+        "collection"
+      ]
+    }
+  },
+  {
+    "id": "portrait",
+    "type": "word",
+    "label": "portrait",
+    "label_cn": "肖像",
+    "definition": "A painting, drawing, photograph, or engraving of a person, especially one depicting only the face or head and shoulders.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "art form",
+      "etymology": "From Old French 'portraire' (to portray)",
+      "tags": [
+        "painting",
+        "likeness",
+        "person",
+        "representation"
+      ]
+    }
+  },
+  {
+    "id": "composer",
+    "type": "word",
+    "label": "composer",
+    "label_cn": "作曲家",
+    "definition": "A person who writes music, especially as a professional occupation; one who creates original musical compositions.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "profession",
+      "etymology": "From Latin 'componere' (to put together)",
+      "tags": [
+        "musician",
+        "creator",
+        "music",
+        "artist"
+      ]
+    }
+  },
+  {
+    "id": "orchestra",
+    "type": "word",
+    "label": "orchestra",
+    "label_cn": "管弦乐队",
+    "definition": "A large group of musicians who play together on various instruments, typically including strings, woodwinds, brass, and percussion sections.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "ensemble",
+      "etymology": "From Greek 'orchestra' (dancing place in theater)",
+      "tags": [
+        "ensemble",
+        "instruments",
+        "performance",
+        "classical"
+      ]
+    }
+  },
+  {
+    "id": "drama",
+    "type": "word",
+    "label": "drama",
+    "label_cn": "戏剧",
+    "definition": "A play for theater, radio, or television; the art or activity of writing and performing plays.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "literature",
+      "etymology": "From Greek 'drama' (action, deed)",
+      "tags": [
+        "theater",
+        "performance",
+        "play",
+        "stage"
+      ]
+    }
+  },
+  {
+    "id": "manuscript",
+    "type": "word",
+    "label": "manuscript",
+    "label_cn": "手稿",
+    "definition": "A book, document, or piece of music written by hand rather than typed or printed; an author's original or draft version of a text.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "document",
+      "etymology": "From Medieval Latin 'manuscriptus' (written by hand)",
+      "tags": [
+        "handwritten",
+        "original",
+        "document",
+        "text"
+      ]
+    }
+  },
+  {
+    "id": "aesthetic",
+    "type": "word",
+    "label": "aesthetic",
+    "label_cn": "美学的",
+    "definition": "Concerned with beauty or the appreciation of beauty; relating to the philosophy of aesthetics and the study of art and beauty.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "concept",
+      "etymology": "From Greek 'aistetikos' (perceptive, sensitive)",
+      "tags": [
+        "beauty",
+        "art",
+        "philosophy",
+        "appreciation"
+      ]
+    }
+  },
+  {
+    "id": "ballad",
+    "type": "word",
+    "label": "ballad",
+    "label_cn": "民谣",
+    "definition": "A poem or song narrating a story in short stanzas; a slow sentimental or romantic song.",
+    "importance": 0.65,
+    "metadata": {
+      "category": "music/literature",
+      "etymology": "From Old French 'balade' (dancing song)",
+      "tags": [
+        "song",
+        "narrative",
+        "poetry",
+        "folk"
+      ]
+    }
+  },
+  {
+    "id": "baroque",
+    "type": "topic",
+    "label": "Baroque",
+    "label_cn": "巴洛克",
+    "definition": "A highly ornate and often extravagant style of architecture, art, and music that flourished in Europe from the early 17th to mid-18th century.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "artistic period",
+      "etymology": "From Portuguese 'barroco' (irregular pearl)",
+      "tags": [
+        "ornate",
+        "17th century",
+        "European",
+        "style"
+      ]
+    }
+  },
+  {
+    "id": "classical",
+    "type": "word",
+    "label": "classical",
+    "label_cn": "古典的",
+    "definition": "Relating to ancient Greek or Roman culture; representing an exemplary standard within a traditional and long-established form or style.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "style",
+      "etymology": "From Latin 'classicus' (of the highest class)",
+      "tags": [
+        "traditional",
+        "ancient",
+        "standard",
+        "refined"
+      ]
+    }
+  },
+  {
+    "id": "metaphor",
+    "type": "word",
+    "label": "metaphor",
+    "label_cn": "隐喻",
+    "definition": "A figure of speech in which a word or phrase is applied to an object or action to which it is not literally applicable, creating an implicit comparison.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "literary device",
+      "etymology": "From Greek 'metaphora' (transfer, carry over)",
+      "tags": [
+        "figurative",
+        "comparison",
+        "language",
+        "poetry"
+      ]
+    }
+  },
+  {
+    "id": "sonnet",
+    "type": "word",
+    "label": "sonnet",
+    "label_cn": "十四行诗",
+    "definition": "A poem of fourteen lines using any of a number of formal rhyme schemes, typically having ten syllables per line.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "poetry form",
+      "etymology": "From Italian 'sonetto' (little song)",
+      "tags": [
+        "poetry",
+        "fourteen lines",
+        "rhyme",
+        "form"
+      ]
+    }
+  },
+  {
+    "id": "improvisation",
+    "type": "word",
+    "label": "improvisation",
+    "label_cn": "即兴创作",
+    "definition": "The action of creating or performing something spontaneously without preparation, especially in music, theater, or dance.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "technique",
+      "etymology": "From Latin 'improvisus' (unforeseen)",
+      "tags": [
+        "spontaneous",
+        "creativity",
+        "performance",
+        "jazz"
+      ]
+    }
+  },
+  {
+    "id": "genre",
+    "type": "word",
+    "label": "genre",
+    "label_cn": "类型",
+    "definition": "A category of artistic composition characterized by similarities in form, style, or subject matter.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "classification",
+      "etymology": "From French 'genre' (kind, sort)",
+      "tags": [
+        "category",
+        "style",
+        "classification",
+        "type"
+      ]
+    }
+  },
+  {
+    "id": "epic",
+    "type": "word",
+    "label": "epic",
+    "label_cn": "史诗",
+    "definition": "A long poem, typically one derived from ancient oral tradition, narrating the deeds and adventures of heroic or legendary figures.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "literature",
+      "etymology": "From Greek 'epikos' (word, song)",
+      "tags": [
+        "heroic",
+        "narrative",
+        "long",
+        "legendary"
+      ]
+    }
+  },
+  {
+    "id": "chorus",
+    "type": "word",
+    "label": "chorus",
+    "label_cn": "合唱",
+    "definition": "A part of a song that is repeated after each verse; a large organized group of singers, especially one that performs together.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "music",
+      "etymology": "From Greek 'khoros' (dance, dancing ground)",
+      "tags": [
+        "singing",
+        "group",
+        "refrain",
+        "ensemble"
+      ]
+    }
+  },
+  {
+    "id": "opera",
+    "type": "word",
+    "label": "opera",
+    "label_cn": "歌剧",
+    "definition": "A dramatic work in one or more acts set to music for singers and instrumentalists, combining text, music, drama, and often dance.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "music",
+      "etymology": "From Italian 'opera' (work, labor)",
+      "tags": [
+        "theatrical",
+        "singing",
+        "classical",
+        "drama"
+      ]
+    }
+  },
+  {
+    "id": "abstract",
+    "type": "word",
+    "label": "abstract",
+    "label_cn": "抽象的",
+    "definition": "Existing in thought or as an idea but not having a physical or concrete existence; art that does not attempt to represent external reality.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "concept",
+      "etymology": "From Latin 'abstractus' (drawn away)",
+      "tags": [
+        "non-representational",
+        "conceptual",
+        "art",
+        "modern"
+      ]
+    }
+  },
+  {
+    "id": "baroque",
+    "type": "word",
+    "label": "baroque",
+    "label_cn": "巴洛克",
+    "definition": "Relating to or denoting a style of European architecture, music, and art of the 17th and 18th centuries characterized by ornate detail.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "style",
+      "etymology": "From Portuguese 'barroco' (irregular pearl)",
+      "tags": [
+        "ornate",
+        "decorative",
+        "European",
+        "17th century"
+      ]
+    }
+  },
+  {
+    "id": "lyric",
+    "type": "word",
+    "label": "lyric",
+    "label_cn": "抒情的",
+    "definition": "Expressing the writer's emotions in an imaginative and beautiful way; the words of a song.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "literature/music",
+      "etymology": "From Greek 'lyrikos' (singing to the lyre)",
+      "tags": [
+        "emotional",
+        "poetry",
+        "song",
+        "personal"
+      ]
+    }
+  },
+  {
+    "id": "allegory",
+    "type": "word",
+    "label": "allegory",
+    "label_cn": "寓言",
+    "definition": "A story, poem, or picture that can be interpreted to reveal a hidden meaning, typically a moral or political one.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "literary device",
+      "etymology": "From Greek 'allegoria' (speaking otherwise)",
+      "tags": [
+        "symbolic",
+        "hidden meaning",
+        "narrative",
+        "moral"
+      ]
+    }
+  },
+  {
+    "id": "impressionism",
+    "type": "topic",
+    "label": "Impressionism",
+    "label_cn": "印象派",
+    "definition": "A 19th-century art movement characterized by relatively small, thin, visible brushstrokes and emphasis on accurate depiction of light and its changing qualities.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "art movement",
+      "etymology": "From French 'impressionnisme' (based on impression)",
+      "tags": [
+        "19th century",
+        "light",
+        "color",
+        "movement"
+      ]
+    }
+  },
+  {
+    "id": "harmony",
+    "type": "word",
+    "label": "harmony",
+    "label_cn": "和声",
+    "definition": "The combination of simultaneously sounded musical notes to produce chords and chord progressions having a pleasing effect.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "music element",
+      "etymology": "From Greek 'harmonia' (agreement, concord)",
+      "tags": [
+        "chords",
+        "music theory",
+        "consonance",
+        "combination"
+      ]
+    }
+  },
+  {
+    "id": "fable",
+    "type": "word",
+    "label": "fable",
+    "label_cn": "寓言故事",
+    "definition": "A short story, typically with animals as characters, conveying a moral lesson.",
+    "importance": 0.65,
+    "metadata": {
+      "category": "literature",
+      "etymology": "From Latin 'fabula' (story, tale)",
+      "tags": [
+        "moral",
+        "animals",
+        "short story",
+        "lesson"
+      ]
+    }
+  },
+  {
+    "id": "virtuoso",
+    "type": "word",
+    "label": "virtuoso",
+    "label_cn": "艺术大师",
+    "definition": "A person highly skilled in music or another artistic pursuit; showing exceptional technical skill.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "person",
+      "etymology": "From Italian 'virtuoso' (skilled, learned)",
+      "tags": [
+        "skill",
+        "mastery",
+        "excellence",
+        "musician"
+      ]
+    }
+  },
+  {
+    "id": "mythology",
+    "type": "concept",
+    "label": "mythology",
+    "label_cn": "神话",
+    "definition": "A collection of myths, especially one belonging to a particular religious or cultural tradition; the study of myths.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "concept",
+      "etymology": "From Greek 'mythologia' (telling of stories)",
+      "tags": [
+        "myths",
+        "legends",
+        "tradition",
+        "stories"
+      ]
+    }
+  },
+  {
+    "id": "mosaic",
+    "type": "word",
+    "label": "mosaic",
+    "label_cn": "马赛克",
+    "definition": "A picture or pattern produced by arranging together small colored pieces of hard material such as stone, tile, or glass.",
+    "importance": 0.65,
+    "metadata": {
+      "category": "art form",
+      "etymology": "From Latin 'mosaicus' (of the Muses)",
+      "tags": [
+        "decorative",
+        "tiles",
+        "pattern",
+        "ancient"
+      ]
+    }
+  },
+  {
+    "id": "concerto",
+    "type": "word",
+    "label": "concerto",
+    "label_cn": "协奏曲",
+    "definition": "A musical composition for a solo instrument or instruments accompanied by an orchestra, especially one in three movements.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "music",
+      "etymology": "From Italian 'concerto' (concert, agreement)",
+      "tags": [
+        "solo",
+        "orchestra",
+        "classical",
+        "composition"
+      ]
+    }
+  },
+  {
+    "id": "folklore",
+    "type": "concept",
+    "label": "folklore",
+    "label_cn": "民间传说",
+    "definition": "The traditional beliefs, customs, and stories of a community, passed through the generations by word of mouth.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "tradition",
+      "etymology": "From folk + lore (learning, knowledge)",
+      "tags": [
+        "tradition",
+        "oral",
+        "cultural",
+        "stories"
+      ]
+    }
+  },
+  {
+    "id": "perspective",
+    "type": "word",
+    "label": "perspective",
+    "label_cn": "透视",
+    "definition": "The art of drawing solid objects on a two-dimensional surface so as to give the right impression of their height, width, depth, and position.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "technique",
+      "etymology": "From Latin 'perspicere' (see through, examine)",
+      "tags": [
+        "technique",
+        "depth",
+        "drawing",
+        "visual"
+      ]
+    }
+  },
+  {
+    "id": "sonata",
+    "type": "word",
+    "label": "sonata",
+    "label_cn": "奏鸣曲",
+    "definition": "A composition for an instrumental soloist, often with piano accompaniment, typically in several movements with one or more in sonata form.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "music",
+      "etymology": "From Italian 'sonata' (sounded, played)",
+      "tags": [
+        "instrumental",
+        "classical",
+        "solo",
+        "form"
+      ]
+    }
+  },
+  {
+    "id": "anthology",
+    "type": "word",
+    "label": "anthology",
+    "label_cn": "选集",
+    "definition": "A published collection of poems or other pieces of writing or music by different authors or composers.",
+    "importance": 0.65,
+    "metadata": {
+      "category": "collection",
+      "etymology": "From Greek 'anthologia' (flower gathering)",
+      "tags": [
+        "collection",
+        "compilation",
+        "works",
+        "multiple authors"
+      ]
+    }
+  },
+  {
+    "id": "geography",
+    "type": "topic",
+    "label": "geography",
+    "label_cn": "地理学",
+    "definition": "The study of Earth's physical features, climate, population, and the relationships between people and their environments.",
+    "importance": 0.95,
+    "metadata": {
+      "category": "academic_field",
+      "etymology": "From Greek 'geo' (earth) + 'graphia' (writing/description)",
+      "tags": [
+        "science",
+        "earth",
+        "study",
+        "fundamental"
+      ]
+    }
+  },
+  {
+    "id": "mountain",
+    "type": "concept",
+    "label": "mountain",
+    "label_cn": "山脉",
+    "definition": "A large natural elevation of the earth's surface rising abruptly from the surrounding level, typically higher than 600 meters.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "landform",
+      "etymology": "From Old French 'montaigne', from Latin 'montanea' (mountainous country)",
+      "tags": [
+        "terrain",
+        "elevation",
+        "landform",
+        "nature"
+      ]
+    }
+  },
+  {
+    "id": "desert",
+    "type": "concept",
+    "label": "desert",
+    "label_cn": "沙漠",
+    "definition": "A barren area of landscape with little precipitation, typically receiving less than 250mm of rain annually, characterized by extreme temperatures.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "biome",
+      "etymology": "From Latin 'desertum' (abandoned place), from 'deserere' (to abandon)",
+      "tags": [
+        "climate",
+        "dry",
+        "landform",
+        "extreme"
+      ]
+    }
+  },
+  {
+    "id": "city",
+    "type": "concept",
+    "label": "city",
+    "label_cn": "城市",
+    "definition": "A large human settlement with significant population density, complex infrastructure, and serving as a center for commerce, culture, and governance.",
+    "importance": 0.95,
+    "metadata": {
+      "category": "settlement",
+      "etymology": "From Latin 'civitas' (citizenship, state, city), from 'civis' (citizen)",
+      "tags": [
+        "urban",
+        "settlement",
+        "civilization",
+        "population"
+      ]
+    }
+  },
+  {
+    "id": "climate",
+    "type": "concept",
+    "label": "climate",
+    "label_cn": "气候",
+    "definition": "The long-term pattern of weather conditions in a particular area, including temperature, humidity, atmospheric pressure, wind, and precipitation.",
+    "importance": 0.92,
+    "metadata": {
+      "category": "atmospheric_science",
+      "etymology": "From Greek 'klima' (region, zone), from 'klinein' (to slope, incline)",
+      "tags": [
+        "weather",
+        "atmosphere",
+        "pattern",
+        "environment"
+      ]
+    }
+  },
+  {
+    "id": "terrain",
+    "type": "word",
+    "label": "terrain",
+    "label_cn": "地形",
+    "definition": "A stretch of land, especially with regard to its physical features and characteristics.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "landform",
+      "etymology": "From French 'terrain', from Latin 'terrenum' (land, ground)",
+      "tags": [
+        "geography",
+        "surface",
+        "topography",
+        "land"
+      ]
+    }
+  },
+  {
+    "id": "plateau",
+    "type": "word",
+    "label": "plateau",
+    "label_cn": "高原",
+    "definition": "An area of relatively flat land at a high elevation, typically with steep sides.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "landform",
+      "etymology": "From French 'plateau' (flat piece), diminutive of 'plat' (flat)",
+      "tags": [
+        "elevation",
+        "terrain",
+        "flat",
+        "highland"
+      ]
+    }
+  },
+  {
+    "id": "valley",
+    "type": "word",
+    "label": "valley",
+    "label_cn": "山谷",
+    "definition": "A low area of land between hills or mountains, typically with a river or stream flowing through it.",
+    "importance": 0.82,
+    "metadata": {
+      "category": "landform",
+      "etymology": "From Latin 'vallis' (valley)",
+      "tags": [
+        "terrain",
+        "depression",
+        "river",
+        "landform"
+      ]
+    }
+  },
+  {
+    "id": "volcano",
+    "type": "word",
+    "label": "volcano",
+    "label_cn": "火山",
+    "definition": "A rupture in the Earth's crust that allows hot lava, volcanic ash, and gases to escape from a magma chamber below the surface.",
+    "importance": 0.78,
+    "metadata": {
+      "category": "geological_feature",
+      "etymology": "From Italian 'volcano', from Latin 'Vulcanus' (Roman god of fire)",
+      "tags": [
+        "geology",
+        "mountain",
+        "eruption",
+        "natural_hazard"
+      ]
+    }
+  },
+  {
+    "id": "peninsula",
+    "type": "word",
+    "label": "peninsula",
+    "label_cn": "半岛",
+    "definition": "A piece of land that is almost entirely surrounded by water but connected to the mainland on one side.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "landform",
+      "etymology": "From Latin 'paeninsula', from 'paene' (almost) + 'insula' (island)",
+      "tags": [
+        "geography",
+        "coastline",
+        "water",
+        "land"
+      ]
+    }
+  },
+  {
+    "id": "archipelago",
+    "type": "word",
+    "label": "archipelago",
+    "label_cn": "群岛",
+    "definition": "A group or chain of islands clustered together in a sea or ocean.",
+    "importance": 0.65,
+    "metadata": {
+      "category": "landform",
+      "etymology": "From Italian 'arcipelago', from Greek 'arkhi-' (chief) + 'pelagos' (sea)",
+      "tags": [
+        "islands",
+        "ocean",
+        "geography",
+        "cluster"
+      ]
+    }
+  },
+  {
+    "id": "canyon",
+    "type": "word",
+    "label": "canyon",
+    "label_cn": "峡谷",
+    "definition": "A deep gorge with steep sides, typically carved by river erosion over geological time.",
+    "importance": 0.72,
+    "metadata": {
+      "category": "landform",
+      "etymology": "From Spanish 'cañón' (tube, gorge), from Latin 'canna' (reed, tube)",
+      "tags": [
+        "erosion",
+        "terrain",
+        "river",
+        "geology"
+      ]
+    }
+  },
+  {
+    "id": "coastline",
+    "type": "word",
+    "label": "coastline",
+    "label_cn": "海岸线",
+    "definition": "The outline or boundary where land meets a body of water, especially the sea.",
+    "importance": 0.78,
+    "metadata": {
+      "category": "geographical_feature",
+      "etymology": "From 'coast' (Latin 'costa' meaning rib, side) + 'line'",
+      "tags": [
+        "ocean",
+        "boundary",
+        "geography",
+        "shore"
+      ]
+    }
+  },
+  {
+    "id": "precipitation",
+    "type": "word",
+    "label": "precipitation",
+    "label_cn": "降水",
+    "definition": "Any form of water - liquid or solid - falling from the sky, including rain, snow, sleet, and hail.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "meteorology",
+      "etymology": "From Latin 'praecipitare' (to throw headlong), from 'praeceps' (headlong)",
+      "tags": [
+        "weather",
+        "climate",
+        "rain",
+        "atmosphere"
+      ]
+    }
+  },
+  {
+    "id": "humidity",
+    "type": "word",
+    "label": "humidity",
+    "label_cn": "湿度",
+    "definition": "The amount of water vapor present in the air, typically expressed as a percentage of saturation.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "meteorology",
+      "etymology": "From Latin 'humidus' (moist, wet), from 'humere' (to be moist)",
+      "tags": [
+        "climate",
+        "atmosphere",
+        "moisture",
+        "weather"
+      ]
+    }
+  },
+  {
+    "id": "latitude",
+    "type": "word",
+    "label": "latitude",
+    "label_cn": "纬度",
+    "definition": "The angular distance of a place north or south of the earth's equator, measured in degrees.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "coordinate_system",
+      "etymology": "From Latin 'latitudo' (breadth, width), from 'latus' (wide)",
+      "tags": [
+        "navigation",
+        "geography",
+        "coordinate",
+        "measurement"
+      ]
+    }
+  },
+  {
+    "id": "longitude",
+    "type": "word",
+    "label": "longitude",
+    "label_cn": "经度",
+    "definition": "The angular distance of a place east or west of the prime meridian, measured in degrees.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "coordinate_system",
+      "etymology": "From Latin 'longitudo' (length), from 'longus' (long)",
+      "tags": [
+        "navigation",
+        "geography",
+        "coordinate",
+        "measurement"
+      ]
+    }
+  },
+  {
+    "id": "equator",
+    "type": "place",
+    "label": "equator",
+    "label_cn": "赤道",
+    "definition": "An imaginary line drawn around the earth at 0 degrees latitude, equidistant from the North and South Poles, dividing the earth into hemispheres.",
+    "importance": 0.88,
+    "metadata": {
+      "category": "reference_line",
+      "etymology": "From Medieval Latin 'aequator', from Latin 'aequare' (to make equal)",
+      "tags": [
+        "geography",
+        "latitude",
+        "tropical",
+        "global"
+      ]
+    }
+  },
+  {
+    "id": "tropics",
+    "type": "concept",
+    "label": "tropics",
+    "label_cn": "热带",
+    "definition": "The region of Earth surrounding the equator between the Tropic of Cancer and Tropic of Capricorn, characterized by warm climate year-round.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "climate_zone",
+      "etymology": "From Greek 'tropikos' (of the turning), referring to sun's turning at solstices",
+      "tags": [
+        "climate",
+        "zone",
+        "warm",
+        "equator"
+      ]
+    }
+  },
+  {
+    "id": "temperate",
+    "type": "word",
+    "label": "temperate",
+    "label_cn": "温带",
+    "definition": "Relating to or denoting a climate region with mild temperatures, distinct seasons, and moderate rainfall.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "climate_zone",
+      "etymology": "From Latin 'temperatus' (moderate), from 'temperare' (to moderate)",
+      "tags": [
+        "climate",
+        "moderate",
+        "seasons",
+        "zone"
+      ]
+    }
+  },
+  {
+    "id": "tundra",
+    "type": "word",
+    "label": "tundra",
+    "label_cn": "冻原",
+    "definition": "A vast, flat, treeless Arctic region with permanently frozen subsoil and low-growing vegetation.",
+    "importance": 0.68,
+    "metadata": {
+      "category": "biome",
+      "etymology": "From Russian 'tundra', from Kildin Sami 'tūndâr' (uplands, treeless mountain)",
+      "tags": [
+        "arctic",
+        "biome",
+        "cold",
+        "permafrost"
+      ]
+    }
+  },
+  {
+    "id": "savanna",
+    "type": "word",
+    "label": "savanna",
+    "label_cn": "热带草原",
+    "definition": "A grassy plain in tropical and subtropical regions with few trees, experiencing seasonal rainfall and dry periods.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "biome",
+      "etymology": "From Spanish 'sabana', from Taino 'zabana' (grassland)",
+      "tags": [
+        "grassland",
+        "tropical",
+        "biome",
+        "Africa"
+      ]
+    }
+  },
+  {
+    "id": "oasis",
+    "type": "word",
+    "label": "oasis",
+    "label_cn": "绿洲",
+    "definition": "A fertile spot in a desert where water is found, supporting vegetation and habitation.",
+    "importance": 0.68,
+    "metadata": {
+      "category": "geographical_feature",
+      "etymology": "From Greek 'oasis', from Egyptian 'wḥꜣt' (fertile spot in desert)",
+      "tags": [
+        "desert",
+        "water",
+        "vegetation",
+        "refuge"
+      ]
+    }
+  },
+  {
+    "id": "glacier",
+    "type": "word",
+    "label": "glacier",
+    "label_cn": "冰川",
+    "definition": "A large, slow-moving mass of ice formed from accumulated snow over many years.",
+    "importance": 0.76,
+    "metadata": {
+      "category": "geological_feature",
+      "etymology": "From French 'glacier', from 'glace' (ice), from Latin 'glacies'",
+      "tags": [
+        "ice",
+        "mountain",
+        "climate",
+        "erosion"
+      ]
+    }
+  },
+  {
+    "id": "erosion",
+    "type": "concept",
+    "label": "erosion",
+    "label_cn": "侵蚀",
+    "definition": "The gradual wearing away of land surface by natural forces such as water, wind, ice, or gravity.",
+    "importance": 0.78,
+    "metadata": {
+      "category": "geological_process",
+      "etymology": "From Latin 'erosio', from 'erodere' (to gnaw away)",
+      "tags": [
+        "geology",
+        "weathering",
+        "process",
+        "landform"
+      ]
+    }
+  },
+  {
+    "id": "urbanization",
+    "type": "concept",
+    "label": "urbanization",
+    "label_cn": "城市化",
+    "definition": "The process by which towns and cities grow as more people move from rural to urban areas.",
+    "importance": 0.82,
+    "metadata": {
+      "category": "demographic_process",
+      "etymology": "From 'urban' (Latin 'urbanus' from 'urbs' meaning city) + '-ization'",
+      "tags": [
+        "city",
+        "population",
+        "development",
+        "migration"
+      ]
+    }
+  },
+  {
+    "id": "metropolis",
+    "type": "word",
+    "label": "metropolis",
+    "label_cn": "大都市",
+    "definition": "A very large, densely populated city, typically the chief city of a country or region.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "settlement",
+      "etymology": "From Greek 'metropolis' (mother city), from 'meter' (mother) + 'polis' (city)",
+      "tags": [
+        "city",
+        "urban",
+        "large",
+        "capital"
+      ]
+    }
+  },
+  {
+    "id": "suburb",
+    "type": "word",
+    "label": "suburb",
+    "label_cn": "郊区",
+    "definition": "A residential area on the outskirts of a city or large town, typically quieter and less densely populated.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "settlement",
+      "etymology": "From Latin 'suburbium', from 'sub' (under, near) + 'urbs' (city)",
+      "tags": [
+        "urban",
+        "residential",
+        "city",
+        "periphery"
+      ]
+    }
+  },
+  {
+    "id": "population",
+    "type": "concept",
+    "label": "population",
+    "label_cn": "人口",
+    "definition": "All the inhabitants of a particular place, considered as a collective group.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "demography",
+      "etymology": "From Latin 'populatio' (a peopling), from 'populus' (people)",
+      "tags": [
+        "demography",
+        "people",
+        "statistics",
+        "society"
+      ]
+    }
+  },
+  {
+    "id": "migration",
+    "type": "concept",
+    "label": "migration",
+    "label_cn": "迁徙",
+    "definition": "The movement of people or animals from one region or country to another, often seasonally or permanently.",
+    "importance": 0.82,
+    "metadata": {
+      "category": "demographic_process",
+      "etymology": "From Latin 'migratio', from 'migrare' (to move from one place to another)",
+      "tags": [
+        "movement",
+        "population",
+        "relocation",
+        "pattern"
+      ]
+    }
+  },
+  {
+    "id": "monsoon",
+    "type": "word",
+    "label": "monsoon",
+    "label_cn": "季风",
+    "definition": "A seasonal prevailing wind in South Asia, especially bringing heavy rains in summer.",
+    "importance": 0.72,
+    "metadata": {
+      "category": "weather_pattern",
+      "etymology": "From Dutch 'monssoen', from Portuguese 'monção', from Arabic 'mawsim' (season)",
+      "tags": [
+        "climate",
+        "wind",
+        "rain",
+        "seasonal"
+      ]
+    }
+  },
+  {
+    "id": "altitude",
+    "type": "word",
+    "label": "altitude",
+    "label_cn": "海拔",
+    "definition": "The height of an object or point in relation to sea level or ground level.",
+    "importance": 0.83,
+    "metadata": {
+      "category": "measurement",
+      "etymology": "From Latin 'altitudo' (height), from 'altus' (high)",
+      "tags": [
+        "elevation",
+        "measurement",
+        "geography",
+        "height"
+      ]
+    }
+  },
+  {
+    "id": "fjord",
+    "type": "word",
+    "label": "fjord",
+    "label_cn": "峡湾",
+    "definition": "A long, narrow, deep inlet of the sea between high cliffs, formed by glacial erosion.",
+    "importance": 0.62,
+    "metadata": {
+      "category": "landform",
+      "etymology": "From Norwegian 'fjord', from Old Norse 'fjǫrðr' (inlet, estuary)",
+      "tags": [
+        "coastline",
+        "glacier",
+        "Norway",
+        "landform"
+      ]
+    }
+  },
+  {
+    "id": "delta",
+    "type": "word",
+    "label": "delta",
+    "label_cn": "三角洲",
+    "definition": "A triangular or fan-shaped area of deposited sediment at the mouth of a river, formed by river sediments.",
+    "importance": 0.74,
+    "metadata": {
+      "category": "landform",
+      "etymology": "From Greek letter 'delta' (Δ), describing the triangular shape",
+      "tags": [
+        "river",
+        "sediment",
+        "geography",
+        "landform"
+      ]
+    }
+  },
+  {
+    "id": "watershed",
+    "type": "word",
+    "label": "watershed",
+    "label_cn": "流域",
+    "definition": "An area of land that drains all streams and rainfall to a common outlet such as a river, bay, or ocean.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "hydrological_feature",
+      "etymology": "From 'water' + 'shed' (Old English 'scead' meaning division, separation)",
+      "tags": [
+        "water",
+        "drainage",
+        "river",
+        "geography"
+      ]
+    }
+  },
+  {
+    "id": "ecosystem",
+    "type": "concept",
+    "label": "ecosystem",
+    "label_cn": "生态系统",
+    "definition": "A biological community of interacting organisms and their physical environment functioning as a unit.",
+    "importance": 0.88,
+    "metadata": {
+      "category": "ecology",
+      "etymology": "From 'eco-' (Greek 'oikos' meaning house, habitat) + 'system'",
+      "tags": [
+        "ecology",
+        "environment",
+        "biology",
+        "nature"
+      ]
+    }
+  },
+  {
+    "id": "continental",
+    "type": "word",
+    "label": "continental",
+    "label_cn": "大陆性的",
+    "definition": "Relating to or characteristic of a continent, especially regarding climate with extreme temperature variations.",
+    "importance": 0.68,
+    "metadata": {
+      "category": "climate_descriptor",
+      "etymology": "From Latin 'continens' (continuous land), from 'continere' (to hold together)",
+      "tags": [
+        "climate",
+        "landmass",
+        "geography",
+        "temperature"
+      ]
+    }
+  },
+  {
+    "id": "maritime",
+    "type": "word",
+    "label": "maritime",
+    "label_cn": "海洋性的",
+    "definition": "Connected with the sea, especially in relation to seafaring, naval, or climate moderated by ocean proximity.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "geographic_descriptor",
+      "etymology": "From Latin 'maritimus' (of the sea), from 'mare' (sea)",
+      "tags": [
+        "ocean",
+        "climate",
+        "coastal",
+        "navigation"
+      ]
+    }
+  },
+  {
+    "id": "arid",
+    "type": "word",
+    "label": "arid",
+    "label_cn": "干旱的",
+    "definition": "Having little or no rain; extremely dry climate with insufficient moisture to support most plant life.",
+    "importance": 0.73,
+    "metadata": {
+      "category": "climate_descriptor",
+      "etymology": "From Latin 'aridus' (dry, parched), from 'arere' (to be dry)",
+      "tags": [
+        "climate",
+        "dry",
+        "desert",
+        "rainfall"
+      ]
+    }
+  },
+  {
+    "id": "topography",
+    "type": "word",
+    "label": "topography",
+    "label_cn": "地形学",
+    "definition": "The arrangement of natural and artificial physical features of an area, or the detailed mapping and charting of these features.",
+    "importance": 0.76,
+    "metadata": {
+      "category": "geographic_science",
+      "etymology": "From Greek 'topos' (place) + 'graphia' (writing, description)",
+      "tags": [
+        "terrain",
+        "mapping",
+        "geography",
+        "elevation"
+      ]
+    }
+  },
+  {
+    "id": "mythology",
+    "type": "topic",
+    "label": "mythology",
+    "label_cn": "神话学",
+    "definition": "A collection of myths, especially those belonging to a particular religious or cultural tradition, or the study of such myths.",
+    "importance": 1,
+    "metadata": {
+      "category": "concept",
+      "etymology": "From Greek 'mythos' (story) + 'logos' (study)",
+      "tags": [
+        "foundational",
+        "academic",
+        "culture"
+      ]
+    }
+  },
+  {
+    "id": "deity",
+    "type": "concept",
+    "label": "deity",
+    "label_cn": "神祇",
+    "definition": "A god or goddess in a polytheistic religion; a divine being worthy of worship.",
+    "importance": 0.95,
+    "metadata": {
+      "category": "religious_concept",
+      "etymology": "From Latin 'deitas' (divine nature), from 'deus' (god)",
+      "tags": [
+        "divine",
+        "worship",
+        "supernatural"
+      ]
+    }
+  },
+  {
+    "id": "pantheon",
+    "type": "concept",
+    "label": "pantheon",
+    "label_cn": "万神殿",
+    "definition": "All the gods of a particular religion or mythology collectively; a temple dedicated to all gods.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "religious_structure",
+      "etymology": "From Greek 'pantheion' (temple of all gods), pan (all) + theos (god)",
+      "tags": [
+        "collective",
+        "divine",
+        "temple"
+      ]
+    }
+  },
+  {
+    "id": "zeus",
+    "type": "person",
+    "label": "Zeus",
+    "label_cn": "宙斯",
+    "definition": "The king of the gods in ancient Greek mythology, ruler of Mount Olympus and god of the sky and thunder.",
+    "importance": 0.95,
+    "metadata": {
+      "category": "greek_mythology",
+      "etymology": "From Greek 'Zeus', possibly from Proto-Indo-European root meaning 'sky' or 'shine'",
+      "tags": [
+        "olympian",
+        "king",
+        "thunder",
+        "greek"
+      ]
+    }
+  },
+  {
+    "id": "odin",
+    "type": "person",
+    "label": "Odin",
+    "label_cn": "奥丁",
+    "definition": "The chief god in Norse mythology, associated with wisdom, war, death, and magic; ruler of Asgard.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "norse_mythology",
+      "etymology": "From Old Norse 'Óðinn', related to 'óðr' (fury, poetry, mind)",
+      "tags": [
+        "allfather",
+        "wisdom",
+        "war",
+        "norse"
+      ]
+    }
+  },
+  {
+    "id": "jade_emperor",
+    "type": "person",
+    "label": "Jade Emperor",
+    "label_cn": "玉皇大帝",
+    "definition": "The supreme deity in Chinese folk religion and Taoism, ruler of heaven and all realms of existence.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "chinese_mythology",
+      "etymology": "Chinese 'Yù Huáng Dà Dì' (jade + emperor + great + sovereign)",
+      "tags": [
+        "supreme",
+        "heaven",
+        "taoism",
+        "chinese"
+      ]
+    }
+  },
+  {
+    "id": "olympus",
+    "type": "place",
+    "label": "Olympus",
+    "label_cn": "奥林匹斯山",
+    "definition": "The highest mountain in Greece, believed to be the home of the twelve major gods in Greek mythology.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "sacred_place",
+      "etymology": "From Greek 'Olympos', possibly pre-Greek origin meaning 'mountain'",
+      "tags": [
+        "mountain",
+        "divine_home",
+        "greek",
+        "sacred"
+      ]
+    }
+  },
+  {
+    "id": "valhalla",
+    "type": "place",
+    "label": "Valhalla",
+    "label_cn": "英灵殿",
+    "definition": "A majestic hall in Norse mythology where warriors who died in battle are taken by Valkyries to feast with Odin.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "afterlife_realm",
+      "etymology": "From Old Norse 'Valhǫll' (hall of the slain), valr (slain) + hǫll (hall)",
+      "tags": [
+        "afterlife",
+        "warriors",
+        "norse",
+        "paradise"
+      ]
+    }
+  },
+  {
+    "id": "kunlun",
+    "type": "place",
+    "label": "Kunlun",
+    "label_cn": "昆仑山",
+    "definition": "A sacred mountain in Chinese mythology, believed to be the dwelling place of immortals and the Queen Mother of the West.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "sacred_place",
+      "etymology": "Chinese 'Kūnlún Shān', ancient mythological mountain",
+      "tags": [
+        "mountain",
+        "immortals",
+        "chinese",
+        "sacred"
+      ]
+    }
+  },
+  {
+    "id": "hercules",
+    "type": "person",
+    "label": "Hercules",
+    "label_cn": "赫拉克勒斯",
+    "definition": "A divine hero in Greek mythology, son of Zeus, known for his extraordinary strength and twelve labors.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "greek_hero",
+      "etymology": "Roman name for Greek 'Heracles', meaning 'glory of Hera'",
+      "tags": [
+        "hero",
+        "strength",
+        "demigod",
+        "greek"
+      ]
+    }
+  },
+  {
+    "id": "thor",
+    "type": "person",
+    "label": "Thor",
+    "label_cn": "托尔",
+    "definition": "The Norse god of thunder, storms, and strength, wielder of the hammer Mjölnir and protector of mankind.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "norse_mythology",
+      "etymology": "From Old Norse 'Þórr', related to 'thunder'",
+      "tags": [
+        "thunder",
+        "warrior",
+        "hammer",
+        "norse"
+      ]
+    }
+  },
+  {
+    "id": "nuwa",
+    "type": "person",
+    "label": "Nüwa",
+    "label_cn": "女娲",
+    "definition": "A goddess in Chinese mythology credited with creating humanity and repairing the pillar of heaven.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "chinese_mythology",
+      "etymology": "Chinese 'Nǚwā', ancient creator goddess",
+      "tags": [
+        "creator",
+        "goddess",
+        "chinese",
+        "primordial"
+      ]
+    }
+  },
+  {
+    "id": "immortal",
+    "type": "concept",
+    "label": "immortal",
+    "label_cn": "不朽者/神仙",
+    "definition": "A being that lives forever or cannot die; in mythology, often refers to gods or those who achieved eternal life.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "supernatural_being",
+      "etymology": "From Latin 'immortalis' (not + mortal)",
+      "tags": [
+        "eternal",
+        "divine",
+        "supernatural"
+      ]
+    }
+  },
+  {
+    "id": "prophecy",
+    "type": "concept",
+    "label": "prophecy",
+    "label_cn": "预言",
+    "definition": "A prediction of future events, often delivered by a deity or oracle; a divine message about what will happen.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "divine_communication",
+      "etymology": "From Greek 'prophēteia' (gift of interpreting the will of gods)",
+      "tags": [
+        "prediction",
+        "oracle",
+        "fate",
+        "divine"
+      ]
+    }
+  },
+  {
+    "id": "oracle",
+    "type": "concept",
+    "label": "oracle",
+    "label_cn": "神谕/先知",
+    "definition": "A priest or priestess through whom a deity speaks; a shrine where such prophecies are given.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "divine_medium",
+      "etymology": "From Latin 'oraculum' (divine announcement), from 'orare' (to speak)",
+      "tags": [
+        "prophecy",
+        "priest",
+        "divine_message",
+        "greek"
+      ]
+    }
+  },
+  {
+    "id": "titan",
+    "type": "concept",
+    "label": "Titan",
+    "label_cn": "泰坦",
+    "definition": "One of the elder gods in Greek mythology who ruled before the Olympians; a being of enormous size and power.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "primordial_deity",
+      "etymology": "From Greek 'Titan', possibly meaning 'strainer' or 'stretcher'",
+      "tags": [
+        "primordial",
+        "giant",
+        "greek",
+        "ancient"
+      ]
+    }
+  },
+  {
+    "id": "ragnarok",
+    "type": "myth",
+    "label": "Ragnarök",
+    "label_cn": "诸神黄昏",
+    "definition": "The apocalyptic battle in Norse mythology resulting in the death of major gods and the rebirth of the world.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "eschatology",
+      "etymology": "From Old Norse 'ragnarǫk' (fate of the gods), ragna (gods) + rǫk (fate)",
+      "tags": [
+        "apocalypse",
+        "norse",
+        "end_times",
+        "destiny"
+      ]
+    }
+  },
+  {
+    "id": "odyssey",
+    "type": "myth",
+    "label": "Odyssey",
+    "label_cn": "奥德赛",
+    "definition": "An epic Greek poem attributed to Homer, describing the ten-year journey of Odysseus returning home after the Trojan War.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "epic_poem",
+      "etymology": "From Greek 'Odysseia', from 'Odysseus' (the hero's name)",
+      "tags": [
+        "epic",
+        "journey",
+        "homer",
+        "greek"
+      ]
+    }
+  },
+  {
+    "id": "valkyrie",
+    "type": "concept",
+    "label": "Valkyrie",
+    "label_cn": "女武神",
+    "definition": "Female figures in Norse mythology who choose which warriors die in battle and escort them to Valhalla.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "divine_servant",
+      "etymology": "From Old Norse 'valkyrja' (chooser of the slain), valr (slain) + kyrja (chooser)",
+      "tags": [
+        "warrior",
+        "norse",
+        "maiden",
+        "death"
+      ]
+    }
+  },
+  {
+    "id": "dragon",
+    "type": "concept",
+    "label": "dragon",
+    "label_cn": "龙",
+    "definition": "A legendary creature appearing in many mythologies, typically depicted as a large serpentine being with powers over elements.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "mythical_creature",
+      "etymology": "From Greek 'drakōn' (serpent, giant sea fish), possibly from 'derkesthai' (to see clearly)",
+      "tags": [
+        "creature",
+        "serpent",
+        "power",
+        "universal"
+      ]
+    }
+  },
+  {
+    "id": "phoenix",
+    "type": "concept",
+    "label": "phoenix",
+    "label_cn": "凤凰",
+    "definition": "A mythical bird that cyclically regenerates by burning itself and rising from its own ashes, symbolizing rebirth.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "mythical_creature",
+      "etymology": "From Greek 'phoinix' (purple-red, Phoenician), associated with Egyptian mythology",
+      "tags": [
+        "rebirth",
+        "immortal",
+        "bird",
+        "resurrection"
+      ]
+    }
+  },
+  {
+    "id": "underworld",
+    "type": "place",
+    "label": "underworld",
+    "label_cn": "冥界",
+    "definition": "The realm of the dead in various mythologies; the subterranean world where souls go after death.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "afterlife_realm",
+      "etymology": "Old English 'under' + 'world', translation of Latin 'infernus'",
+      "tags": [
+        "death",
+        "afterlife",
+        "realm",
+        "spirits"
+      ]
+    }
+  },
+  {
+    "id": "hades",
+    "type": "person",
+    "label": "Hades",
+    "label_cn": "哈迪斯",
+    "definition": "The Greek god of the underworld and the dead; also the name of the underworld realm itself.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "greek_mythology",
+      "etymology": "From Greek 'Haidēs', possibly meaning 'the unseen one'",
+      "tags": [
+        "underworld",
+        "death",
+        "greek",
+        "olympian"
+      ]
+    }
+  },
+  {
+    "id": "loki",
+    "type": "person",
+    "label": "Loki",
+    "label_cn": "洛基",
+    "definition": "A trickster god in Norse mythology, shape-shifter and companion of the gods who ultimately brings about Ragnarök.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "norse_mythology",
+      "etymology": "From Old Norse 'Loki', possibly related to 'lúka' (to close, end)",
+      "tags": [
+        "trickster",
+        "chaos",
+        "norse",
+        "shapeshifter"
+      ]
+    }
+  },
+  {
+    "id": "monkey_king",
+    "type": "person",
+    "label": "Monkey King",
+    "label_cn": "孙悟空",
+    "definition": "A legendary figure from Chinese mythology, the main character in Journey to the West, known for his strength and magical powers.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "chinese_mythology",
+      "etymology": "Chinese 'Sūn Wùkōng' (Sun + awakened + emptiness)",
+      "tags": [
+        "hero",
+        "trickster",
+        "chinese",
+        "buddhist"
+      ]
+    }
+  },
+  {
+    "id": "epic",
+    "type": "concept",
+    "label": "epic",
+    "label_cn": "史诗",
+    "definition": "A long narrative poem celebrating heroic deeds and events significant to a culture or nation.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "literary_form",
+      "etymology": "From Greek 'epos' (word, song, epic poem)",
+      "tags": [
+        "narrative",
+        "heroic",
+        "poetry",
+        "legend"
+      ]
+    }
+  },
+  {
+    "id": "odysseus",
+    "type": "person",
+    "label": "Odysseus",
+    "label_cn": "奥德修斯",
+    "definition": "Greek hero famous for his cunning and intelligence, protagonist of Homer's Odyssey and key figure in the Trojan War.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "greek_hero",
+      "etymology": "From Greek 'Odysseus', possibly meaning 'wrathful' or 'to be angry at'",
+      "tags": [
+        "hero",
+        "cunning",
+        "greek",
+        "trojan_war"
+      ]
+    }
+  },
+  {
+    "id": "achilles",
+    "type": "person",
+    "label": "Achilles",
+    "label_cn": "阿喀琉斯",
+    "definition": "The greatest Greek warrior in the Trojan War, nearly invulnerable except for his heel, protagonist of Homer's Iliad.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "greek_hero",
+      "etymology": "From Greek 'Akhilleus', possibly pre-Greek origin",
+      "tags": [
+        "warrior",
+        "hero",
+        "greek",
+        "trojan_war"
+      ]
+    }
+  },
+  {
+    "id": "trojan_war",
+    "type": "myth",
+    "label": "Trojan War",
+    "label_cn": "特洛伊战争",
+    "definition": "A legendary conflict between Greeks and Trojans, sparked by Paris's abduction of Helen, lasting ten years.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "legendary_war",
+      "etymology": "Named after Troy (Greek 'Troia'), the city under siege",
+      "tags": [
+        "war",
+        "greek",
+        "epic",
+        "historic"
+      ]
+    }
+  },
+  {
+    "id": "athena",
+    "type": "person",
+    "label": "Athena",
+    "label_cn": "雅典娜",
+    "definition": "Greek goddess of wisdom, warfare, handicraft, and strategic battle; patron deity of Athens.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "greek_mythology",
+      "etymology": "From Greek 'Athēnā', possibly pre-Greek origin, related to Athens",
+      "tags": [
+        "wisdom",
+        "war",
+        "olympian",
+        "greek"
+      ]
+    }
+  },
+  {
+    "id": "poseidon",
+    "type": "person",
+    "label": "Poseidon",
+    "label_cn": "波塞冬",
+    "definition": "Greek god of the sea, earthquakes, and horses; one of the twelve Olympians and brother of Zeus.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "greek_mythology",
+      "etymology": "From Greek 'Poseidōn', possibly 'husband of the earth' or 'lord of waters'",
+      "tags": [
+        "sea",
+        "olympian",
+        "greek",
+        "trident"
+      ]
+    }
+  },
+  {
+    "id": "apollo",
+    "type": "person",
+    "label": "Apollo",
+    "label_cn": "阿波罗",
+    "definition": "Greek god of music, poetry, prophecy, healing, and the sun; one of the most important Olympian deities.",
+    "importance": 0.9,
+    "metadata": {
+      "category": "greek_mythology",
+      "etymology": "From Greek 'Apollōn', possibly meaning 'destroyer' or from 'apellai' (assembly)",
+      "tags": [
+        "sun",
+        "music",
+        "prophecy",
+        "olympian"
+      ]
+    }
+  },
+  {
+    "id": "artemis",
+    "type": "person",
+    "label": "Artemis",
+    "label_cn": "阿尔忒弥斯",
+    "definition": "Greek goddess of the hunt, wilderness, wild animals, and the moon; twin sister of Apollo.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "greek_mythology",
+      "etymology": "From Greek 'Artemis', possibly meaning 'safe' or 'butcher'",
+      "tags": [
+        "hunt",
+        "moon",
+        "virgin",
+        "olympian"
+      ]
+    }
+  },
+  {
+    "id": "freya",
+    "type": "person",
+    "label": "Freya",
+    "label_cn": "弗蕾亚",
+    "definition": "Norse goddess of love, beauty, fertility, war, and death; leader of the Valkyries and practitioner of seidr magic.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "norse_mythology",
+      "etymology": "From Old Norse 'Freyja' (lady), related to 'Freyr' (lord)",
+      "tags": [
+        "love",
+        "war",
+        "norse",
+        "magic"
+      ]
+    }
+  },
+  {
+    "id": "fenrir",
+    "type": "concept",
+    "label": "Fenrir",
+    "label_cn": "芬里尔",
+    "definition": "A monstrous wolf in Norse mythology, son of Loki, destined to kill Odin during Ragnarök.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "mythical_creature",
+      "etymology": "From Old Norse 'Fenrir' or 'Fenrisúlfr' (Fenris wolf)",
+      "tags": [
+        "wolf",
+        "monster",
+        "norse",
+        "apocalypse"
+      ]
+    }
+  },
+  {
+    "id": "yggdrasil",
+    "type": "concept",
+    "label": "Yggdrasil",
+    "label_cn": "世界树",
+    "definition": "The immense sacred tree in Norse mythology that connects the nine worlds, central to Norse cosmology.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "cosmic_structure",
+      "etymology": "From Old Norse, possibly 'Yggr's (Odin's) horse', referring to the gallows/tree",
+      "tags": [
+        "tree",
+        "cosmos",
+        "norse",
+        "worlds"
+      ]
+    }
+  },
+  {
+    "id": "midgard",
+    "type": "place",
+    "label": "Midgard",
+    "label_cn": "中土世界",
+    "definition": "The realm of humans in Norse mythology, one of the nine worlds connected by Yggdrasil, located in the center.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "cosmic_realm",
+      "etymology": "From Old Norse 'Miðgarðr' (middle enclosure), mið (middle) + garðr (enclosure)",
+      "tags": [
+        "earth",
+        "humans",
+        "norse",
+        "realm"
+      ]
+    }
+  },
+  {
+    "id": "asgard",
+    "type": "place",
+    "label": "Asgard",
+    "label_cn": "阿斯加德",
+    "definition": "The realm of the Aesir gods in Norse mythology, home to Odin, Thor, and other deities, connected to Midgard by Bifrost.",
+    "importance": 0.85,
+    "metadata": {
+      "category": "divine_realm",
+      "etymology": "From Old Norse 'Ásgarðr' (enclosure of the Aesir), áss (god) + garðr (enclosure)",
+      "tags": [
+        "heaven",
+        "gods",
+        "norse",
+        "realm"
+      ]
+    }
+  },
+  {
+    "id": "mjolnir",
+    "type": "concept",
+    "label": "Mjölnir",
+    "label_cn": "雷神之锤",
+    "definition": "Thor's magical hammer in Norse mythology, capable of leveling mountains and always returning to his hand.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "divine_weapon",
+      "etymology": "From Old Norse 'Mjǫllnir', possibly meaning 'crusher' or 'lightning'",
+      "tags": [
+        "hammer",
+        "weapon",
+        "thor",
+        "norse"
+      ]
+    }
+  },
+  {
+    "id": "medusa",
+    "type": "person",
+    "label": "Medusa",
+    "label_cn": "美杜莎",
+    "definition": "A Gorgon in Greek mythology with snakes for hair whose gaze turns people to stone; slain by Perseus.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "greek_monster",
+      "etymology": "From Greek 'Medousa' (guardian, protectress), from 'medon' (ruler)",
+      "tags": [
+        "monster",
+        "gorgon",
+        "greek",
+        "curse"
+      ]
+    }
+  },
+  {
+    "id": "perseus",
+    "type": "person",
+    "label": "Perseus",
+    "label_cn": "珀尔修斯",
+    "definition": "Greek hero and demigod who slew Medusa, rescued Andromeda, and founded Mycenae; son of Zeus.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "greek_hero",
+      "etymology": "From Greek 'Perseus', possibly meaning 'destroyer' or 'to sack'",
+      "tags": [
+        "hero",
+        "demigod",
+        "slayer",
+        "greek"
+      ]
+    }
+  },
+  {
+    "id": "minotaur",
+    "type": "concept",
+    "label": "Minotaur",
+    "label_cn": "弥诺陶洛斯",
+    "definition": "A creature with the head of a bull and body of a man in Greek mythology, imprisoned in the Labyrinth of Crete.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "mythical_creature",
+      "etymology": "From Greek 'Minotauros' (Minos's bull), Minos (king) + tauros (bull)",
+      "tags": [
+        "monster",
+        "hybrid",
+        "greek",
+        "labyrinth"
+      ]
+    }
+  },
+  {
+    "id": "theseus",
+    "type": "person",
+    "label": "Theseus",
+    "label_cn": "忒修斯",
+    "definition": "Greek hero and king of Athens who slew the Minotaur, united Attica, and had many legendary adventures.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "greek_hero",
+      "etymology": "From Greek 'Thēseus', possibly meaning 'to set' or 'establisher'",
+      "tags": [
+        "hero",
+        "king",
+        "slayer",
+        "greek"
+      ]
+    }
+  },
+  {
+    "id": "siren",
+    "type": "concept",
+    "label": "siren",
+    "label_cn": "塞壬",
+    "definition": "Dangerous creatures in Greek mythology who lured sailors with enchanting music and voices to shipwreck on rocky coasts.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "mythical_creature",
+      "etymology": "From Greek 'seirēn', possibly from 'seira' (rope, cord) or related to 'sear' (dry, parched)",
+      "tags": [
+        "creature",
+        "music",
+        "danger",
+        "greek"
+      ]
+    }
+  },
+  {
+    "id": "chimera",
+    "type": "concept",
+    "label": "chimera",
+    "label_cn": "奇美拉",
+    "definition": "A fire-breathing hybrid creature in Greek mythology with a lion's head, goat's body, and serpent's tail.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "mythical_creature",
+      "etymology": "From Greek 'khimaira' (she-goat, mythical creature)",
+      "tags": [
+        "monster",
+        "hybrid",
+        "fire",
+        "greek"
+      ]
+    }
+  },
+  {
+    "id": "hydra",
+    "type": "concept",
+    "label": "Hydra",
+    "label_cn": "九头蛇",
+    "definition": "A multi-headed serpent in Greek mythology that regrows two heads for each one cut off; slain by Hercules.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "mythical_creature",
+      "etymology": "From Greek 'hudra' (water serpent), related to 'hudōr' (water)",
+      "tags": [
+        "serpent",
+        "monster",
+        "greek",
+        "regeneration"
+      ]
+    }
+  },
+  {
+    "id": "centaur",
+    "type": "concept",
+    "label": "centaur",
+    "label_cn": "半人马",
+    "definition": "A creature in Greek mythology with the upper body of a human and the lower body and legs of a horse.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "mythical_creature",
+      "etymology": "From Greek 'kentauros', possibly from 'kentein' (to goad) + 'tauros' (bull)",
+      "tags": [
+        "hybrid",
+        "horse",
+        "greek",
+        "wild"
+      ]
+    }
+  },
+  {
+    "id": "cyclops",
+    "type": "concept",
+    "label": "Cyclops",
+    "label_cn": "独眼巨人",
+    "definition": "A member of a race of giants in Greek mythology with a single eye in the middle of their forehead.",
+    "importance": 0.7,
+    "metadata": {
+      "category": "mythical_creature",
+      "etymology": "From Greek 'kuklōps' (round-eyed), kuklos (circle) + ōps (eye)",
+      "tags": [
+        "giant",
+        "monster",
+        "greek",
+        "one-eyed"
+      ]
+    }
+  },
+  {
+    "id": "fuxi",
+    "type": "person",
+    "label": "Fuxi",
+    "label_cn": "伏羲",
+    "definition": "A culture hero in Chinese mythology, credited with creating the eight trigrams, fishing, hunting, and domestication.",
+    "importance": 0.75,
+    "metadata": {
+      "category": "chinese_mythology",
+      "etymology": "Chinese 'Fúxī', ancient legendary sovereign and cultural hero",
+      "tags": [
+        "creator",
+        "culture_hero",
+        "chinese",
+        "primordial"
+      ]
+    }
+  },
+  {
+    "id": "pangu",
+    "type": "person",
+    "label": "Pangu",
+    "label_cn": "盘古",
+    "definition": "The first living being and creator of the universe in Chinese mythology, who separated heaven and earth from chaos.",
+    "importance": 0.8,
+    "metadata": {
+      "category": "chinese_mythology",
+      "etymology": "Chinese 'Pángǔ', primordial creator deity",
+      "tags": [
+        "creator",
+        "primordial",
+        "chinese",
+        "cosmogony"
+      ]
+    }
+  }
+]
