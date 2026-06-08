@@ -5,7 +5,7 @@
     "label": "universe",
     "label_cn": "宇宙",
     "definition": "All existing matter and space considered as a whole",
-    "importance": 1.0,
+    "importance": 1,
     "metadata": {
       "etymology": "Latin: universum",
       "category": "astronomy",
@@ -141,7 +141,7 @@
     "label": "earth",
     "label_cn": "地球",
     "definition": "The third planet from the sun and the only known world with life",
-    "importance": 1.0,
+    "importance": 1,
     "metadata": {
       "etymology": "Old English: eorþe",
       "category": "geography",
@@ -243,7 +243,7 @@
     "label": "history",
     "label_cn": "历史",
     "definition": "The study of past events and human affairs",
-    "importance": 1.0,
+    "importance": 1,
     "metadata": {
       "etymology": "Greek: historia (inquiry)",
       "category": "history",
@@ -345,7 +345,7 @@
     "label": "science",
     "label_cn": "科学",
     "definition": "The systematic study of the structure and behavior of the natural world",
-    "importance": 1.0,
+    "importance": 1,
     "metadata": {
       "etymology": "Latin: scientia (knowledge)",
       "category": "science",
@@ -3935,40 +3935,6 @@
     }
   },
   {
-    "id": "consciousness",
-    "type": "concept",
-    "label": "consciousness",
-    "label_cn": "意识",
-    "definition": "The state of being aware of and responsive to one's surroundings; the quality of subjective experience and awareness of internal and external existence.",
-    "importance": 0.86,
-    "metadata": {
-      "category": "mind_philosophy",
-      "etymology": "From Latin 'conscius' meaning 'knowing with others, aware', from 'con-' (with) + 'scire' (to know)",
-      "tags": [
-        "awareness",
-        "mind",
-        "experience"
-      ]
-    }
-  },
-  {
-    "id": "justice",
-    "type": "concept",
-    "label": "justice",
-    "label_cn": "正义",
-    "definition": "The quality of being fair and reasonable; the principle of moral rightness and equitable treatment based on ethics, rationality, law, and fairness.",
-    "importance": 0.91,
-    "metadata": {
-      "category": "ethical_concept",
-      "etymology": "From Latin 'justitia' meaning 'righteousness, equity', from 'justus' (just, fair)",
-      "tags": [
-        "fairness",
-        "ethics",
-        "rights"
-      ]
-    }
-  },
-  {
     "id": "existentialism",
     "type": "concept",
     "label": "existentialism",
@@ -4509,23 +4475,6 @@
         "hardware",
         "processor",
         "computing"
-      ]
-    }
-  },
-  {
-    "id": "memory",
-    "type": "concept",
-    "label": "memory",
-    "label_cn": "内存",
-    "definition": "Computer hardware that stores data and instructions for quick access by the processor.",
-    "importance": 0.8,
-    "metadata": {
-      "category": "hardware",
-      "etymology": "From Latin 'memoria' meaning 'mindful, remembering'",
-      "tags": [
-        "hardware",
-        "storage",
-        "RAM"
       ]
     }
   },
@@ -5132,24 +5081,6 @@
     }
   },
   {
-    "id": "renaissance",
-    "type": "topic",
-    "label": "Renaissance",
-    "label_cn": "文艺复兴",
-    "definition": "The revival of art and literature under the influence of classical models in the 14th-16th centuries, marking the transition from medieval to modern times in Europe.",
-    "importance": 0.9,
-    "metadata": {
-      "category": "historical period",
-      "etymology": "From French 'renaissance' (rebirth)",
-      "tags": [
-        "revival",
-        "classical",
-        "European",
-        "humanism"
-      ]
-    }
-  },
-  {
     "id": "shakespeare",
     "type": "person",
     "label": "Shakespeare",
@@ -5596,24 +5527,6 @@
         "conceptual",
         "art",
         "modern"
-      ]
-    }
-  },
-  {
-    "id": "baroque",
-    "type": "word",
-    "label": "baroque",
-    "label_cn": "巴洛克",
-    "definition": "Relating to or denoting a style of European architecture, music, and art of the 17th and 18th centuries characterized by ornate detail.",
-    "importance": 0.7,
-    "metadata": {
-      "category": "style",
-      "etymology": "From Portuguese 'barroco' (irregular pearl)",
-      "tags": [
-        "ornate",
-        "decorative",
-        "European",
-        "17th century"
       ]
     }
   },
@@ -6446,24 +6359,6 @@
     }
   },
   {
-    "id": "ecosystem",
-    "type": "concept",
-    "label": "ecosystem",
-    "label_cn": "生态系统",
-    "definition": "A biological community of interacting organisms and their physical environment functioning as a unit.",
-    "importance": 0.88,
-    "metadata": {
-      "category": "ecology",
-      "etymology": "From 'eco-' (Greek 'oikos' meaning house, habitat) + 'system'",
-      "tags": [
-        "ecology",
-        "environment",
-        "biology",
-        "nature"
-      ]
-    }
-  },
-  {
     "id": "continental",
     "type": "word",
     "label": "continental",
@@ -6943,24 +6838,6 @@
         "trickster",
         "chinese",
         "buddhist"
-      ]
-    }
-  },
-  {
-    "id": "epic",
-    "type": "concept",
-    "label": "epic",
-    "label_cn": "史诗",
-    "definition": "A long narrative poem celebrating heroic deeds and events significant to a culture or nation.",
-    "importance": 0.75,
-    "metadata": {
-      "category": "literary_form",
-      "etymology": "From Greek 'epos' (word, song, epic poem)",
-      "tags": [
-        "narrative",
-        "heroic",
-        "poetry",
-        "legend"
       ]
     }
   },

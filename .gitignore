@@ -26,6 +26,7 @@ dist-ssr
 # Environment variables
 .env
 .env.local
+.env.production
 .env.production.local
 .env.development.local
 
@@ -34,3 +35,19 @@ dist-ssr
 
 # Supabase
 .supabase
+
+# Vercel
+.vercel
+
+# Temporary files
+*.backup
+gen-*.cjs
+fix-*.cjs
+supabase/*.sql
+!supabase/migrations/*.sql
+
+# MCP
+.mcp.json
+
+# Test files
+test/
