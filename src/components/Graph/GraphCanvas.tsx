@@ -29,10 +29,10 @@ export function GraphCanvas() {
   const [history, setHistory] = useState<Array<{ id: string; label: string; labelCn?: string }>>([])
 
   // 获取初始数据
-  const { data: initialData, isLoading: isLoadingInitial } = useInitialGraph()
+  const { data: initialData, isLoading: isLoadingInitial, error: initialError } = useInitialGraph()
 
   // 获取切换后的节点数据
-  const { data: nodeData, isLoading: isLoadingNode } = useNodeGraph(centerNodeId)
+  const { data: nodeData, isLoading: isLoadingNode, error: nodeError } = useNodeGraph(centerNodeId)
 
   const [nodes, setNodes, onNodesChange] = useNodesState<Node>([])
   const [edges, setEdges, onEdgesChange] = useEdgesState<Edge>([])
@@ -182,6 +182,28 @@ export function GraphCanvas() {
     )
   }
 
+  if (initialError) {
+    const errorMessage = initialError instanceof Error
+      ? ('userMessage' in initialError ? (initialError as Error & { userMessage?: string }).userMessage : initialError.message) || initialError.message
+      : '加载失败'
+
+    return (
+      <div className="w-full h-screen flex flex-col items-center justify-center bg-gray-900 text-white">
+        <div className="max-w-md text-center space-y-4">
+          <div className="text-6xl mb-4">⚠️</div>
+          <div className="text-2xl font-bold">加载图谱失败</div>
+          <div className="text-gray-400">{errorMessage}</div>
+          <button
+            onClick={() => window.location.reload()}
+            className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
+          >
+            刷新页面重试
+          </button>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="w-full h-screen">
       <ReactFlow
@@ -207,6 +229,28 @@ export function GraphCanvas() {
       {isLoadingNode && (
         <div className="absolute top-4 right-4 bg-white px-4 py-2 rounded-lg shadow-lg">
           <div className="text-sm">加载节点数据...</div>
+        </div>
+      )}
+
+      {nodeError && (
+        <div className="absolute top-4 right-4 bg-red-50 border border-red-200 px-4 py-3 rounded-lg shadow-lg max-w-sm">
+          <div className="flex items-start gap-2">
+            <span className="text-red-500 text-lg">⚠️</span>
+            <div className="flex-1">
+              <div className="text-sm font-semibold text-red-800 mb-1">加载节点失败</div>
+              <div className="text-xs text-red-600">
+                {nodeError instanceof Error
+                  ? ('userMessage' in nodeError ? (nodeError as Error & { userMessage?: string }).userMessage : nodeError.message) || nodeError.message
+                  : '未知错误'}
+              </div>
+            </div>
+            <button
+              onClick={() => setCenterNodeId(null)}
+              className="text-red-400 hover:text-red-600"
+            >
+              ✕
+            </button>
+          </div>
         </div>
       )}
 
