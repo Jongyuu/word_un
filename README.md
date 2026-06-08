@@ -1,5 +1,12 @@
 # Word Universe 🌌
 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-0.1.0-green.svg)](CHANGELOG.md)
+[![Node](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg)](https://nodejs.org/)
+[![React](https://img.shields.io/badge/react-18.3.1-61dafb.svg)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/typescript-5.6.2-blue.svg)](https://www.typescriptlang.org/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 > **知识探索宇宙** - 在探索中自然学习英语
 
 Word Universe 不是传统的背单词工具，而是一个知识探索游乐场。通过点击节点探索知识图谱，在好奇心驱动下自然接触和学习英语单词。
