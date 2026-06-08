@@ -6,6 +6,14 @@ export interface Node {
   type: 'word' | 'topic' | 'root' | 'concept'
   importance: number
   isCenter?: boolean
+  definition?: string
+  metadata?: {
+    etymology?: string
+    category?: string
+    tags?: string[]
+    [key: string]: any
+  }
+  createdAt?: string
 }
 
 export interface Relation {
