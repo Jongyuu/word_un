@@ -1,6 +1,12 @@
 import { memo } from 'react'
 import { EdgeProps, getSmoothStepPath } from '@xyflow/react'
 
+interface CustomEdgeData {
+  strength?: number
+  type?: string
+  showLabel?: boolean
+}
+
 export const CustomEdge = memo(({
   id,
   sourceX,
@@ -23,8 +29,9 @@ export const CustomEdge = memo(({
   })
 
   // 从 data 中获取关系强度
-  const strength = data?.strength || 0.5
-  const relationType = data?.type || 'related'
+  const edgeData = data as CustomEdgeData | undefined
+  const strength = edgeData?.strength ?? 0.5
+  const relationType = edgeData?.type ?? 'related'
 
   // 根据关系类型设置颜色
   const edgeColors: Record<string, string> = {
@@ -53,7 +60,7 @@ export const CustomEdge = memo(({
         markerEnd={markerEnd}
       />
       {/* 关系类型标签（可选） */}
-      {data?.showLabel && (
+      {edgeData?.showLabel && (
         <text>
           <textPath
             href={`#${id}`}
