@@ -10,7 +10,7 @@ interface GraphActions {
   // TODO: Add action methods
 }
 
-export const useGraphStore = create<GraphState & GraphActions>((set) => ({
+export const useGraphStore = create<GraphState & GraphActions>((_set) => ({
   // TODO: Implement Zustand store
   // TODO: Add initial state
   // TODO: Add actions

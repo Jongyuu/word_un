@@ -1,4 +1,4 @@
-import type { Node, Relation } from './index'
+import type { Node } from './index'
 
 export interface GraphResponse {
   centerNode: Node

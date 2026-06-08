@@ -10,8 +10,8 @@ interface LayoutConfig {
 }
 
 export const calculateNodePositions = (
-  nodes: any[],
-  config?: LayoutConfig
+  _nodes: any[],
+  _config?: LayoutConfig
 ): Map<string, NodePosition> => {
   // TODO: Implement layout algorithm
   // TODO: Consider hierarchical layout
@@ -22,8 +22,8 @@ export const calculateNodePositions = (
 };
 
 export const calculateEdgePath = (
-  sourcePos: NodePosition,
-  targetPos: NodePosition
+  _sourcePos: NodePosition,
+  _targetPos: NodePosition
 ): string => {
   // TODO: Implement edge path calculation
   // TODO: Return SVG path string

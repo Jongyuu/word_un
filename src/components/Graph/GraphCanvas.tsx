@@ -28,8 +28,8 @@ export function GraphCanvas() {
   // 获取切换后的节点数据
   const { data: nodeData, isLoading: isLoadingNode } = useNodeGraph(centerNodeId)
 
-  const [nodes, setNodes, onNodesChange] = useNodesState([])
-  const [edges, setEdges, onEdgesChange] = useEdgesState([])
+  const [nodes, setNodes, onNodesChange] = useNodesState<Node>([])
+  const [edges, setEdges, onEdgesChange] = useEdgesState<Edge>([])
 
   // 将 API 数据转换为 React Flow 格式
   const transformGraphData = useCallback((data: GraphResponse) => {

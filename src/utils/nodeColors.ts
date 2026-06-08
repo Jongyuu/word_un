@@ -6,18 +6,18 @@ export const nodeColorScheme = {
 };
 
 // TODO: Define color utility functions
-export const getNodeColor = (nodeType: string): string => {
+export const getNodeColor = (_nodeType: string): string => {
   // TODO: Implement node color selection logic
   return nodeColorScheme.default;
 };
 
-export const getNodeBorderColor = (nodeType: string, isSelected?: boolean): string => {
+export const getNodeBorderColor = (_nodeType: string, _isSelected?: boolean): string => {
   // TODO: Implement border color logic
   // TODO: Handle selection state
   return '#1e40af';
 };
 
-export const getNodeTextColor = (nodeType: string): string => {
+export const getNodeTextColor = (_nodeType: string): string => {
   // TODO: Implement text color logic for contrast
   return '#ffffff';
 };
