@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useState, useRef } from 'react'
 import {
   ReactFlow,
   Background,
@@ -8,7 +8,9 @@ import {
   Edge,
   useNodesState,
   useEdgesState,
-  NodeTypes
+  NodeTypes,
+  useReactFlow,
+  ReactFlowProvider
 } from '@xyflow/react'
 import '@xyflow/react/dist/style.css'
 import { CustomNode } from './CustomNode'
@@ -20,17 +22,27 @@ import { Breadcrumb } from '@/components/Navigation/Breadcrumb'
 import { BackButton } from '@/components/Navigation/BackButton'
 import { TutorialOverlay } from '@/components/Tutorial/TutorialOverlay'
 import type { Node as NodeType } from '@/types'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const nodeTypes: NodeTypes = {
   custom: CustomNode
 }
 
 export function GraphCanvas() {
+  return (
+    <ReactFlowProvider>
+      <GraphCanvasInner />
+    </ReactFlowProvider>
+  )
+}
+
+function GraphCanvasInner() {
   const [centerNodeId, setCenterNodeId] = useState<string | null>(null)
   const [selectedNode, setSelectedNode] = useState<NodeType | null>(null)
   const [history, setHistory] = useState<Array<{ id: string; label: string; labelCn?: string }>>([])
   const [isTransitioning, setIsTransitioning] = useState(false)
+  const { fitView } = useReactFlow()
+  const previousCenterRef = useRef<string | null>(null)
 
   // 获取初始数据
   const { data: initialData, isLoading: isLoadingInitial, error: initialError } = useInitialGraph()
@@ -115,21 +127,33 @@ export function GraphCanvas() {
     }
   }, [initialData, centerNodeId, transformGraphData, setNodes, setEdges])
 
-  // 节点切换数据加载
+  // 节点切换数据加载 - Obsidian 风格动画
   useEffect(() => {
-    if (nodeData && centerNodeId) {
+    if (nodeData && centerNodeId && centerNodeId !== previousCenterRef.current) {
       setIsTransitioning(true)
+      previousCenterRef.current = centerNodeId
 
-      // 添加短暂延迟以显示过渡效果
+      // 短暂延迟以显示过渡效果
       const timer = setTimeout(() => {
         const { nodes: flowNodes, edges: flowEdges } = transformGraphData(nodeData)
+
+        // 先更新节点和边
         setNodes(flowNodes)
         setEdges(flowEdges)
+
+        // 平滑缩放到中心节点 - Obsidian 风格的聚焦效果
+        setTimeout(() => {
+          fitView({
+            padding: 0.3,
+            duration: 800,
+            nodes: [{ id: centerNodeId }]
+          })
+        }, 50)
+
         setIsTransitioning(false)
 
         // 添加到历史记录
         setHistory(prev => {
-          // 避免重复添加
           if (prev[prev.length - 1]?.id === centerNodeId) {
             return prev
           }
@@ -139,11 +163,11 @@ export function GraphCanvas() {
             labelCn: nodeData.centerNode.labelCn
           }]
         })
-      }, 300)
+      }, 400)
 
       return () => clearTimeout(timer)
     }
-  }, [nodeData, centerNodeId, transformGraphData, setNodes, setEdges])
+  }, [nodeData, centerNodeId, transformGraphData, setNodes, setEdges, fitView])
 
   // 检查是否有邻居节点
   const hasNeighbors = (nodeData?.neighbors.length ?? 0) > 0 || (initialData?.neighbors.length ?? 0) > 0
@@ -216,25 +240,68 @@ export function GraphCanvas() {
   }
 
   return (
-    <div className="w-full h-screen relative">
-      {/* 过渡动画遮罩 */}
-      {isTransitioning && (
-        <motion.div
-          className="absolute inset-0 bg-gray-900/30 backdrop-blur-sm z-40 flex items-center justify-center pointer-events-none"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-        >
+    <div className="w-full h-screen relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      {/* Obsidian 风格过渡动画遮罩 */}
+      <AnimatePresence>
+        {isTransitioning && (
           <motion.div
-            className="text-white text-lg font-medium bg-white/10 px-6 py-3 rounded-full backdrop-blur-md"
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ type: 'spring', damping: 20, stiffness: 300 }}
+            className="absolute inset-0 z-40 flex items-center justify-center pointer-events-none"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
           >
-            切换中心节点...
+            <motion.div
+              className="relative"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 1.2, opacity: 0 }}
+              transition={{
+                type: 'spring',
+                damping: 25,
+                stiffness: 300,
+                mass: 0.5
+              }}
+            >
+              {/* 外层光晕 */}
+              <motion.div
+                className="absolute inset-0 rounded-full blur-xl"
+                style={{
+                  background: 'radial-gradient(circle, rgba(99, 102, 241, 0.4) 0%, rgba(99, 102, 241, 0) 70%)'
+                }}
+                animate={{
+                  scale: [1, 1.2, 1],
+                  opacity: [0.5, 0.8, 0.5]
+                }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  ease: 'easeInOut'
+                }}
+              />
+              {/* 内层圆环 */}
+              <motion.div
+                className="w-16 h-16 border-4 border-indigo-400 border-t-transparent rounded-full"
+                animate={{ rotate: 360 }}
+                transition={{
+                  duration: 1,
+                  repeat: Infinity,
+                  ease: 'linear'
+                }}
+              />
+              {/* 文字提示 */}
+              <motion.div
+                className="absolute top-24 left-1/2 transform -translate-x-1/2 text-white text-sm font-medium bg-gray-800/80 backdrop-blur-md px-4 py-2 rounded-full whitespace-nowrap"
+                initial={{ y: -10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.1 }}
+              >
+                切换中心节点...
+              </motion.div>
+            </motion.div>
           </motion.div>
-        </motion.div>
-      )}
+        )}
+      </AnimatePresence>
 
       <ReactFlow
         nodes={nodes}
@@ -250,10 +317,25 @@ export function GraphCanvas() {
         nodesDraggable={true}
         nodesConnectable={false}
         elementsSelectable={true}
+        defaultEdgeOptions={{
+          animated: true,
+          style: { strokeWidth: 2 }
+        }}
+        proOptions={{ hideAttribution: true }}
       >
-        <Background />
-        <Controls />
-        <MiniMap />
+        <Background color="#4B5563" gap={16} />
+        <Controls className="bg-gray-800/80 backdrop-blur-md border-gray-700" />
+        <MiniMap
+          className="bg-gray-800/80 backdrop-blur-md border-gray-700"
+          nodeColor={(node) => {
+            const type = (node.data as any).type
+            if (type === 'word') return '#3B82F6'
+            if (type === 'topic') return '#8B5CF6'
+            if (type === 'root') return '#F59E0B'
+            if (type === 'concept') return '#10B981'
+            return '#3B82F6'
+          }}
+        />
       </ReactFlow>
 
       {/* 空状态提示 */}
