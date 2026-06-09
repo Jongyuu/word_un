@@ -12,12 +12,15 @@ import {
 } from '@xyflow/react'
 import '@xyflow/react/dist/style.css'
 import { CustomNode } from './CustomNode'
+import { LoadingSkeleton } from './LoadingSkeleton'
 import { useInitialGraph, useNodeGraph } from '@/hooks/useGraphData'
 import type { GraphResponse } from '@/types'
 import { NodeInfoCard } from '@/components/InfoCard/NodeInfoCard'
 import { Breadcrumb } from '@/components/Navigation/Breadcrumb'
 import { BackButton } from '@/components/Navigation/BackButton'
+import { TutorialOverlay } from '@/components/Tutorial/TutorialOverlay'
 import type { Node as NodeType } from '@/types'
+import { motion } from 'framer-motion'
 
 const nodeTypes: NodeTypes = {
   custom: CustomNode
@@ -27,6 +30,7 @@ export function GraphCanvas() {
   const [centerNodeId, setCenterNodeId] = useState<string | null>(null)
   const [selectedNode, setSelectedNode] = useState<NodeType | null>(null)
   const [history, setHistory] = useState<Array<{ id: string; label: string; labelCn?: string }>>([])
+  const [isTransitioning, setIsTransitioning] = useState(false)
 
   // 获取初始数据
   const { data: initialData, isLoading: isLoadingInitial, error: initialError } = useInitialGraph()
@@ -114,24 +118,35 @@ export function GraphCanvas() {
   // 节点切换数据加载
   useEffect(() => {
     if (nodeData && centerNodeId) {
-      const { nodes: flowNodes, edges: flowEdges } = transformGraphData(nodeData)
-      setNodes(flowNodes)
-      setEdges(flowEdges)
+      setIsTransitioning(true)
 
-      // 添加到历史记录
-      setHistory(prev => {
-        // 避免重复添加
-        if (prev[prev.length - 1]?.id === centerNodeId) {
-          return prev
-        }
-        return [...prev, {
-          id: nodeData.centerNode.id,
-          label: nodeData.centerNode.label,
-          labelCn: nodeData.centerNode.labelCn
-        }]
-      })
+      // 添加短暂延迟以显示过渡效果
+      const timer = setTimeout(() => {
+        const { nodes: flowNodes, edges: flowEdges } = transformGraphData(nodeData)
+        setNodes(flowNodes)
+        setEdges(flowEdges)
+        setIsTransitioning(false)
+
+        // 添加到历史记录
+        setHistory(prev => {
+          // 避免重复添加
+          if (prev[prev.length - 1]?.id === centerNodeId) {
+            return prev
+          }
+          return [...prev, {
+            id: nodeData.centerNode.id,
+            label: nodeData.centerNode.label,
+            labelCn: nodeData.centerNode.labelCn
+          }]
+        })
+      }, 300)
+
+      return () => clearTimeout(timer)
     }
   }, [nodeData, centerNodeId, transformGraphData, setNodes, setEdges])
+
+  // 检查是否有邻居节点
+  const hasNeighbors = (nodeData?.neighbors.length ?? 0) > 0 || (initialData?.neighbors.length ?? 0) > 0
 
   // 单击节点事件 - 显示信息卡片
   const onNodeClick = useCallback((_event: React.MouseEvent, node: Node) => {
@@ -175,11 +190,7 @@ export function GraphCanvas() {
   }, [history])
 
   if (isLoadingInitial) {
-    return (
-      <div className="w-full h-screen flex items-center justify-center bg-gray-900">
-        <div className="text-xl text-white">加载中...</div>
-      </div>
-    )
+    return <LoadingSkeleton />
   }
 
   if (initialError) {
@@ -205,7 +216,26 @@ export function GraphCanvas() {
   }
 
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-screen relative">
+      {/* 过渡动画遮罩 */}
+      {isTransitioning && (
+        <motion.div
+          className="absolute inset-0 bg-gray-900/30 backdrop-blur-sm z-40 flex items-center justify-center pointer-events-none"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          <motion.div
+            className="text-white text-lg font-medium bg-white/10 px-6 py-3 rounded-full backdrop-blur-md"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ type: 'spring', damping: 20, stiffness: 300 }}
+          >
+            切换中心节点...
+          </motion.div>
+        </motion.div>
+      )}
+
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -226,9 +256,31 @@ export function GraphCanvas() {
         <MiniMap />
       </ReactFlow>
 
+      {/* 空状态提示 */}
+      {!hasNeighbors && nodes.length > 0 && (
+        <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
+          <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl p-8 max-w-md text-center border border-gray-200 pointer-events-auto">
+            <div className="text-6xl mb-4">🌟</div>
+            <h3 className="text-xl font-bold text-gray-800 mb-2">
+              这是一个独立节点
+            </h3>
+            <p className="text-gray-600 mb-4">
+              当前节点暂时没有关联的其他节点。这可能是一个新添加的概念，或者是一个独立存在的知识点。
+            </p>
+            <div className="text-sm text-gray-500">
+              点击节点可以查看详细信息
+            </div>
+          </div>
+        </div>
+      )}
+
       {isLoadingNode && (
-        <div className="absolute top-4 right-4 bg-white px-4 py-2 rounded-lg shadow-lg">
-          <div className="text-sm">加载节点数据...</div>
+        <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-3 rounded-lg shadow-lg border border-gray-100 flex items-center gap-3">
+          <svg className="animate-spin h-4 w-4 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+          </svg>
+          <div className="text-sm text-gray-700">加载节点数据...</div>
         </div>
       )}
 
@@ -277,6 +329,9 @@ export function GraphCanvas() {
           disabled={history.length <= 1}
         />
       )}
+
+      {/* 新手引导 */}
+      <TutorialOverlay />
     </div>
   )
 }

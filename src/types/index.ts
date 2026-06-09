@@ -11,6 +11,8 @@ export interface Node {
     etymology?: string
     category?: string
     tags?: string[]
+    phonetic?: string      // IPA notation, e.g., /ˈjuːnɪvɜːrs/
+    pronunciation?: string  // Readable pronunciation guide, e.g., YOO-ni-vers
     [key: string]: string | number | boolean | string[] | undefined
   }
   createdAt?: string

@@ -13,26 +13,46 @@ export function NodeInfoCard({ node, onClose }: NodeInfoCardProps) {
   return (
     <AnimatePresence>
       <motion.div
-        initial={{ opacity: 0, x: 300 }}
+        initial={{ opacity: 0, x: 400 }}
         animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: 300 }}
-        transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+        exit={{ opacity: 0, x: 400 }}
+        transition={{
+          type: 'spring',
+          damping: 30,
+          stiffness: 300,
+          mass: 0.8
+        }}
         className="fixed right-0 top-0 h-screen w-96 bg-white shadow-2xl z-50 overflow-y-auto"
+        style={{
+          boxShadow: '-4px 0 24px rgba(0, 0, 0, 0.12), -2px 0 8px rgba(0, 0, 0, 0.08)'
+        }}
       >
         {/* 关闭按钮 */}
-        <button
+        <motion.button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 hover:bg-gray-100 rounded-full transition-colors"
+          className="absolute top-4 right-4 p-2 hover:bg-gray-100 rounded-full transition-colors group"
           aria-label="关闭"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
         >
-          <X className="w-5 h-5 text-gray-600" />
-        </button>
+          <X className="w-5 h-5 text-gray-600 group-hover:text-gray-900 transition-colors" />
+        </motion.button>
 
         {/* 内容区域 */}
-        <div className="p-6">
+        <motion.div
+          className="p-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1, duration: 0.4 }}
+        >
           {/* 标题区域 */}
           <div className="mb-6">
-            <div className="flex items-center gap-2 mb-2">
+            <motion.div
+              className="flex items-center gap-2 mb-2"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.15 }}
+            >
               <span className={`
                 px-3 py-1 rounded-full text-xs font-medium text-white
                 ${node.type === 'word' ? 'bg-node-word' : ''}
@@ -42,12 +62,46 @@ export function NodeInfoCard({ node, onClose }: NodeInfoCardProps) {
               `}>
                 {node.type}
               </span>
-            </div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-1">
+            </motion.div>
+            <motion.h2
+              className="text-3xl font-bold text-gray-900 mb-1"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2 }}
+            >
               {node.label}
-            </h2>
+            </motion.h2>
+
+            {/* 音标和发音 */}
+            {(node.metadata?.phonetic || node.metadata?.pronunciation) && (
+              <motion.div
+                className="flex flex-wrap items-center gap-3 mb-2"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.23 }}
+              >
+                {node.metadata.phonetic && (
+                  <span className="text-base text-blue-600 font-mono">
+                    {node.metadata.phonetic}
+                  </span>
+                )}
+                {node.metadata.pronunciation && (
+                  <span className="text-sm text-gray-500 italic">
+                    {node.metadata.pronunciation}
+                  </span>
+                )}
+              </motion.div>
+            )}
+
             {node.labelCn && (
-              <p className="text-xl text-gray-600">{node.labelCn}</p>
+              <motion.p
+                className="text-xl text-gray-600"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.25 }}
+              >
+                {node.labelCn}
+              </motion.p>
             )}
           </div>
 
@@ -123,7 +177,7 @@ export function NodeInfoCard({ node, onClose }: NodeInfoCardProps) {
               Created: {new Date(node.createdAt).toLocaleDateString()}
             </div>
           )}
-        </div>
+        </motion.div>
       </motion.div>
     </AnimatePresence>
   )

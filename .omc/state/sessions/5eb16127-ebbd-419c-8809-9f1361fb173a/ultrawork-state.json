@@ -1,0 +1,11 @@
+{
+  "active": true,
+  "started_at": "2026-06-09T03:38:41.527Z",
+  "original_prompt": "/oh-my-claudecode:ultrawork 1.调试UI动效2.调整UX界面3.页面节点只有5个单词，数据库节点没有倒入，也绵绵无法查看更多单词 4.单词详情页追加中文注释内容，追加发音，追加音标. 5.检查实现逻辑和开发文档需求是否一致，进行验证调试",
+  "session_id": "5eb16127-ebbd-419c-8809-9f1361fb173a",
+  "project_path": "/home/jingyuu/claude/word-un-repo",
+  "reinforcement_count": 0,
+  "awaiting_confirmation": true,
+  "awaiting_confirmation_set_at": "2026-06-09T03:38:41.527Z",
+  "last_checked_at": "2026-06-09T03:38:41.527Z"
+}

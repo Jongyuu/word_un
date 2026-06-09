@@ -1,0 +1,378 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1780948566371,
+  "projectRoot": "/home/jingyuu/claude/word-un-repo",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "react",
+        "version": "18.3.1",
+        "category": "frontend"
+      },
+      {
+        "name": "react-dom",
+        "version": "18.3.1",
+        "category": "frontend"
+      },
+      {
+        "name": "vite",
+        "version": "5.4.10",
+        "category": "build"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "npm run build 2>&1",
+    "testCommand": null,
+    "lintCommand": "npm run lint",
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "vite",
+      "build": "tsc -b && vite build",
+      "lint": "eslint .",
+      "preview": "vite preview",
+      "setup": "tsx scripts/setup-wizard.ts",
+      "import-data": "tsx scripts/import-seed-data.ts",
+      "test:setup": "tsx scripts/test-setup.ts",
+      "deploy:check": "tsx scripts/deploy-check.ts",
+      "backup": "tsx scripts/backup-data.ts",
+      "stats": "tsx scripts/data-stats.ts",
+      "perf": "tsx scripts/performance-check.ts",
+      "validate": "tsx scripts/validate-data.ts"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": "type-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "docs",
+      "public",
+      "scripts",
+      "src"
+    ],
+    "gitBranches": {
+      "defaultBranch": "master",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "api": {
+      "path": "api",
+      "purpose": "API routes",
+      "fileCount": 0,
+      "lastAccessed": 1780948566341,
+      "keyFiles": []
+    },
+    "dist": {
+      "path": "dist",
+      "purpose": "Distribution/build output",
+      "fileCount": 2,
+      "lastAccessed": 1780948566343,
+      "keyFiles": [
+        "index.html",
+        "vite.svg"
+      ]
+    },
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 5,
+      "lastAccessed": 1780948566357,
+      "keyFiles": [
+        "DEVELOPER_ONBOARDING.md",
+        "PROJECT_STATS.md",
+        "PROJECT_SUMMARY.md",
+        "QUICK_REFERENCE.md",
+        "TEST_REPORT.md"
+      ]
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 1,
+      "lastAccessed": 1780948566361,
+      "keyFiles": [
+        "vite.svg"
+      ]
+    },
+    "scripts": {
+      "path": "scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 9,
+      "lastAccessed": 1780948566361,
+      "keyFiles": [
+        "backup-data.ts",
+        "data-stats.ts",
+        "deploy-check.ps1",
+        "deploy-check.ts",
+        "import-seed-data.ts"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 4,
+      "lastAccessed": 1780948566362,
+      "keyFiles": [
+        "App.tsx",
+        "index.css",
+        "main.tsx",
+        "vite-env.d.ts"
+      ]
+    },
+    "supabase": {
+      "path": "supabase",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1780948566362,
+      "keyFiles": [
+        "config.toml"
+      ]
+    },
+    "dist/assets": {
+      "path": "dist/assets",
+      "purpose": "Static assets",
+      "fileCount": 2,
+      "lastAccessed": 1780948566366,
+      "keyFiles": [
+        "index-CGqg6drJ.js",
+        "index-Cc2zbszc.css"
+      ]
+    },
+    "src/api": {
+      "path": "src/api",
+      "purpose": "API routes",
+      "fileCount": 1,
+      "lastAccessed": 1780948566368,
+      "keyFiles": [
+        "graphApi.ts"
+      ]
+    },
+    "src/assets": {
+      "path": "src/assets",
+      "purpose": "Static assets",
+      "fileCount": 1,
+      "lastAccessed": 1780948566368,
+      "keyFiles": [
+        "react.svg"
+      ]
+    },
+    "src/components": {
+      "path": "src/components",
+      "purpose": "UI components",
+      "fileCount": 0,
+      "lastAccessed": 1780948566368,
+      "keyFiles": []
+    },
+    "src/types": {
+      "path": "src/types",
+      "purpose": "Type definitions",
+      "fileCount": 2,
+      "lastAccessed": 1780948566368,
+      "keyFiles": [
+        "api.ts",
+        "index.ts"
+      ]
+    },
+    "src/utils": {
+      "path": "src/utils",
+      "purpose": "Utility functions",
+      "fileCount": 3,
+      "lastAccessed": 1780948566369,
+      "keyFiles": [
+        "env.ts",
+        "layoutEngine.ts",
+        "nodeColors.ts"
+      ]
+    },
+    "supabase/migrations": {
+      "path": "supabase/migrations",
+      "purpose": "Database migrations",
+      "fileCount": 1,
+      "lastAccessed": 1780948566369,
+      "keyFiles": [
+        "20260608233110_init_word_universe.sql"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "src/components/Graph/GraphCanvas.tsx",
+      "accessCount": 16,
+      "lastAccessed": 1780977568110,
+      "type": "file"
+    },
+    {
+      "path": "src/components/InfoCard/NodeInfoCard.tsx",
+      "accessCount": 9,
+      "lastAccessed": 1780976813369,
+      "type": "file"
+    },
+    {
+      "path": "README.md",
+      "accessCount": 4,
+      "lastAccessed": 1780976754573,
+      "type": "file"
+    },
+    {
+      "path": "src/types/index.ts",
+      "accessCount": 4,
+      "lastAccessed": 1780977555060,
+      "type": "file"
+    },
+    {
+      "path": "api/graph/initial.ts",
+      "accessCount": 3,
+      "lastAccessed": 1780976720338,
+      "type": "file"
+    },
+    {
+      "path": "api/graph/center/[nodeId].ts",
+      "accessCount": 3,
+      "lastAccessed": 1780976789972,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Graph/CustomNode.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1780976898822,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Navigation/Breadcrumb.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1780976930751,
+      "type": "file"
+    },
+    {
+      "path": "src/utils/env.ts",
+      "accessCount": 2,
+      "lastAccessed": 1780949594344,
+      "type": "file"
+    },
+    {
+      "path": "PRODUCT_DESIGN.md",
+      "accessCount": 2,
+      "lastAccessed": 1780976695106,
+      "type": "file"
+    },
+    {
+      "path": "src/api/graphApi.ts",
+      "accessCount": 2,
+      "lastAccessed": 1780976708382,
+      "type": "file"
+    },
+    {
+      "path": "supabase/migrations/20260608233110_init_word_universe.sql",
+      "accessCount": 2,
+      "lastAccessed": 1780976764795,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Graph/LoadingSkeleton.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1780977567049,
+      "type": "file"
+    },
+    {
+      "path": ".env.example",
+      "accessCount": 1,
+      "lastAccessed": 1780948748241,
+      "type": "file"
+    },
+    {
+      "path": "src/main.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1780949161675,
+      "type": "file"
+    },
+    {
+      "path": "vercel.json",
+      "accessCount": 1,
+      "lastAccessed": 1780949299003,
+      "type": "file"
+    },
+    {
+      "path": ".vercel-deploy-guide.md",
+      "accessCount": 1,
+      "lastAccessed": 1780949299372,
+      "type": "file"
+    },
+    {
+      "path": "src/App.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1780950507290,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Graph/CustomEdge.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1780976680009,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 1,
+      "lastAccessed": 1780976680542,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Navigation/BackButton.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1780976741882,
+      "type": "file"
+    },
+    {
+      "path": "PROJECT_SUMMARY.md",
+      "accessCount": 1,
+      "lastAccessed": 1780976764316,
+      "type": "file"
+    },
+    {
+      "path": "src/types/api.ts",
+      "accessCount": 1,
+      "lastAccessed": 1780976777486,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Tutorial/TutorialOverlay.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1780977098410,
+      "type": "file"
+    },
+    {
+      "path": "IMPLEMENTATION_REVIEW.md",
+      "accessCount": 1,
+      "lastAccessed": 1780977664974,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"claude mcp get vercel\",\"description\":\"Get Vercel MCP server details\"}",
+  "error": "Exit code 1\nNo MCP server found with name: \"vercel\". Configured servers: context7, exa, filesystem, github, plugin:oh-my-claudecode:t, plugin:vercel:vercel, supabase",
+  "timestamp": "2026-06-08T20:24:35.318Z",
+  "retry_count": 2
+}
